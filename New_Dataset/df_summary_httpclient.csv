@@ -1,0 +1,747 @@
+,ID,SUMMARY
+0,HTTPCLIENT-569, HttpState.clearCookies() should be synchronized 
+1,HTTPCLIENT-386, Catch SocketTimeoutException not InterruptedIOException 
+2,HTTPCLIENT-302, exception during writeRequest leaves the connection un-released 
+3,HTTPCLIENT-104, Incorrect debug message in HttpMethodBase 
+4,HTTPCLIENT-85, Host request header does not contain port 
+5,HTTPCLIENT-196, httpClient failed to reconnect after keep-alive connection timed out 
+6,HTTPCLIENT-697, Http Client give sme message when proxy/http endpoint is down 
+7,HTTPCLIENT-477, There is no way to specify a different auth scheme priority for host and proxy 
+8,HTTPCLIENT-1054, HTTPClient per default relentlessly spams to stderr 
+9,HTTPCLIENT-1030," Implement ""ignoreCookies"" CookieSpec "
+10,HTTPCLIENT-553, JavaDoc getConnection methods in Connection Managers 
+11,HTTPCLIENT-30, should allow receiving secure cookies from non-secure chanel 
+12,HTTPCLIENT-452, DateUtil.formatDate() uses default timezone instead of GMT 
+13,HTTPCLIENT-824, Review the use of BaiscHttpParams and HttpProtocolProcessor in HttpClient 
+14,HTTPCLIENT-286, Manually set 'Cookie' & 'Authorization' headers get discarded 
+15,HTTPCLIENT-323, GetMethod.getResponseBodyAsStream() .available() could return content-length 
+16,HTTPCLIENT-960, HttpMultipart doesn't generate Content-Type part header in mode BROWSER_COMPATIBLE 
+17,HTTPCLIENT-813, HttpClient throws NPE on Invalid Port when used with MultiThreadedHttpConnectionManager 
+18,HTTPCLIENT-71, Add support for Digest authentication to the Authenticator class 
+19,HTTPCLIENT-530, Findbugs reports and fixes 
+20,HTTPCLIENT-317, HTTP Client doesn't support multipart/related content-type 
+21,HTTPCLIENT-852," CircularRedirectException encountered when using a proxy, but not when reaching the target directly "
+22,HTTPCLIENT-667, Provide BestMatch cookie policy 
+23,HTTPCLIENT-501, Minor RFC 2109 / 2965 violation 
+24,HTTPCLIENT-609, Use TRACE logging instead of DEBUG for the absolute nitty-gritties 
+25,HTTPCLIENT-926, Add Amazon S3 authentication support 
+26,HTTPCLIENT-46, Plug-in authentication modules 
+27,HTTPCLIENT-1027, Some typos in the English Manual 
+28,HTTPCLIENT-965, cache does not honor must-revalidate or proxy-revalidate Cache-Control directives 
+29,HTTPCLIENT-404, SO_TIMEOUT parameter on the method level has no effect 
+30,HTTPCLIENT-384, 3.0 not compile-time compatible with 2.0 library usage 
+31,HTTPCLIENT-972, caching module should use HttpParams-style configuration 
+32,HTTPCLIENT-1026, Properly close resources 
+33,HTTPCLIENT-165, '100-continue' response times out unexpectedly 
+34,HTTPCLIENT-440, Exception in HttpConnection because of unchecked buffer size 
+35,HTTPCLIENT-510, User-defined ProtocolSocketFactory for secure connection through proxy 
+36,HTTPCLIENT-985, cache module should populate Via header to capture upstream and downstream protocols 
+37,HTTPCLIENT-1034," Add link to ""Benchmarking the HttpClient Caching Module"" article from Comcast Interactive Media "
+38,HTTPCLIENT-163, HttpClient does not compile 'out of the box' in IBM's VisualAge IDE 
+39,HTTPCLIENT-574, Subclasses do not have write access to StatusLine 
+40,HTTPCLIENT-705, Handle URIs with path component null 
+41,HTTPCLIENT-738, HostnameVerifier shouldn't shadow simple name of implemented interface 
+42,HTTPCLIENT-99, Requests are retried 3 times unconditionaly 
+43,HTTPCLIENT-1142, Infinite loop on NTLM authentication 
+44,HTTPCLIENT-1097, BrowserCompatHostnameVerifier and StrictHostnameVerifier should handle wildcards in SSL certificates better 
+45,HTTPCLIENT-552, Add shutdown method to SimpleHttpConnectionManager 
+46,HTTPCLIENT-758, Wrong method signatures in AbstractHttpClient 
+47,HTTPCLIENT-26, need a way to set request body in PostMethod 
+48,HTTPCLIENT-1100, Missing Content-Length header makes cached entry invalid 
+49,HTTPCLIENT-675, thread starving in MultiThreadedHttpConnectionManager 
+50,HTTPCLIENT-614, allow different strategies when checking CN of x509 cert 
+51,HTTPCLIENT-713, remove RoutedRequest from ClientRequestDirector interface 
+52,HTTPCLIENT-298, javadoc often has <code> without </code> 
+53,HTTPCLIENT-494, Invalid redirects are not corrected 
+54,HTTPCLIENT-806, ConnectException not handled in DefaultHttpMethodRetryHandler 
+55,HTTPCLIENT-1177, HttpClient treats URI fragments in redirect URIs incosistently 
+56,HTTPCLIENT-506, Digest auth uses wrong uri in proxy authentication 
+57,HTTPCLIENT-1182, Add a constructor to org.apache.http.conn.ssl.SSLSocketFactory to allow for directly wrapping a javax.net.ssl.SSLSocketFactory socketfactory 
+58,HTTPCLIENT-444, Preemptive authentication causes NTLM auth scheme to fail 
+59,HTTPCLIENT-657, TestBasicCookieAttribHandlers fails on non-english Locale systems 
+60,HTTPCLIENT-41, New method to add an array of parameters to PostMethod 
+61,HTTPCLIENT-1057, wrong class name in statemgmt.xml 
+62,HTTPCLIENT-998, cache should use both Last-Modified and ETag for validations when available 
+63,HTTPCLIENT-869, Incorrect/incomplete product name in META-INF/NOTICE file 
+64,HTTPCLIENT-772, typo in RFC reference in web site 
+65,HTTPCLIENT-526, warn on invalid set-cookie header 
+66,HTTPCLIENT-342, [API Doc] Improve the description of the preemptive authentication 
+67,HTTPCLIENT-261, infinite loop on 302 redirect with different host in Location: header 
+68,HTTPCLIENT-1066, HTTPClient 4.1 auto slash removal 
+69,HTTPCLIENT-769, java.lang.IllegalStateException: Connection already open. 
+70,HTTPCLIENT-1016, Adding a custom location header extractor method for RedirectStrategy. 
+71,HTTPCLIENT-689, stackable parameters 
+72,HTTPCLIENT-903, Use ConcurrentHashMap instead of HashMap wherever thread-safe access is needed 
+73,HTTPCLIENT-711, bad route computed for redirected requests 
+74,HTTPCLIENT-659, DateUtils should cache SimpleDateFormat 
+75,HTTPCLIENT-944, In case of SocketTimeoutException and using HttpRequestRetryHandler the execution is always +1 
+76,HTTPCLIENT-1158, Change the error message in the exception at URIUtils#rewriteURI  
+77,HTTPCLIENT-227, Missing Content-Length header causes a SocketException 
+78,HTTPCLIENT-729, move HttpRoute and related classes to separate package 
+79,HTTPCLIENT-914, Use Apache Codec 1.4 
+80,HTTPCLIENT-399," Connection not closed after ""Connection: close"" request "
+81,HTTPCLIENT-390, SSL + proxy + Host auth + Keep Alive off causes an infinite loop in HttpMethodDirector 
+82,HTTPCLIENT-674, use VersionInfo of core 
+83,HTTPCLIENT-413, Cookie with domain .mydomain.com not sent to host mydomain.com 
+84,HTTPCLIENT-672, re-sync client with changes in core alpha6 snapshot 
+85,HTTPCLIENT-505, cipher 
+86,HTTPCLIENT-464," An HTTP ""204 NO CONTENT"" response results in dropped connection "
+87,HTTPCLIENT-1139, NTLM Authentication No Longer Working In Latest Release 
+88,HTTPCLIENT-243, Transfer-Encoding: identity not supported + possible patch 
+89,HTTPCLIENT-595, Fix junit scope in maven pom 
+90,HTTPCLIENT-822, HttpClient throws java.net.SocketException instead of org.apache.http.conn.ConnectionTimeoutException when connection timeout occurs 
+91,HTTPCLIENT-5, Cookie.parse exception when parsing expiry date in single quotes 
+92,HTTPCLIENT-478, HttpConnectionParams.setConnectionTimeout(int) has no effect if host unreachable 
+93,HTTPCLIENT-107, HttpMethodBase: Port mismatch in URL for redirect to absolute location 
+94,HTTPCLIENT-280, Freezes w/ MultiThreadedHttpConnectionManager 
+95,HTTPCLIENT-347, MultiThreadedConnectionManager Accounting Problems 
+96,HTTPCLIENT-755, Use of java.net.URI.resolve() is buggy 
+97,HTTPCLIENT-1154, org.apache.http.impl.client.cache.memcached.MemcachedHttpCacheStorage should allow client to specify custom prefix string for keys 
+98,HTTPCLIENT-582, Allow access to registered cookie policies 
+99,HTTPCLIENT-653, connection wrapper prevents GC of TSCCM 
+100,HTTPCLIENT-166, waitForResponse is using busy wait 
+101,HTTPCLIENT-484, Fold AuthSSLProtocolSocketFactory into HttpClient proper 
+102,HTTPCLIENT-226, HttpMethod#getResponseBody throws NPE 
+103,HTTPCLIENT-775, download section of website down 
+104,HTTPCLIENT-48, User interaction for authentication 
+105,HTTPCLIENT-245, customize handling of 302 redirects 
+106,HTTPCLIENT-815, Quick Start guide for HttpClient 4.0 
+107,HTTPCLIENT-1056, Wrong creation of AuthScope object 
+108,HTTPCLIENT-309, [RFE] Allow streaming of POST methods via chunked transfer encoding. 
+109,HTTPCLIENT-1157, MemcachedHttpCacheStorage should throw IOExceptions instead of Runtime Exceptions 
+110,HTTPCLIENT-725, TSCCM code cleanup 
+111,HTTPCLIENT-344, HttpConnection.isOpen() logging is not accurate 
+112,HTTPCLIENT-989, DefaultHttpRequestRetryHandler must not retry non-idempotent http methods (violates RFC 2616) 
+113,HTTPCLIENT-1147," When HttpClient-Cache cannot open cache file, should act like miss "
+114,HTTPCLIENT-715, remove RoutedRequest from API 
+115,HTTPCLIENT-242, Add InputStream buffering. 
+116,HTTPCLIENT-365, StatusLine IndexOutOfBounds 
+117,HTTPCLIENT-1069, HttpClient 4.1 ignores request retry handler and stops retrying when a read timeout is followed by a connection refusal 
+118,HTTPCLIENT-1044," DefaultHttpRequestRetryHandler is not handling PUT as an idempotent method for retries, though RFC2616 section 9.1.2 clearly defines it to be one. "
+119,HTTPCLIENT-773, Parsing expires 
+120,HTTPCLIENT-906, Minor performance improvement to IdleConnectionHandler 
+121,HTTPCLIENT-463," Occasional ""Host connection pool not found"" "
+122,HTTPCLIENT-108, Cookie.java: 'bookean' typo 
+123,HTTPCLIENT-765, String.toLowerCase() / toUpperCase() should specify Locale.ENGLISH 
+124,HTTPCLIENT-383, HostConfiguration handling requires cleanup 
+125,HTTPCLIENT-216, Cookies with null path attribute are rejected in the compatibility mode 
+126,HTTPCLIENT-352, Allow polymorphic use of addParameter 
+127,HTTPCLIENT-4, Chunked transfer encoding not isolated from application. 
+128,HTTPCLIENT-206," URI class constructors need revision, optimization "
+129,HTTPCLIENT-1179, Upgrade commons-codec 1.4 -> 1.6 
+130,HTTPCLIENT-176, Unusual Http status line 
+131,HTTPCLIENT-1135," RandomAccessFile mode ""w"" is not valid "
+132,HTTPCLIENT-54, Handle Null Arguments consistantly 
+133,HTTPCLIENT-1086, Use Iterable<? extends UrlEncodedFormEntity> instead of List<? extends UrlEncodedFormEntity> in URLEncodedUtils.format and UrlEncodedFormEntity 
+134,HTTPCLIENT-1063," ResponseContentEncoding should also handle x-gzip, compress and x-compress "
+135,HTTPCLIENT-304, Cleanup use of EncodingUtil and HttpConstants 
+136,HTTPCLIENT-79, Preemtive Auth fails whithout credentials 
+137,HTTPCLIENT-385, Access to SO_TIMEOUT for open connections 
+138,HTTPCLIENT-239, Redirect 302 to the same URL causes max redirects exception 
+139,HTTPCLIENT-868," Add <a name=""""> anchors to documentation sections "
+140,HTTPCLIENT-1152, org.apache.http.impl.client.cache.memcached.MemcachedHttpCacheStorage should verify class of returned object before casting 
+141,HTTPCLIENT-437, method.getURI()  returns escaped URIs but it shouldn't 
+142,HTTPCLIENT-110, Port 80 is needed to run tests 
+143,HTTPCLIENT-522, ProxyCredentials disclosed to remote host 
+144,HTTPCLIENT-197," Problem with redirect on HEAD when (bad, naughty) server returns body content "
+145,HTTPCLIENT-316, release is not signed 
+146,HTTPCLIENT-237, wire logger skips empty line 
+147,HTTPCLIENT-281, DefaultHttpParamsFactory violates applet sandbox 
+148,HTTPCLIENT-615, Consider making HostConfiguration immutable 
+149,HTTPCLIENT-842," Link javadocs of HttpClient, HttpCore and HttpMime "
+150,HTTPCLIENT-717, NPE in SimpleHttpConnectionManager.shutdown() 
+151,HTTPCLIENT-50, User configurable cookie policy 
+152,HTTPCLIENT-1002, Stale connections are never detected when wireLog.isDebugEnabled() == true 
+153,HTTPCLIENT-487, ParameterParser parse method for authentication headers does not appear to deal with empty value strings 
+154,HTTPCLIENT-1003, Handle conditional requests in cache 
+155,HTTPCLIENT-791, Default retry count three even if documentation says it's five 
+156,HTTPCLIENT-278, Add the ability to disable the content-type and transfer encoding headers for Parts 
+157,HTTPCLIENT-106, Path should not be encoded in HttpMethodBase 
+158,HTTPCLIENT-699, Performance tuning 
+159,HTTPCLIENT-221, error handling duplicate connection headers 
+160,HTTPCLIENT-567, EasyX509TrustManager no longer checks cert expiry 
+161,HTTPCLIENT-122, HttpMultiClient reuses closed connections 
+162,HTTPCLIENT-909, Upgrade all default socket factories to use SO_REUSEADDR parameter 
+163,HTTPCLIENT-975, add support to caching module for RFC 5861 (stale-on-error and stale-while-revalidate) 
+164,HTTPCLIENT-208, Netscape proxy problem wtih POST 
+165,HTTPCLIENT-95, Proxy authentication does not handle multiple multiple authentication schemes 
+166,HTTPCLIENT-18, Can't use proxy server with https 
+167,HTTPCLIENT-195, NTLM authentication failed due to closing of connection 
+168,HTTPCLIENT-542, Explicit VirtualHosts Can Cause Issues On Redirects 
+169,HTTPCLIENT-1076, [GSoC 2011] Fluent API to HttpClient 
+170,HTTPCLIENT-1011, CachingHttpClient.execute() does not catch the IOException thrown by HttpCache.getCacheEntry() 
+171,HTTPCLIENT-410, Typos in MultiThreadedHttpConnectionManager 
+172,HTTPCLIENT-1037, FormBodyPart code does not agree with ContentDescriptor Javadoc wrt nullability of mimeType and transferEncoding 
+173,HTTPCLIENT-113, NullPointerException in HttpMethodBase.getResponseBodyAsString 
+174,HTTPCLIENT-236, URI.normalize() error 
+175,HTTPCLIENT-807, ContentBody doesn't currently have a setMimeType method. 
+176,HTTPCLIENT-43, replace the PostMethod parameters HashMap with a List 
+177,HTTPCLIENT-1051, SSL connections cannot be established using resolvable IP address 
+178,HTTPCLIENT-591, Apply the supplied patch. Sets 2 variable in the base class to protected 
+179,HTTPCLIENT-570, Failed CONNECT leaves connection in an inconsistent state 
+180,HTTPCLIENT-723, HttpRoutePlanner based on ProxySelector 
+181,HTTPCLIENT-1078, DecompressingEntity not calling close on InputStream retrieved by getContent 
+182,HTTPCLIENT-1013, website: 404 for several documentation pages 
+183,HTTPCLIENT-130, HttpMethodBase does not compile on JDK prior to 1.3 
+184,HTTPCLIENT-718," SSL verification occurs before setSoTimeout, which can lead to hangs "
+185,HTTPCLIENT-784, Multipart post is broken 
+186,HTTPCLIENT-644, Bad request vulnerability  
+187,HTTPCLIENT-640, contrib.ssl.HostConfigurationWithHostFactory 
+188,HTTPCLIENT-1128, Provide factory method to create DefaultHttpClient instances pre-configured based on JSSE and networking system properties 
+189,HTTPCLIENT-123, MultipartPostMethod does not check for error messages 
+190,HTTPCLIENT-149, 303 Redirects are not handled properly 
+191,HTTPCLIENT-979, cache entry resource management should be extracted from CachingHttpClient 
+192,HTTPCLIENT-1072, Inline nested jars in OSGi bundles 
+193,HTTPCLIENT-649, Support multiple proxies 
+194,HTTPCLIENT-747, No entry created for this pool. 
+195,HTTPCLIENT-634, HostConfiguration socketFactory is ignored 
+196,HTTPCLIENT-668, make sure no static loggers are used 
+197,HTTPCLIENT-948, IdleConnectionHandler can leave closed connections in a inconsistent state 
+198,HTTPCLIENT-786, variables should be accessed through getters 
+199,HTTPCLIENT-610, HttpMethodBase.getResponseBodyAsString(long limit) 
+200,HTTPCLIENT-341, HttpUrl does not accept unescaped passwords 
+201,HTTPCLIENT-429, Problem getting the HTTPClient to use HTTP 1.0 with a proxy server 
+202,HTTPCLIENT-911," Support underscore in domain name, or provide better exception "
+203,HTTPCLIENT-753, move class Scheme and friends to a separate package 
+204,HTTPCLIENT-695, broken link to the release notes 
+205,HTTPCLIENT-259, [Maven] Migrate checkstyle.properties to XML 
+206,HTTPCLIENT-117, Move to the new URIUtil class 
+207,HTTPCLIENT-748, make SchemeRegistry friendlier for DI frameworks 
+208,HTTPCLIENT-742, common interface for HttpRoute and RouteTracker 
+209,HTTPCLIENT-265, Error releasing chunked connections with no response body. 
+210,HTTPCLIENT-1153, org.apache.http.impl.client.cache.memcached.MemcachedHttpCacheStorage uses URL as cache key - shouldn't. 
+211,HTTPCLIENT-214, HttpClient drops connection to the proxy when an invalid 'connection: close' directive is encountered in 'connection established' response 
+212,HTTPCLIENT-999, need tests to guarantee transparency of caching module on end-to-end headers 
+213,HTTPCLIENT-633, MultiThreadedHttpConnectionManager does not properly respond to thread interrupts 
+214,HTTPCLIENT-1065, Documentation on SingleClientConnManager(SchemeRegistry schreg) constructor is wrong 
+215,HTTPCLIENT-1079, Kerberos cross-realm support is broken 
+216,HTTPCLIENT-981, CachingHttpClient returns a 411 respones when executing a POST (HttpPost) request  
+217,HTTPCLIENT-735, allow unsetting of DEFAULT_PROXY and FORCED_ROUTE parameters in the client stack 
+218,HTTPCLIENT-128, Redirection of a POST method 
+219,HTTPCLIENT-427, Implement a cache to perform real request only when needed 
+220,HTTPCLIENT-412, Document SINGLE_COOKIE_HEADER param in the cookie guide 
+221,HTTPCLIENT-1140, Infinite loop on basic authentication 
+222,HTTPCLIENT-47, User definable default headers support 
+223,HTTPCLIENT-964, no-cache directives with field names are transmitted downstream 
+224,HTTPCLIENT-268, Socket streams are closed in the incorrect order. 
+225,HTTPCLIENT-131, [HttpClient] Authenticator() - ability to perform alternate authentication 
+226,HTTPCLIENT-373, Allow configuration of SO_LINGER 
+227,HTTPCLIENT-307, An IOException or RuntimeException leaves the underlying socket in an undetermined state 
+228,HTTPCLIENT-34, optimization in sending request 
+229,HTTPCLIENT-228, Request with DIGEST authentication fails when redirected 
+230,HTTPCLIENT-967, allow cache to be configured as a non-shared (private) cache 
+231,HTTPCLIENT-923, NetscapeDraftSpec is too strict about cookie expires date format 
+232,HTTPCLIENT-187, Provide general HTTP date parsing 
+233,HTTPCLIENT-862, Extend the client's redirect handling interface to allow control of the content of the redirect 
+234,HTTPCLIENT-38, Header Connection Close - Closes the Connection 
+235,HTTPCLIENT-119, [PATCH] FilePart fails to send data on second call to send 
+236,HTTPCLIENT-295, HttpClient loops endlessly while trying to retrieve status line 
+237,HTTPCLIENT-406, Releasing a connection is unconfirmed 
+238,HTTPCLIENT-326, MultiThreadedConnectionManager should provide a shutdown 
+239,HTTPCLIENT-788, Public Suffix List 
+240,HTTPCLIENT-296, Basic Authentification fails with non-ASCII username/password characters 
+241,HTTPCLIENT-379, JVM bug 4949631 causes BufferOverflowException in HttpMethodBase.getResponseBodyAsString 
+242,HTTPCLIENT-848, HttpClient:- Connections not released when SSL Tunneling fails. 
+243,HTTPCLIENT-874, Override method MultipartEntity.addPart so that applications may use FormBodyPart 
+244,HTTPCLIENT-1143, CachingHttpClient leaks connections with stale-if-error 
+245,HTTPCLIENT-306, Redesign of HTTP authentication framework 
+246,HTTPCLIENT-230, Contributed utility for determing content type from file type extension 
+247,HTTPCLIENT-520, MultipartEntity incorrectly computes unknown length 
+248,HTTPCLIENT-884, Charset omitted from UrlEncodedFormEntity Content-Type header 
+249,HTTPCLIENT-871, Add FileBody constructor with explicit filename 
+250,HTTPCLIENT-1015, Support only-if-cached directive 
+251,HTTPCLIENT-143, Better integration of the TestWebApp-HowTo into the documentation 
+252,HTTPCLIENT-969, BasicCookieStore.getCookies() returns non-threadsafe collection 
+253,HTTPCLIENT-129, multipart feedback 
+254,HTTPCLIENT-676, memory leak in MultiThreadedHttpConnectionManager 
+255,HTTPCLIENT-1020, Please add maven-notice-plugin to gump-trunk 
+256,HTTPCLIENT-102, Unable to get the status line from a http method object 
+257,HTTPCLIENT-618, Eliminate class HostConfiguration 
+258,HTTPCLIENT-790, Protocol interceptors not called when executing CONNECT methods 
+259,HTTPCLIENT-601, SecureProtocolFactoryWrapper class for using the socket factory created by Java Web Start 
+260,HTTPCLIENT-238, HeaderElement#parse(String) implementation is not optimal 
+261,HTTPCLIENT-719, Clone support 
+262,HTTPCLIENT-266, [patch] Support for digest auth MD5-sess 
+263,HTTPCLIENT-835, Thread safety and visibility Improvements 
+264,HTTPCLIENT-524, Provide feedback mechanism to CredentialsProvider 
+265,HTTPCLIENT-402, DefaultMethodRetryHandler bug 
+266,HTTPCLIENT-210, Exception handling in HttpClient requires redesign 
+267,HTTPCLIENT-345, [CONTRIB] SSL authenticating protocol socket factory 
+268,HTTPCLIENT-536, misleading lack of javadoc in StringRequestEntity 
+269,HTTPCLIENT-789, Support for passing an SSLContext to the SSLSocketFactory of HttpClient 
+270,HTTPCLIENT-255, In J2SDK 1.5.0 (Tiger) enum is a keyword 
+271,HTTPCLIENT-324, [API Doc] Document exceptions thrown on execute methods 
+272,HTTPCLIENT-739, CookieIdentityComparator and CookiePathComparator could/should implement Serializable 
+273,HTTPCLIENT-1166, URIUtils.extractHost(...) throws a NumberFormatException line 310 
+274,HTTPCLIENT-1164, Compressed entities are not being cached properly 
+275,HTTPCLIENT-179, HTTPS Post Does Not Work 
+276,HTTPCLIENT-546, MultiThreadedHttpConnectionManager setMaxTotalConnections() method doesn't work 
+277,HTTPCLIENT-368, [PATCH]character encoding handling is invalid at multipart 
+278,HTTPCLIENT-460, Windows specific implementation of the Digest auth scheme 
+279,HTTPCLIENT-29, shouldn't throw exception on bad cookies 
+280,HTTPCLIENT-616, HttpMethodDirector.executeWithRetry method fails to close the underlying connection if a RuntimeException is thrown 
+281,HTTPCLIENT-314, New socket timeout value wont have effect if connection is reused 
+282,HTTPCLIENT-701, Cookie guide lists RFC 2965 as unsupported 
+283,HTTPCLIENT-162, Realm from authentication challenge unavailable 
+284,HTTPCLIENT-1053, Security issue - DigestScheme uses constant nonce count value 
+285,HTTPCLIENT-158, Empty response body is not properly handled when chunked encoding is used 
+286,HTTPCLIENT-502, HttpConnection isOpen flag concurrency problem 
+287,HTTPCLIENT-32, querystring still not set in Url*Method constructors 
+288,HTTPCLIENT-544, Digest auth uses incorrect URI 
+289,HTTPCLIENT-389, Provide Date Header Util Methods 
+290,HTTPCLIENT-312, Update license terms 
+291,HTTPCLIENT-24, Exception shouldn't be thrown for unsupported authentication method 
+292,HTTPCLIENT-630, URI.java readObject()/writeObject() must be private 
+293,HTTPCLIENT-485, Connection is not released back to the pool if a runtime exception is thrown in HttpMethod#releaseConnection method 
+294,HTTPCLIENT-377, [API Doc] HttpClient tutorial update 
+295,HTTPCLIENT-98, PUT method blocks against older servers 
+296,HTTPCLIENT-420, Provide a non-pooling connection manager 
+297,HTTPCLIENT-291, Cookie docs are outdated. 
+298,HTTPCLIENT-1014, ByteArrayBody as an alternative to InputStreamBody 
+299,HTTPCLIENT-665, Change access to internal maps of HttpState to protected. 
+300,HTTPCLIENT-692, ClientConnectionManager should throw InterruptedException 
+301,HTTPCLIENT-500, Dependency URL broken for commons-logging 
+302,HTTPCLIENT-13, empty path not handled correctly 
+303,HTTPCLIENT-217, httpMethod.abort needed 
+304,HTTPCLIENT-290, MS Proxy with NTLM authentication set up does not work 
+305,HTTPCLIENT-1132, porting of ProxyClient from 3.1 to 4.x API 
+306,HTTPCLIENT-670, add an interface for plugable dns clients 
+307,HTTPCLIENT-289, MultiThreadedHttpConnectionManager daemon Thread never GC'd 
+308,HTTPCLIENT-538, New PostSOAP example (for src/examples) 
+309,HTTPCLIENT-1172, LocalTestServer and supporting classes should be available as a separate jar 
+310,HTTPCLIENT-740, AbstractConnPool constructor calls thread.Start() 
+311,HTTPCLIENT-322, Deprecate and replace SimpleHttpConnection with the SimpleHttpServer based testing framework 
+312,HTTPCLIENT-157, migrate to commons-codec Base64 
+313,HTTPCLIENT-635, Port fix for HTTPCLIENT-633 to 4.0 
+314,HTTPCLIENT-1122, NPE in RequestProxyAuthentication on Android 
+315,HTTPCLIENT-401, HttpState should have methods for clearing all cookies and credentials 
+316,HTTPCLIENT-66, RFC 2965 Support (Port sensitive cookies) 
+317,HTTPCLIENT-426, httpclient doesn't read and parse response from certain types of proxy servers when POST method is used 
+318,HTTPCLIENT-834, Transparent Content Coding support 
+319,HTTPCLIENT-625, shutdown of MultiThreadedHttpConnectionManager 
+320,HTTPCLIENT-517, Cookie Documentation clarifications 
+321,HTTPCLIENT-917," When authentication is invalidated during redirection, proxy authentication also should be invalidated "
+322,HTTPCLIENT-132, New Preferences Architecture 
+323,HTTPCLIENT-901, Add a ContextAwareAuthScheme that has access to the HttpContext in the authenticate method 
+324,HTTPCLIENT-335, Handling sub-domain cookies. 
+325,HTTPCLIENT-135, Possible HttpClient codepage issue (ascii/ebcdic) on WebSphere z/OS 
+326,HTTPCLIENT-930, Unencoded redirect URI causes exception when following redirects 
+327,HTTPCLIENT-445, 304 response status handling 
+328,HTTPCLIENT-223, URI path resolution problems. 
+329,HTTPCLIENT-1039, AbstractHttpClient.determineTarget does not recognize target host correctly 
+330,HTTPCLIENT-1103, GzipDecompressingEntity (and therefore ContentEncodingHttpClient) not consistent with EntityUtils.consumeEntity 
+331,HTTPCLIENT-547, Provide access to port of Host header 
+332,HTTPCLIENT-889, Should USE_EXPECT_CONTINUE be false by default? 
+333,HTTPCLIENT-832,  MalformedCookieException: distinguish cookie syntax errors from cross-domain errors 
+334,HTTPCLIENT-860," DefaultRequestDirector converts redirects of PUT/POST to GET for status codes 301, 302, 307 "
+335,HTTPCLIENT-1144, Caching client has a class for common headers that was not being used consistently in the code 
+336,HTTPCLIENT-1033," HttpRoute.equals(Object o) is quite inefficient, as it does not take full advantage of shortcut logic "
+337,HTTPCLIENT-139, isHttp11 should have HttpClient scope 
+338,HTTPCLIENT-56, Move to commons-logging 
+339,HTTPCLIENT-439, Authentication fails when connecting to server with username and password in non ascii characters 
+340,HTTPCLIENT-1008," Send all variants' ETags on ""variant miss"" "
+341,HTTPCLIENT-489, Request is retried if preemptive authentication fails 
+342,HTTPCLIENT-962, client cache may be a shared cache but is caching responses to requests with Authorization headers 
+343,HTTPCLIENT-447, IllegalStateException: Authentication state already initialized 
+344,HTTPCLIENT-97, Error reading data 
+345,HTTPCLIENT-898, Improve multihome support 
+346,HTTPCLIENT-752, version.properties 
+347,HTTPCLIENT-904, HttpMime StringBody constructor throws specification unnecessarily declares UnsupportedEncodingException 
+348,HTTPCLIENT-145, Align the code base with checkstyle 
+349,HTTPCLIENT-152, Ensure the features.html and index.html adequately give httpclient enough credit 
+350,HTTPCLIENT-151, CookieSpec.formatCookie(Cookie) produces an incorrect cookie header value 
+351,HTTPCLIENT-795," If there is more than 15 seconds between HttpClient.execute() calls using a MultipartEntity, a ProtocolException is thrown complaining about the Content-Length header already being present. "
+352,HTTPCLIENT-57, Define and implement Logging policy 
+353,HTTPCLIENT-734, request.abort() should interrupt thread waiting for a connection 
+354,HTTPCLIENT-1007," When A URL is redirected, there is no easy way to encode the new url before HC tries to execute it/ "
+355,HTTPCLIENT-516, Javadoc: does not mention Expires; clarify validate 
+356,HTTPCLIENT-652, Add optional state attribute to managed client connections 
+357,HTTPCLIENT-686," Maven 2 POM includes junit in default ""compile"" scope, rather than ""test"" scope "
+358,HTTPCLIENT-387, DefaultHttpParamsFactory.getDefaultParams() is not thread safe 
+359,HTTPCLIENT-189, Set-Cookie2 and Set-Cookie 
+360,HTTPCLIENT-213, Authentication fails with proxied SSL Connections 
+361,HTTPCLIENT-641, Resource Leakage when loading keystore in AuthSSLProtocolSocketFactory 
+362,HTTPCLIENT-1032, cache revalidation of variants does not update original variant entry 
+363,HTTPCLIENT-776, NPE w/ AbstractPoolEntry.open 
+364,HTTPCLIENT-559, SSL contrib files do not use standard javax.net.ssl package provided from JDK 1.4.2 
+365,HTTPCLIENT-92," Cookies with ',' in the value string is not parsed correctly in some cases "
+366,HTTPCLIENT-779, toplevel exception cleanup 
+367,HTTPCLIENT-994, cache does not allow client to override origin-specified freshness using max-stale 
+368,HTTPCLIENT-991, cache module produces improperly formatted Warning header when revalidation fails 
+369,HTTPCLIENT-350, HttpState#matchCredentials is broken 
+370,HTTPCLIENT-716, application-defined routes 
+371,HTTPCLIENT-987, cache module does not recognize equivalent URIs 
+372,HTTPCLIENT-249," please log allocation of new connections to support debugging, testing "
+373,HTTPCLIENT-252, Cookie Strict Mode independent of regular Strict Mode 
+374,HTTPCLIENT-51, Redefine HttpClient vs HttpMultiClient interface for 2.0 
+375,HTTPCLIENT-540, Typo in API_CHANGES_3_0.txt 
+376,HTTPCLIENT-974, RequestWrapper does not use the headers of the request it wraps. 
+377,HTTPCLIENT-698, DefaultRedirectHandler not resolving relative location URI wrt the request URI 
+378,HTTPCLIENT-105," ChunkedInputStream broken (2 bugs + fixes, 1 suggestion) "
+379,HTTPCLIENT-1035, cache should invalidate obsoleted entries mentioned in Content-Location 
+380,HTTPCLIENT-215, Build problem with StrictSSLProtocolSocketFactory 
+381,HTTPCLIENT-209, Add set/getLocalAddress methods to HostConfiguration 
+382,HTTPCLIENT-456, HttpClient should always override the host of HostConfiguration if an absolute request URI is given 
+383,HTTPCLIENT-1156, Kerberos Authentication Scheme 
+384,HTTPCLIENT-1087, Proxy authentication error: Unexpected state: MSG_TYPE3_GENERATED when using NTLM authentication 
+385,HTTPCLIENT-353, Setting different MAX_HOST_CONNECTION values per host using a single MultiThreadedHttpConnectionManager 
+386,HTTPCLIENT-650, Wire log is incomplete if HttpParser detects an error 
+387,HTTPCLIENT-594, HttpMethodBase#aborted variable mistakenly declared transient instead of volatile 
+388,HTTPCLIENT-178, MultiThreadedHttpConnectionManager never reclaims unused connectons 
+389,HTTPCLIENT-438, commons codec not documented as a dependency 
+390,HTTPCLIENT-188, recoverable exceptions when reading are not retried 
+391,HTTPCLIENT-656, IP address of the server of a HttpConnection 
+392,HTTPCLIENT-940, impl.conn.Wire uses String.getBytes() which depends on the default charset 
+393,HTTPCLIENT-639, Add OSGi bundle metadata to manifest 
+394,HTTPCLIENT-1075," ContentEncodingHttpClient.execute(HttpGet, ResponseHandler<T>) throws IOException when reading compressed response "
+395,HTTPCLIENT-861, URI reference resolution fails examples in RFC 3986 
+396,HTTPCLIENT-541, Redesign virtual host API 
+397,HTTPCLIENT-198, The PostMethod did not bring back response headers from proxy servers 
+398,HTTPCLIENT-951, Incorrect handling of InputStreams when connecting to a server that requires authentication 
+399,HTTPCLIENT-820, AbstractHttpClient.addRequestInterceptor should document in what order the interceptors run 
+400,HTTPCLIENT-805, Pass ClientConnectionManager to DefaultHttpClient constructor 
+401,HTTPCLIENT-233, HttpMethodBase Javadoc patches 
+402,HTTPCLIENT-284, Updates to connectionStaleCheckingEnabled docs. 
+403,HTTPCLIENT-3, Http Authentication with invalid credentials causes infinite loop 
+404,HTTPCLIENT-768, Publish source/javadoc jar files to the Maven repository 
+405,HTTPCLIENT-150, StringIndexOutOfBound exception in RFC2109 cookie validate when host name contains no domain information and is short in length than the cookie domain. 
+406,HTTPCLIENT-833, SSLSocketFactory.connectSocket() possible NPE - or use of wrong variable? 
+407,HTTPCLIENT-19, Response Folded Headers throws HttpException 
+408,HTTPCLIENT-645, Cookie.compare(...) uses single instance STRING_COLLATOR to do blocking compares 
+409,HTTPCLIENT-330, [PATCH] Wirelog corrections 
+410,HTTPCLIENT-767, Static variables need to be final (or access should be synchronised): 
+411,HTTPCLIENT-952, SSLSocketFactory.createSSLContext does not process trust store 
+412,HTTPCLIENT-1113, Error downloading text file with gzip content encoding 
+413,HTTPCLIENT-232, Make MultiThreadedHttpConnectionManager defaults public statics. 
+414,HTTPCLIENT-736, dependencies for route planner implementations 
+415,HTTPCLIENT-1134, BasicResponseHandler Javadoc Needs Clarification 
+416,HTTPCLIENT-262, Minor typo in org.apache.commons.httpclient.Wire 2.0-rc1 
+417,HTTPCLIENT-270, return value of PostMethod#removeParameter 
+418,HTTPCLIENT-332, Connection timeout logic redesign 
+419,HTTPCLIENT-636, Revise internal data structures of ThreadSafeClientConnManager 
+420,HTTPCLIENT-35, [HttpClient] Better proxy support in HttpMultiClient 
+421,HTTPCLIENT-895, Log creation impairs performance 
+422,HTTPCLIENT-358, Auto method retrial broken 
+423,HTTPCLIENT-1036, StringBody has incorrect default for characterset 
+424,HTTPCLIENT-1029, Update 3.x legacy homepage with end of life notification and pointer to HTTPComponents 
+425,HTTPCLIENT-865, HttpClient OSGi Export-Package doesn't specify version 
+426,HTTPCLIENT-780, ProxyHost/HttpHost: Checks for null when javadoc document null ok 
+427,HTTPCLIENT-587, derelativizing of relative URIs with a scheme is incorrect 
+428,HTTPCLIENT-1168, HTTPClient doesn't send authentication header in threaded environment 
+429,HTTPCLIENT-388, http.connection-manager.timeout is a LONG not an INTEGER 
+430,HTTPCLIENT-929, Request with two forward slashes for path fails 
+431,HTTPCLIENT-100, Add possibility to disable automatic authentication header processing. 
+432,HTTPCLIENT-563, Incorrect copyright statements 
+433,HTTPCLIENT-754, BasicClientCookie.toString() contains 'name' instead of 'value' when writing out cookie value 
+434,HTTPCLIENT-69, User/Developer Documentation 
+435,HTTPCLIENT-167, SSL Tunneling does not work with MultiThreadedHttpConnectionManager 
+436,HTTPCLIENT-749, HttpClient 'ParamBeans' for easier configuration 
+437,HTTPCLIENT-942, ClientConnectionRelease example is incorrect 
+438,HTTPCLIENT-726, review TSCCM for spurious wakeups 
+439,HTTPCLIENT-880, Check for correct content-type in URLEncodedUtils not working for encoding-suffixes 
+440,HTTPCLIENT-328, Proxy tunneling/auth with CONNECT for non-HTTP protocols 
+441,HTTPCLIENT-589, Do not consume the remaining response content if the connection is to be closed 
+442,HTTPCLIENT-1041, Enabling wire logging changes isEof/isStale behavior 
+443,HTTPCLIENT-693, DEFAULT_HEADERS not added to subsequent requests 
+444,HTTPCLIENT-1160, LayeredSchemeSocketFactory.createLayeredSocket() should have access to HttpParams 
+445,HTTPCLIENT-631, String constants should be final 
+446,HTTPCLIENT-1155, CachingHttpClient should have similar behavior as AbstractHttpClient when executing with ResponseHandler 
+447,HTTPCLIENT-1107, HttpClient does not retry authentication when multiple challenges are present if the primary one fails 
+448,HTTPCLIENT-1136, BasicClientConnectionManager.releaseConnection accesses poolEntry using non-standard lock 
+449,HTTPCLIENT-475, Provide support for unconnected sockets 
+450,HTTPCLIENT-733, Implementation of Delete method 
+451,HTTPCLIENT-612, FileRequestEntity in SVN does not close input file 
+452,HTTPCLIENT-111, Add multi-part post support 
+453,HTTPCLIENT-679, URI Absolutization does not follow browser behavior 
+454,HTTPCLIENT-418, ALLOW_CIRCULAR_REDIRECTS has no effect if references include query string 
+455,HTTPCLIENT-872, Add preemptive authentication 
+456,HTTPCLIENT-980, CachingHttpClient returns a 503 response when the backend HttpClient produces an IOException 
+457,HTTPCLIENT-997, cache module should handle out-of-order validations properly and unconditionally refresh 
+458,HTTPCLIENT-454, Connection with the proxy is not reopened if an proxy auth failure occurs while SSL tunnel is being established 
+459,HTTPCLIENT-509," need members of MultipartRequestEntity to be ""protected"" instead of ""private"" to make it extendable for multipart/related "
+460,HTTPCLIENT-319, ArrayIndexOutOfBounds Exception on invalid content-length 
+461,HTTPCLIENT-961, not all applicable URIs are invalidated on PUT/POST/DELETEs that pass through client cache 
+462,HTTPCLIENT-677, Connection pool uses Thread.interrupt() 
+463,HTTPCLIENT-1098, Populating exception message with InetSocketAddress.getHostName() can take a long time 
+464,HTTPCLIENT-125, empty host header with ip address 
+465,HTTPCLIENT-759, DefaultClientRequestDirector doesn't release connections back to ClientConnectionManager on exceptions 
+466,HTTPCLIENT-919," NTLM implementation lacks support for NTLMv1, NTLMv2, and NTLM2 Session forms of NTLM "
+467,HTTPCLIENT-25, [httpclient] Incorrect credentials loop infinitely 
+468,HTTPCLIENT-837, Wire produces invalid log skipping zero bytes in certain cases 
+469,HTTPCLIENT-915, Provide a clean mechanism to attatch user define attributes to connections 
+470,HTTPCLIENT-593, ProtocolSocketFactory equals and hashCode don't support subclassing 
+471,HTTPCLIENT-1024, cache does not validate multiple cached variants 
+472,HTTPCLIENT-287, Setting CONNECTION_TIMEOUT and SO_TIMEOUT on a per-method basis 
+473,HTTPCLIENT-310, Memory leak in MultiThreadedHttpClient caused by bad .equals() 
+474,HTTPCLIENT-497, Logger (Category) names don't follow common pattern 
+475,HTTPCLIENT-867, Logging documentation refers to nonexisting level ERROR in java.util.logging section 
+476,HTTPCLIENT-45, HTTP Version configuration and tracking 
+477,HTTPCLIENT-264, Crashes when it gets a redirect 
+478,HTTPCLIENT-819, HttpParams doesn't document its key values 
+479,HTTPCLIENT-369, Missing skip()-Method in ContentLengthInputStream 
+480,HTTPCLIENT-366, PostMethod Java doc refers to wrong section of RFC1945 
+481,HTTPCLIENT-462, ProtocolException thrown on slightly broken headers 
+482,HTTPCLIENT-141, Using deprecated class javax.servlet.http.HttpUtils 
+483,HTTPCLIENT-902, In case of ConnectTimeoutException : HttpRequestRetryHandler is not used. 
+484,HTTPCLIENT-244, URI uses  sun.security.action.GetPropertyAction 
+485,HTTPCLIENT-688, HttpOptions.getAllowedMethods expects single Allow header 
+486,HTTPCLIENT-74, J2EE FORM authentication (also affects pluggable authentication) 
+487,HTTPCLIENT-222," Via NTLM proxy to SSL Apache/BasicAuth. - worked in may 22nd, but broken in beta1 "
+488,HTTPCLIENT-931, Change value of 'Expect' header in org.apache.http.client.methods.HttpPost 
+489,HTTPCLIENT-11, null domains break Cookie.java 
+490,HTTPCLIENT-182, httpclient charset encooding loosing problem 
+491,HTTPCLIENT-597, MultithreadedConnectionManager and IdleConnectionTimeoutThread improvements 
+492,HTTPCLIENT-737, EchoHandler:104 possible NPE 
+493,HTTPCLIENT-521, SimpleHttpConnectionManager is used incorrectly by tutorial code 
+494,HTTPCLIENT-1116, ResponseCachingPolicy uses integers for sizes 
+495,HTTPCLIENT-1105, Built-in way to do auto-retry for certain status codes 
+496,HTTPCLIENT-22, shouldn't automatically set Content-Length in request header 
+497,HTTPCLIENT-320," ""Socket Closed"" IOException thrown by HttpConnection "
+498,HTTPCLIENT-588, relative URIs with internal double-slashes ('//') misparsed 
+499,HTTPCLIENT-554, AbstractHttpProcessor hard-wired against a single context 
+500,HTTPCLIENT-301, Cookie rejected 
+501,HTTPCLIENT-103, ChunkedInputStream incorrectly handles chunksize without semicolon 
+502,HTTPCLIENT-654, Cookie class cannot handle IPv6 literals 
+503,HTTPCLIENT-459, Document the problem with MS impl of digest authentication with older JREs and stale connection check 
+504,HTTPCLIENT-82, HttpURLConnection wrapper 
+505,HTTPCLIENT-578, literal plus (+) character in path components of HttpURL is not preserved. 
+506,HTTPCLIENT-1127, Deadlock between SingleClientConnManager.releaseConnection() and SingleClientConnManager.shutdown() 
+507,HTTPCLIENT-31, user need a way to control cookie policy 
+508,HTTPCLIENT-1017, Checksum Wrong for HttpComponent project pom v4.1 on central 
+509,HTTPCLIENT-184, org.apache.commons.httpclient.HeaderElement fail to parse cookie header 
+510,HTTPCLIENT-1159, HttpClientUtils  - Helper methods to release resources of HttpClient / HttpResponse after use  
+511,HTTPCLIENT-881," AbstractClientConnAdapter doesn't ensure that only one of ConnectionReleaseTrigger.abortConnection, .releaseConnection has effect "
+512,HTTPCLIENT-841, potential memory leak when using ThreadSafeClientConnManager 
+513,HTTPCLIENT-1137, The values for the Via header are created by httpclient-cache for each cached and backend request 
+514,HTTPCLIENT-495, DefaultHttpMethodRetryHandler does not check whether the failed method has been aborted 
+515,HTTPCLIENT-662, Disentangle commons-httpclient from commons in Gump 
+516,HTTPCLIENT-378, HttpState.setCookiePolicy() is completely ignored 
+517,HTTPCLIENT-331, [PATCH] HttpClient#getHost & HttpClient#getPort methods are misleading 
+518,HTTPCLIENT-777, SingleClientConnectionManager Needs to Recreate UniquePoolEntry 
+519,HTTPCLIENT-1073, cache module generates exceptions for non-compliant responses without consuming response bodies 
+520,HTTPCLIENT-963, client cache does not respect 'Cache-Control: no-store' on requests 
+521,HTTPCLIENT-303, auto close idle connections 
+522,HTTPCLIENT-757, Default proxy set at the client level has no effect 
+523,HTTPCLIENT-62, Developer documentation 
+524,HTTPCLIENT-351, Split the wire log into header and content parts. 
+525,HTTPCLIENT-116, Request/Response race condition when doing multiple requests on the same connection. 
+526,HTTPCLIENT-260, Authentication does not respond to stale nonce 
+527,HTTPCLIENT-126, Default charset 
+528,HTTPCLIENT-471, DateUtil#formatDate uses default locale instead of US 
+529,HTTPCLIENT-73, No way to get the requestBody out of a PostMethod or use if extending class 
+530,HTTPCLIENT-892," Links in Section ""Example Code"" are broken "
+531,HTTPCLIENT-704, Exception not caugh in DefaultResponseParser 
+532,HTTPCLIENT-1120, DefaultHttpRequestRetryHandler#retryRequest should not retry aborted requests 
+533,HTTPCLIENT-455, Feature Request: include contributed code for Plugin Proxy Detection 
+534,HTTPCLIENT-70, Provide more Example Code 
+535,HTTPCLIENT-1038, AbstractHttpClient.determineTarget(HttpUriRequest) 
+536,HTTPCLIENT-875, DefaultClientConnectionOperator doesn't update socket after call to connectSocket(...) 
+537,HTTPCLIENT-491, nonce-count in digest auth should not be quoted 
+538,HTTPCLIENT-826, Set source and output encoding in POMs 
+539,HTTPCLIENT-696, java.util.logging configuration examples does not work as intended 
+540,HTTPCLIENT-539, UserInfo disapears after creating URI 
+541,HTTPCLIENT-746, substitute for URLUtils.java 
+542,HTTPCLIENT-941, Standardize on a common mocking framework (either EasyMock or Mockito) 
+543,HTTPCLIENT-283, Invalid cookie causing IllegalArgumentException 
+544,HTTPCLIENT-376, DateParser refactoring; Stateful cookie specs 
+545,HTTPCLIENT-343, [API Doc] Compile new preference architecture and HTTP parameterization guide 
+546,HTTPCLIENT-392, Provide additional test coverage for HTTP and HTTPS over proxy 
+547,HTTPCLIENT-560, entities and connection handling incomplete 
+548,HTTPCLIENT-318, Host configuration properties not updated when the method is redirected 
+549,HTTPCLIENT-533," CookiePolicy.registerCookieSpec(CookiePolicy.DEFAULT, <Some CookieSpec>); does not work as documented "
+550,HTTPCLIENT-1111, Setting SSLSocket parameters 
+551,HTTPCLIENT-797, o.a.h.conn.scheme.PlainSocketFactory is not a true Singleton 
+552,HTTPCLIENT-414, cookies > 20 years invalidated 
+553,HTTPCLIENT-583, Build.xml - add log level definitions 
+554,HTTPCLIENT-285, Ability to ignore (reject) cookies altogether 
+555,HTTPCLIENT-241, Support for handling large files should be added 
+556,HTTPCLIENT-771, ConcurrentModificationException thrown in MultiThreaded code 
+557,HTTPCLIENT-329, [API Doc] Compile performance optimization guide 
+558,HTTPCLIENT-121," Cookie.java blowing up on cookies from ""country code"" domains "
+559,HTTPCLIENT-557, Nullpointer when creating URI from scheme specific part with null fragment 
+560,HTTPCLIENT-627, overhaul connection manager and associated connection interface 
+561,HTTPCLIENT-617, Hostname verification:  turn off wildcards when CN is an IP address 
+562,HTTPCLIENT-273, ConnectionTimeoutException doesn't releaseConnection() 
+563,HTTPCLIENT-205, HttpMethodBase(String) incorrectly encoding URI 
+564,HTTPCLIENT-1123, Implement a way to override or resolve DNS entries defined in the OS 
+565,HTTPCLIENT-220, HttpClient does not properly handle 'application/x-www-form-urlencoded' encoding 
+566,HTTPCLIENT-315, HttpURL creates wrong authority String when user info is changed 
+567,HTTPCLIENT-136, Inadequate HTTP proxy server support in HttpClient. 
+568,HTTPCLIENT-204, StackOverflowError in HttpConnection 
+569,HTTPCLIENT-466, URI.parseUriReference treats strings with leading ':' as absolute URIs with zero-length scheme 
+570,HTTPCLIENT-714, move route computation from client to director 
+571,HTTPCLIENT-561, entity returns the same stream for getContent() 
+572,HTTPCLIENT-257, NTLM class registers Sun JCE implementation by default 
+573,HTTPCLIENT-745, no classes with default visibility 
+574,HTTPCLIENT-12, double encoding of URLs 
+575,HTTPCLIENT-885, URLEncodedUtils fails to parse form-url-encoded entities that specify a charset 
+576,HTTPCLIENT-411, Checking of stale connections is broken 
+577,HTTPCLIENT-407, Errors in character entities in Javadoc for HttpVersion 
+578,HTTPCLIENT-472, No equals operation for Credentials implementations 
+579,HTTPCLIENT-311, getScheme() and getPort() return wrong defaults for HttpsURL 
+580,HTTPCLIENT-1061, Proxy-Authorization header received on server side 
+581,HTTPCLIENT-680, web site for download of 3.1 fails 
+582,HTTPCLIENT-637, Unit tests for HttpConn 
+583,HTTPCLIENT-628, AutoCloseInputStream.available() throws IOException when auto-closed 
+584,HTTPCLIENT-859," BasicCookieStore treats cookies of the same name from the same host as duplicates, even if they have different paths "
+585,HTTPCLIENT-1001, CacheEntryUpdater does not properly update cache entry resource 
+586,HTTPCLIENT-337, Move Content-Type to the RequestEntity 
+587,HTTPCLIENT-943, CacheClient Javadoc and Constants usage cleanup 
+588,HTTPCLIENT-1009, http client cache: SizeLimitedResponseReader is not setting content type for InputStreamEntity in constructResponse() 
+589,HTTPCLIENT-185, Ordering of methods in PostMethod changes behaviour 
+590,HTTPCLIENT-1045," HttpGet request not being created when parameter ""url"" is present "
+591,HTTPCLIENT-382, Move multipart request to a new RequestEntity type 
+592,HTTPCLIENT-10, tests-local fails on 3 tests 
+593,HTTPCLIENT-61, configurable User-Agent string 
+594,HTTPCLIENT-293, Provide support for non-ASCII charsets in the multipart disposition-content header 
+595,HTTPCLIENT-937, Make CacheEntry use an immutable object to represent cache content  
+596,HTTPCLIENT-148, Redirect to a relative URL fails 
+597,HTTPCLIENT-803, SSL connections cannot be established using the IP address 
+598,HTTPCLIENT-602, refactor HttpClientConnection and HttpProxyConnection 
+599,HTTPCLIENT-234, Customizable Cookie Policy 
+600,HTTPCLIENT-504, max connections per host setting does not work 
+601,HTTPCLIENT-605, junit dependency in pom.xml with default compile scope 
+602,HTTPCLIENT-467, CookieSpecBase.domainMatch() leaks cookies to 3rd party domains 
+603,HTTPCLIENT-194, httpClient does not support installation of different SSLSocketFactory 
+604,HTTPCLIENT-818, No documentation on how to use CookieSpec 
+605,HTTPCLIENT-988, cache module should strip 'Content-Encoding: identity' from responses 
+606,HTTPCLIENT-279, Connections are not release when a recoverable exception occurs. 
+607,HTTPCLIENT-1000, Configure Maximum Connection Lifetimes 
+608,HTTPCLIENT-990, Allow heuristic freshness caching 
+609,HTTPCLIENT-356, [API DOC] Authentication guide update: alternate authentication 
+610,HTTPCLIENT-192, Duplicate request headers when connect through proxies 
+611,HTTPCLIENT-308, Log level for message should be debug instead of error. 
+612,HTTPCLIENT-622, leak in MultiThreadedHttpConnectionManager.ConnectionPool.mapHosts 
+613,HTTPCLIENT-17, need a way to set time out when using HttpClient and HttpMultiClient 
+614,HTTPCLIENT-939, 302 response without location header throws exception 
+615,HTTPCLIENT-1058, SO_TIMEOUT not set early enough for SOCKS proxies in PlainSocketFactory 
+616,HTTPCLIENT-763, AbstractClientConnAdapter#abortConnection() does not release the connection if called from the main execution thread while there is no blocking I/O operation  
+617,HTTPCLIENT-173, Multiple DIGEST authentication attempts with same credentials 
+618,HTTPCLIENT-60," Handle virtual hosts, relative urls, multi-homing "
+619,HTTPCLIENT-336, ArrayIndexOutOfBoundsException in HttpStatus.getStatusText(508) 
+620,HTTPCLIENT-1092," ClientPNames.VIRTUAL_HOST is used as is; if not provided, the port should be derived from the target URL "
+621,HTTPCLIENT-977, provide a memcached implementation for HttpCache 
+622,HTTPCLIENT-175, HttpState cannot differentiate credentials for different hosts with same Realm names 
+623,HTTPCLIENT-992, cache should not generate stale responses to requests explicitly requesting first-hand or fresh ones 
+624,HTTPCLIENT-53, Handle Returning Null consistantly 
+625,HTTPCLIENT-275, problem with isIPv4address() for relative uri's 
+626,HTTPCLIENT-118," Build with JDK 1.4, get many javadoc warnings "
+627,HTTPCLIENT-191, NTLM Authentication Fails 
+628,HTTPCLIENT-72, Support for NTLM authentication 
+629,HTTPCLIENT-663, New Gump projects for HttpComponents 4.0 
+630,HTTPCLIENT-712, improve HttpRoute API 
+631,HTTPCLIENT-632, Possible NPE in HttpHost 
+632,HTTPCLIENT-39, Authorization credentials should be sent pre-emptively 
+633,HTTPCLIENT-269, HttpConnection.isResponseAvailable() calls setSoTimeout() but does not catch IOException 
+634,HTTPCLIENT-730, Use of Multi-Args URI Causes URI-Rewriting to improperly unescape characters 
+635,HTTPCLIENT-391, Deprecate and replace TestWebapp with the SimpleHttpServer based testing framework 
+636,HTTPCLIENT-251, Content-Length & Transfer-Encoding request headers should be handled by entity enclosing methods 
+637,HTTPCLIENT-193, Buffered output to socket 
+638,HTTPCLIENT-781, Respect Keep-Alive Header 
+639,HTTPCLIENT-142, Test case failure for testConnTimeout 
+640,HTTPCLIENT-512, UsernamePasswordCredentials.equals(null) throws NPE 
+641,HTTPCLIENT-202," GetMethod.java checks the ""used"" flag which cannot be set at this time "
+642,HTTPCLIENT-300, BasicAuthenticatonExample.java in CVS 
+643,HTTPCLIENT-44, Non-standards configuration and tracking 
+644,HTTPCLIENT-866, HttpClient depends on jcip-annotations.jar 
+645,HTTPCLIENT-169, Cookies with null value are not formatted correctly 
+646,HTTPCLIENT-67, Build environment configuration: Mavenize the build process 
+647,HTTPCLIENT-436, Retry on ConnectionException does not work 
+648,HTTPCLIENT-174, Need setURI() methods in HttpMethod interface 
+649,HTTPCLIENT-598, ContentLengthInputStream does not implement available() properly 
+650,HTTPCLIENT-124, MultipartPost closes input stream 
+651,HTTPCLIENT-1005, API surface of caching module can be reduced 
+652,HTTPCLIENT-883, SO_TIMEOUT is not set on a request level 
+653,HTTPCLIENT-1031, Cannot clone BasicClientCookie2 without specified ports 
+654,HTTPCLIENT-453, Virtual host setting does not apply when parsing and matching cookies 
+655,HTTPCLIENT-253, Javadocs clean-up 
+656,HTTPCLIENT-511," Preemptive Authorization parameter initialization incorrect, causes preemptive auth not to work "
+657,HTTPCLIENT-42, Open up org.apache.commons.httpclient.Base64 please 
+658,HTTPCLIENT-978, provide an ehcache implementation for HttpCache 
+659,HTTPCLIENT-982, Could we get a way to know if the response has been served from the cache or not ? 
+660,HTTPCLIENT-1180, NullPointerException when using HttpHead and Request/Response interceptors 
+661,HTTPCLIENT-687, DefaultRedirectHandler does not access correct HttpParams 
+662,HTTPCLIENT-514, Preemptive auth flags disregarded during ssl tunnel creation 
+663,HTTPCLIENT-292, NTLM Proxy and basic host authorization 
+664,HTTPCLIENT-381, HttpState#PREEMPTIVE_PROPERTY removed. 
+665,HTTPCLIENT-80, PostMethod - Chunked requests are not supported at the moment. 
+666,HTTPCLIENT-853, Wrong cookie matching port number reported when using a proxy 
+667,HTTPCLIENT-349, Credentials ignored if realm specified in preemptive authentication 
+668,HTTPCLIENT-916, RFE: Make Credentials Serializable 
+669,HTTPCLIENT-114, httpclient build requires jdk 1.4 or jce in classpath 
+670,HTTPCLIENT-770, Code cleanups for Java 1.5 and more. 
+671,HTTPCLIENT-984," additional conditional compliance tests for the caching module for Content-Encoding, Content-Location, Date, Expires, Server, Transfer-Encoding, and Vary headers "
+672,HTTPCLIENT-764, HttpClient javadocs need improving 
+673,HTTPCLIENT-673, revise max-per-host configuration 
+674,HTTPCLIENT-450, TestExcetions never run 
+675,HTTPCLIENT-375, Chunked Stream Encoding Problems Fails to throw Exceptions 
+676,HTTPCLIENT-760, Abort Before Execute & Various Other Times Fails 
+677,HTTPCLIENT-1130, New LaxRedirectStrategy class should probably call the super method first. 
+678,HTTPCLIENT-573, Disallow the use of SecureProtocolSocketFactory with ProxyClient 
+679,HTTPCLIENT-297, DigestScheme.authenticate returns invalid authorization string when algorithm is null 
+680,HTTPCLIENT-958, client cache currently allows incomplete responses to be passed on to the client 
+681,HTTPCLIENT-86, need to add a default constructor for Cookie 
+682,HTTPCLIENT-346, Cookies with names containing blanks or starting with $ should be rejected by RFC2109 spec only 
+683,HTTPCLIENT-325, Deadlock with MultiThreadedHttpConnectionManager 
+684,HTTPCLIENT-441, Cookie.java hashCode method violates contract 
+685,HTTPCLIENT-405, HostConfiguration.setHost(String) causes NullPointerException 
+686,HTTPCLIENT-15, redirect not handled correctly if location header doesn't have a protocol 
+687,HTTPCLIENT-235, HttpMethodBase logger uses wrong class. 
+688,HTTPCLIENT-936, NullPointerException in NegotiateScheme 
+689,HTTPCLIENT-1162, Header adding in org.apache.http.client.protocol.RequestAcceptEncoding should be conditional 
+690,HTTPCLIENT-584, Remove lib directory from SVN trunk 
+691,HTTPCLIENT-8, LogSource.setLevel incorrectly uses entrySet 
+692,HTTPCLIENT-523, SPNEGO authentication scheme 
+693,HTTPCLIENT-995, cache returns cached responses even if validators not consistent with all conditional headers 
+694,HTTPCLIENT-490," Can not set the ""Proxy-connection"" header "
+695,HTTPCLIENT-146, Error from maven when generating the task list 
+696,HTTPCLIENT-666, Replace HttpState with CredentialsProvier and CookieStore interfaces 
+697,HTTPCLIENT-651," Inconsistent, order dependant behaviour in HttpMethodBase.getResponse* "
+698,HTTPCLIENT-953, ConnPoolByRoute driving RouteSpecificPool to IllegalState 
+699,HTTPCLIENT-1104, Add way to check for release of connections back into pool 
+700,HTTPCLIENT-1129, Redirect and Kerberos authentication in conflict 
+701,HTTPCLIENT-606, HttpMethodDirector fails when redirecting to a encoded URL location 
+702,HTTPCLIENT-823, Make it possible to adjust MaxTotalConnections parameter dynamicaly 
+703,HTTPCLIENT-827," ServerTestBase, LocalTestServer should be redistributed "
+704,HTTPCLIENT-643, Provide fail-over for multi-home remote servers (if one server in a farm goes down) 
+705,HTTPCLIENT-161, MultipartPostMethod Holding File Stream Open? 
+706,HTTPCLIENT-690, Provide access to SSLSession in ManagedClientConnection 
+707,HTTPCLIENT-334, Per socket SOCKS proxies 
+708,HTTPCLIENT-986, cache module does not completely handle upstream Warning headers correctly 
+709,HTTPCLIENT-154, Allow redirects between hosts and ports 
+710,HTTPCLIENT-932, SSLSocketFactory.connectSocket(...) possible NPE 
+711,HTTPCLIENT-274, default behaviour of useExpectHeader 
+712,HTTPCLIENT-882, Auth state is not correctly maintained if a successful NTLM authentication results in a redirect 
+713,HTTPCLIENT-360, questionable default value for BufferedOutputStream size in HttpConnection 
+714,HTTPCLIENT-313, Improper EOL for text files on Windows 
+715,HTTPCLIENT-743, Duplicate log of HTTP header 
+716,HTTPCLIENT-425, URI.getHost() generates IllegalArgumentException 
+717,HTTPCLIENT-856, Proxy NTLM Authentication  Redirecting to different address fails saying Proxy Auth Required. 
+718,HTTPCLIENT-144, Add a document describing the HttpClient release process 
+719,HTTPCLIENT-147, HttpClient enter 100% for endless time 
+720,HTTPCLIENT-996, SSL does not seem to work at all 
+721,HTTPCLIENT-9, Null paths break the compare method 
+722,HTTPCLIENT-271, PostMethod#setParameter 
+723,HTTPCLIENT-190, SetCookie / DateParser failing to parse non-standard date format 
+724,HTTPCLIENT-613, https should check CN of x509 cert 
+725,HTTPCLIENT-168, Include generated website in the distribution 
+726,HTTPCLIENT-933, All implementations of SchemeSocketFactory.createSocket(HttpParams params) ignore the params 
+727,HTTPCLIENT-321, wrong charset indication in HttpConstants.getContentString() 
+728,HTTPCLIENT-77, Implement Connection Timeouts 
+729,HTTPCLIENT-81, need getResponseContentLength in HttpMethod 
+730,HTTPCLIENT-741, AbstractClientConnAdapter prone to concurrency issues 
+731,HTTPCLIENT-870, Incorrect Specification-Title headers in MANIFEST.MF 
+732,HTTPCLIENT-63, Response handlers 
+733,HTTPCLIENT-156, NullPointerException thrown when invalid header encountered 
+734,HTTPCLIENT-83, handle multivalue headers correctly 
+735,HTTPCLIENT-112, HttpClient incorrectly handles Transfer-Encoding header 
+736,HTTPCLIENT-655, User-Agent string violates RFC 
+737,HTTPCLIENT-449," RequestEntity, EntityEnclosingMethod have inconsistent Javadocs, use deprecated variables "
+738,HTTPCLIENT-1028, HttpClient Manual Simplified Chinese 
+739,HTTPCLIENT-177, reusing connections is unreliable 
+740,HTTPCLIENT-461, HttpClient does not correctly handle escaped characters in HTTP header elements 
+741,HTTPCLIENT-359, StringRequestEntity.getContentLength wrong for multibyte chars 
+742,HTTPCLIENT-1131, Support http URL inline authentication 
+743,HTTPCLIENT-469, Stale connection check does not work with IBM JSSE/JRE 
+744,HTTPCLIENT-424, setAuthPreemptive restricted to BASIC AuthScheme 
+745,HTTPCLIENT-669, introduce HttpRoutePlanner interface 

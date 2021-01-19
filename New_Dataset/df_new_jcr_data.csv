@@ -1,0 +1,477 @@
+,ID,SUMMARY,CLASSIFIED
+0,JCR-4000, More event stats in EventListenerMBean ,NUG
+1,JCR-4001, When using Node.getProperties(String namePattern) also child nodes are processed ,BUG
+2,JCR-4002,CSRF in Jackrabbit-Webdav using empty content-type (CVE-2016-6801),BUG
+3,JCR-4003,Release Jackrabbit 2.12.3,NUG
+4,JCR-4004, Log exception in AbstractDataStore.getReferenceFromIdentifier() ,BUG
+5,JCR-4005, TestVFSDataStore.testDeleteRecord() fails occasionally ,BUG
+6,JCR-4006, TestCachingFDS.testDeleteRecord() fails occasionally ,BUG
+7,JCR-4007, CachingDataStore - touching every time on getRecord() was unnecessary ,BUG
+8,JCR-4008, Restore TestCachingFDS.testDeleteRecord() to fix it with disabling AsyncUpload in unit tests ,NUG
+9,JCR-4009,CSRF in Jackrabbit-Webdav (CVE-2016-6801),NUG
+10,JCR-4010,Release Jackrabbit 2.12.4,NUG
+11,JCR-4011, Query - Jackrabbit Support Needed - on reindexing ,BUG
+12,JCR-4012, Include initial cost in stats for observation processing ,NUG
+13,JCR-4013, Calculate eventConsumerTimeRatio for entire time series ,NUG
+14,JCR-4014,Release Jackrabbit 2.10.4,NUG
+15,JCR-4015, jackrabbit-jcr-commons JcrUtils.getOrCreateByPath fails if session is not allowed to read root ,BUG
+16,JCR-4016, extend path and property filtering of observation event ,NUG
+17,JCR-4017, add ignoresInfo flag to JackrabbitEventFilter ,NUG
+18,JCR-4018, Consistent Async Upload Executor handling in Backend implementations ,NUG
+19,JCR-4019, move httpclient dependency out of parent pom ,NUG
+20,JCR-4020,Release Jackrabbit 2.8.3,NUG
+21,JCR-4021,Release Jackrabbit 2.6.6,NUG
+22,JCR-4022, populate.jsp (standalone) doesn't work due to google ajax api change ,BUG
+23,JCR-4023,[S3DS] Configure failure count in initial migration of blobs from file system to S3,BUG
+24,JCR-4024,Release Jackrabbit 2.4.6,NUG
+25,JCR-4025, Enable animal sniffer plugin ,NUG
+26,JCR-4026,BundleBinding uses JDK 6 runtime methods,NUG
+27,JCR-4027, NPE in JcrRemotingServlet.canHandle() when content-type is missing ,BUG
+28,JCR-4028,Several artifacts of Jackrabbit 2.6.6 are missing in Maven central repository,BUG
+29,JCR-4029,Release Jackrabbit 2.6.7,NUG
+30,JCR-4030,Allow use of Java 7 in Jackrabbit trunk,NUG
+31,JCR-4031, AbstractLocatorFactory: typo in log message ,BUG
+32,JCR-4032, Add jmx EventListenerMBean.getToString() for clearer consolidated listener stats ,NUG
+33,JCR-4033, Session Leak in case of an exception inside the constructor of SessionImpl ,BUG
+34,JCR-4034, Session Leak in case of an exception inside the constructor of SessionImpl ,BUG
+35,JCR-4035, consider supporting parentNodeTypes filtering in observation ,NUG
+36,JCR-4036, Upgrade to latest lucene-core ,NUG
+37,JCR-4037, add includeSubtreeOnDelete flag to JackrabbitEventFilter ,NUG
+38,JCR-4038, NodeLocalNameTest should expect InvalidQueryException for certain incorrect parameters ,BUG
+39,JCR-4039, Queries should reject invalid nodeLocalName parameters ,NUG
+40,JCR-4040,Release Jackrabbit 2.13.4,NUG
+41,JCR-4041,spi2davex: bogus content type charset parameter for application/x-www-form-urlencoded,BUG
+42,JCR-4042, Adding Escape Character in GQL ,NUG
+43,JCR-4043,regression of correction JCR-905,NUG
+44,JCR-4044, Support glob patterns through JackrabbitEventFilter ,NUG
+45,JCR-4045, Improved support for node removals ,NUG
+46,JCR-4046, Improve observation of files ,NUG
+47,JCR-4047,Build fails: jackrabbit-jcr2spi: Signature errors found.,BUG
+48,JCR-4048, add applyOnChild property to JackrabbitEventFilter ,NUG
+49,JCR-4049, BLOBInTempFile deletes underlying file before it can be used ,BUG
+50,JCR-4050,  Allow creation of users with existing password hashes in UserManager ,NUG
+51,JCR-4051,Release Jackrabbit 2.12.5,NUG
+52,JCR-4052,RFC4918DestinationHeaderTest fails with internal server error,BUG
+53,JCR-4053,RFC4918IfHeaderTest test failures,BUG
+54,JCR-4054, DavPropertySet should have type-safe method variants ,NUG
+55,JCR-4055,  Have AuthorizableQueryManager Support Named search with ignorecase ,NUG
+56,JCR-4056, Combining NOT ISDESCENDANTNODE with AND operators does not yield the same result as with OR operators ,BUG
+57,JCR-4057, Improve performance of skipping offset nodes for Lucene queries ,NUG
+58,JCR-4058, missing protectedHandlersConfig.xml in WAR ,BUG
+59,JCR-4059,avoid use of HttpClient3 URI class,NUG
+60,JCR-4060, unintended export versions due to changed defaults in maven bundle plugin ,BUG
+61,JCR-4061, JCR expertise required ,NUG
+62,JCR-4062, Path / data disappearing ,BUG
+63,JCR-4063, Minor improvements in GetSupportedQueryLanguagesTest ,NUG
+64,JCR-4064,Refactor WebDAV related code out of HttpClient3-specific classes for better future re-use,NUG
+65,JCR-4065,Add WebDAV API based on HttpClient4,NUG
+66,JCR-4066,Use HttpClient4 based WebDAV API in remoting code,NUG
+67,JCR-4067,remove HttpClient3 based WebDAV API,NUG
+68,JCR-4068, jcr-commons: get rid of test dependency to json.org JSON parser ,NUG
+69,JCR-4069,jcr2dav: occasional test failure in AccessControlManagerImplTest.testAddingFourAccessControlEntries,BUG
+70,JCR-4070,Release Jackrabbit 2.13.5,NUG
+71,JCR-4071,Release Jackrabbit 2.14,NUG
+72,JCR-4072, Creation of marker file fails when parent folder does not exist in CachingDataStore ,BUG
+73,JCR-4073, jackrabbit-data: occasional test failures in TestLocalCache.testAutoPurge ,BUG
+74,JCR-4074,jackrabbit-jcr2dav: add system property to disable davex support for testing,NUG
+75,JCR-4075,Release Jackrabbit 2.12.6,NUG
+76,JCR-4076,no test coverage for JCR-2582,NUG
+77,JCR-4077, Change vfs ext test cases not to depend on http client ,NUG
+78,JCR-4078, occasional test failure in GarbageCollectorTest.testSimultaneousRunGC ,BUG
+79,JCR-4079, incorrect PROPPATCH response error handling ,BUG
+81,JCR-4081,Upgrade Apache Commons IO to 2.5,NUG
+82,JCR-4082,Release Jackrabbit 2.13.6,NUG
+83,JCR-4083,Upgrade Apache Commons Collections to v3.2.2,NUG
+84,JCR-4084, decide on frozen export version numbers ,NUG
+85,JCR-4085, DavEx json should always add type information for Doubles ,NUG
+86,JCR-4086,spi2dav: code reformat to reduce scope of changes for JCR-4066,NUG
+87,JCR-4087,Release Jackrabbit 2.13.7,NUG
+88,JCR-4088,branch Jackrabbit 2.14,NUG
+89,JCR-4089,Release Jackrabbit 2.14.0,NUG
+90,JCR-4090,Fix Javadoc for JDK 1.8 doctool compliance,NUG
+91,JCR-4091, Jackrabbit error when deleting reports ,BUG
+92,JCR-4092, avoid use of deprecated interface JcrValueType ,NUG
+93,JCR-4093, IndexRule are meant to be applied based on both primaryType and mixin type based inheritance. Currently it appears that only primaryType based inheritance is working ,BUG
+94,JCR-4094,Fix Javadoc for JDK 1.8 doctool compliance - remove TCK related custom tags,NUG
+95,JCR-4095,Release Jackrabbit 2.15.0,NUG
+96,JCR-4096, stop using deprecated GenericRepositoryFactory ,NUG
+97,JCR-4097,Release Jackrabbit 2.10.5,NUG
+98,JCR-4098,Create OSGi Bundles from jackrabbit-spi2dav and jackrabbit-jcr2dav libraries,NUG
+99,JCR-4099,Export org.apache.jackrabbit.jcr2spi package from jackrabbit-jcr2spi bundle,NUG
+100,JCR-4100, jackrabbit-webdav: Scope implements equals() but not hashCode() ,NUG
+101,JCR-4101, add code coverage profile (jacoco) ,NUG
+102,JCR-4102,jcr2dav: change polling thread sometimes dies with NPE,BUG
+103,JCR-4103,Release Jackrabbit 2.8.4,NUG
+104,JCR-4104, cleanup how command lines for test executions are constructed ,NUG
+105,JCR-4105, publish API docs ,NUG
+106,JCR-4106, fix JCR API docs link ,NUG
+107,JCR-4107,Upgrade to httpclient 4.5.3,NUG
+108,JCR-4108,Release Jackrabbit 2.4.7,NUG
+109,JCR-4109,Release Jackrabbit 2.6.8,NUG
+110,JCR-4110, The JackrabbitQueryParser uses the wrong Lucene-Version in its initializing ,BUG
+111,JCR-4111, Issue with Jack Rabbit Repository ,BUG
+112,JCR-4112,Require Java 8,NUG
+113,JCR-4113,Release Jackrabbit 2.8.5,NUG
+115,JCR-4115,Don't use SHA-1 for new DataStore binaries (Jackrabbit),NUG
+116,JCR-4116, SharedItemStateManager.getNonVirtualItemState is over-synchronized ,BUG
+117,JCR-4117,Release Jackrabbit 2.15.1,NUG
+118,JCR-4118, RepositoryChecker creates invalid node names ,BUG
+119,JCR-4119,Upgrade httpcomponents/httpmime to 4.5.3,NUG
+120,JCR-4120,"Spi2DavexRepositoryServiceImpl always hardcodes the default workspace name to ""default""",BUG
+121,JCR-4121, ConcurrentModificationException in InternalVersionHistoryImpl.fixLegacy() ,BUG
+122,JCR-4122, align parent pom references with Oak ,NUG
+123,JCR-4123,No log file found containing revision: 0,BUG
+124,JCR-4124,Release Jackrabbit 2.12.7,NUG
+125,JCR-4125,Not able to upload a large file (2 GB) via Jackrabbit to an MS SQL Server 2014 Database.,BUG
+126,JCR-4126, Shared FileDataStore throws exception if two processes try to add the same file concurrently ,BUG
+127,JCR-4127,update to latest apache parent pom (18),NUG
+128,JCR-4128,update maven plugins and require Maven 3.2.1,NUG
+129,JCR-4129, get rid of unused org.json dependency ,NUG
+130,JCR-4130, Can't add a file ,BUG
+131,JCR-4131,JDK 9 support,NUG
+132,JCR-4132,Release Jackrabbit 2.15.2,NUG
+133,JCR-4133,fix javadoc problems that are errors with JDK8,NUG
+134,JCR-4134, update build instructions wrt Java versions ,NUG
+135,JCR-4135, potential NPE in FSBackend ,BUG
+136,JCR-4136,Release Jackrabbit 2.14.1,NUG
+137,JCR-4137,Release Jackrabbit 2.15.3,NUG
+138,JCR-4138,Not able to upload a large file (2 GB) via Jackrabbit to an Oracle Database,BUG
+139,JCR-4139,Update commons-fileupload dependency to 1.3.2,NUG
+140,JCR-4140,Update easymock dependency to 3.4,NUG
+142,JCR-4142,update junit dependency to 4.12,NUG
+143,JCR-4143,update findbugs dependency to 3.0.2,NUG
+144,JCR-4144, JackrabbitAccessControlList should have an API boolean isMultiValueRestriction(restrictionName) ,BUG
+145,JCR-4145,upgrade clirr plugin to 2.8,NUG
+146,JCR-4146, json extension is removed by AbstractWebdavServlet on COPY request ,BUG
+147,JCR-4147, clirr profile needs to use sensible baselines ,BUG
+148,JCR-4148, revert update of findbugs ,NUG
+149,JCR-4149,change to drop SHA-1 requires version change,BUG
+150,JCR-4150, enable bundle:baseline check ,NUG
+151,JCR-4151, remove clirr profile in branches where bundle:baseline is used ,NUG
+152,JCR-4152,Release Jackrabbit 2.15.4,NUG
+153,JCR-4153, Switch to OSGi annotations ,NUG
+154,JCR-4154, davex upload of binaries broken ,BUG
+155,JCR-4155,Release Jackrabbit 2.14.2,NUG
+156,JCR-4156,Release Jackrabbit 2.10.6,NUG
+157,JCR-4157, jackrabbit-jcr-server: code cleanup ,NUG
+158,JCR-4158, jackrabbit-server doesn't handle content-codings properly ,BUG
+159,JCR-4159, push down code to where/until it's needed ,NUG
+160,JCR-4160, simplify char encoding by using StandardCharsets ,NUG
+161,JCR-4161, Information on encryption methodology of Jack Rabbit Repository ,NUG
+162,JCR-4162,Release Jackrabbit 2.4.8,NUG
+163,JCR-4163,Retire Jackrabbit 2.4,NUG
+164,JCR-4164, add test coverage for content codings ,NUG
+165,JCR-4165,WebDAV servlet: reject unknown/unsupported content codings with 4xx status code,BUG
+166,JCR-4166, support GZIP content coding in requests ,NUG
+167,JCR-4167,signal support for GZIP content coding as per RFC 7694,NUG
+168,JCR-4168, use gzip content coding in requests when server supports it ,NUG
+169,JCR-4169, make WebdavServerTests run automatically ,NUG
+170,JCR-4170,Release Jackrabbit 2.15.5,NUG
+171,JCR-4171, Conditions that are always true. ,BUG
+172,JCR-4172, JCAManagedConnection only considers the most recent handle when getting session ,BUG
+173,JCR-4173, Unable to receive observation events when connecting via DavEx ,BUG
+174,JCR-4174,lock resource deadlock when using mssql2016,BUG
+175,JCR-4175,Release Jackrabbit 2.6.9,NUG
+176,JCR-4176,misleading documentation for ISO9075.encode(),BUG
+177,JCR-4177, move Mockito version to parent pom ,NUG
+178,JCR-4178, Mismatch between Event.getInfoMap use in Oak and JCR remoting ,BUG
+179,JCR-4179,Test failures with Java 9 when using javax.imageio.spi.ServiceRegistry,BUG
+180,JCR-4180,Release Jackrabbit 2.15.6,NUG
+181,JCR-4181,Release Jackrabbit 2.14.3,NUG
+182,JCR-4182, new release checksum requirements ,NUG
+183,JCR-4183,Jackrabbit standalone jar isn't working under JDK 8,BUG
+184,JCR-4184, migrate from org.mortbay.jetty to org.eclipse.jetty ,NUG
+185,JCR-4185,spi2dav URIResolverImpl should check status code before attempting to parse multistatus,BUG
+186,JCR-4186, Use current Derby version ,NUG
+187,JCR-4187,Release Jackrabbit 2.8.6,NUG
+188,JCR-4188, avoid use of sun.security.acl.GroupImpl in PrincipalManagerTest ,NUG
+189,JCR-4189,Jackrabbit should compile & test on Java 9,BUG
+190,JCR-4190,maven-assembly-plugin:2.6:single failing with Java 9,BUG
+191,JCR-4191,baseline checks fails for jackrabbit-webdav under Java 9,BUG
+192,JCR-4192, Issue with retrieving reports from JackRabbit Repository ,BUG
+193,JCR-4193,Release Jackrabbit 2.12.8,NUG
+194,JCR-4194, Can't store nodes on mysql db ,BUG
+195,JCR-4195,"jcr-rmi on java 9: Cannot use SUN rmic, as it is not available",BUG
+196,JCR-4196,update surefire and failsafe plugins for use with java 9,NUG
+197,JCR-4197, Error running Apache Jackrabbit GarbageCollector ,BUG
+198,JCR-4198, Occasional test failures in GarbageCollectorTest.testSimultaneousRunGC ,BUG
+199,JCR-4199,oak-solr-core test failures with java 9,BUG
+200,JCR-4200,javax.transaction.UserTransaction hidden by surefire plugin in with Java 9,NUG
+201,JCR-4201,Release Jackrabbit 2.15.7,NUG
+202,JCR-4202, History of API changes for Jackrabbit Core ,NUG
+203,JCR-4203,Standalone server web ui 500 error ClassFormatException,BUG
+204,JCR-4204,Release Jackrabbit 2.16.0,NUG
+205,JCR-4205,Upgrade JTA dependency to javax.transaction-api 1.2,NUG
+206,JCR-4206, Switch to official OSGi versioning annotations ,NUG
+207,JCR-4207,Use Derby 10.14.1.0,NUG
+208,JCR-4208,Release Jackrabbit 2.14.4,NUG
+209,JCR-4209, Impossible to get the object - the query returns more than one object ,BUG
+210,JCR-4210, Synonym Provider with MemoryFileSystem ,NUG
+211,JCR-4211,Release Jackrabbit 2.15.8,NUG
+212,JCR-4212,add SHA512 checksums to releases,NUG
+213,JCR-4213, It is useful to return an error code with DataStoreException when a record is not found ,NUG
+215,JCR-4215,Use Tika version 1.17,BUG
+216,JCR-4216,Branch 2.16,NUG
+217,JCR-4217,Release Jackrabbit 2.17.0,NUG
+218,JCR-4218, switch bundle comparisonVersion ,NUG
+219,JCR-4219, Specify versions for maven plugins used in build for ensuring stable builds ,NUG
+220,JCR-4220, check-releases.sh should force bash usage ,NUG
+221,JCR-4221,Upgrade Apache HttpComponents to 4.5.4,NUG
+222,JCR-4222,Document reduced RMI interop with older servers after java-9 related changes,BUG
+223,JCR-4223,Upgrade commons-fileupload dependency to 1.3.3,NUG
+224,JCR-4224,Upgrade tomcat-servlet dependency to 7.0.82,NUG
+225,JCR-4225,Upgrade commons-chains dependency to 1.2,NUG
+226,JCR-4226,Upgrade tika-parsers dependency to 1.16,NUG
+227,JCR-4227,Release Jackrabbit 2.10.7,NUG
+228,JCR-4228,Update Oak dependency to latest 1.0 stable release,NUG
+229,JCR-4229, Remove Oak dependency in webapp ,NUG
+230,JCR-4230, Move -webapp and -standalone to examples ,NUG
+231,JCR-4231,Upgrade aws-java-sdk-s3 dependency to 1.11.241,NUG
+232,JCR-4232, GQL: Unexpected/strange behavior when searching for wildcards on property names ,BUG
+233,JCR-4233,Update H2DB test dependency,NUG
+234,JCR-4234, Using LOWER(NAME()) and OR shows UnsupportedRepositoryException ,BUG
+235,JCR-4235,Release Jackrabbit 2.8.7,NUG
+236,JCR-4236, remove obsolete textFilterClasses config parameters ,NUG
+237,JCR-4237, cleanup throws clauses of private methods ,BUG
+238,JCR-4238, use StandardCharsets to avoid having to handle UnsupportedEncodingException ,NUG
+239,JCR-4239, Suppress Tika startup warnings ,NUG
+240,JCR-4240,IndexingQueueTest relies on Tika behavior that is changed in Tika 1.17,BUG
+241,JCR-4241, Jacoco plugin fails with exception ,BUG
+242,JCR-4242, Build failure: unapproved license ,BUG
+243,JCR-4243, update htmlunit test dependency ,NUG
+244,JCR-4244,Upgrade tomcat dependency to 8.5.24,NUG
+246,JCR-4246,"java.security.acl deprecated in Java 10, marked for removal in Java 12",NUG
+247,JCR-4247, Update commons-io dependency ,NUG
+248,JCR-4248,Upgrade httpcore dependency to 4.4.9,NUG
+249,JCR-4249, Introduce replacement for java.security.acl.Group ,NUG
+250,JCR-4250, remove guava dependency ,NUG
+251,JCR-4251,Release Jackrabbit 2.17.1,NUG
+252,JCR-4252,Upgrade httpclient dependency to 4.5.5,NUG
+253,JCR-4253, RepositoryConfig: add some handling for mkdir failure ,NUG
+254,JCR-4254,"Update Logback version to >= 1.2.0, SLF4J accordingly",NUG
+255,JCR-4255, DocOrderScoreNodeIterator: avoid IllegalArgumentException: Comparison method violates its general contract ,NUG
+256,JCR-4256, create announcement mail template for releases ,NUG
+257,JCR-4257,Release Jackrabbit 2.16.1,NUG
+258,JCR-4258, Remove SimpleJBossAccessManager in preparation of upcoming acl changes ,NUG
+259,JCR-4259, remove SimpleJbossAccessManager ,NUG
+260,JCR-4260," jackrabbit-filevault-package-maven-plugin analyze-classes mojo can fail with ""Access denied"" or ""...target/classes is a directory"" ",BUG
+261,JCR-4261, webapp: align jsons-simple dependencies internally and with oak ,NUG
+262,JCR-4262, jcr-server: align org.apache.felix.scr.annotations with oak ,NUG
+263,JCR-4263," jcr-server, jackrabbit-bundle: align org.osgi dependencies with oak ",NUG
+264,JCR-4264, jackrabbit-standalone: align commons-cli dependency with oak ,NUG
+265,JCR-4265, Utility for dependency comparisons ,NUG
+266,JCR-4266,Update servlet-api to 2.5,NUG
+267,JCR-4267,ISO8601.parse should support timezone designators in the form ±hhmm and ±hh,BUG
+268,JCR-4268, Update release notes of old branches with pointer to roadmap ,NUG
+269,JCR-4269,Release Jackrabbit 2.6.10,NUG
+270,JCR-4270,Retire Jackrabbit 2.6,NUG
+271,JCR-4271,Remove redundant JavaDoc link to Java 7 API,NUG
+272,JCR-4272,Upgrade surefire and failsafe plugins to 2.21.0,NUG
+273,JCR-4273,Mention SHA512 checksums in release notes,NUG
+274,JCR-4274,stop advertising MD5 checksums,NUG
+275,JCR-4275, Incorrect link to KEYS in release notes ,BUG
+276,JCR-4276, Update checksum related information on downloads page ,NUG
+277,JCR-4277,stop creating MD5 checksums for releases,NUG
+278,JCR-4278,Remove all usage of java.security.acl.Group for Java 11,NUG
+279,JCR-4279,Jackrabbit should compile & test on Java 10,BUG
+280,JCR-4280,code coverage checks fail on Java 10,BUG
+281,JCR-4281," Download pages must use HTTPS for sigs, hashes, KEYS ",BUG
+282,JCR-4282,Release Jackrabbit 2.17.2,NUG
+284,JCR-4284, Issue with retrieving reports from JackRabbit Repository ,BUG
+285,JCR-4285, fix Javadoc warnings ,NUG
+286,JCR-4286,Release Jackrabbit 2.14.5,NUG
+287,JCR-4287, Improve Debug-Log in SearchIndex and MultiIndex ,NUG
+288,JCR-4288,Upgrade tika-parsers dependency to 1.18,NUG
+290,JCR-4290, remove unused commons-codec dependency ,NUG
+291,JCR-4291, FileInputStream for workspace.xml not closed in RepositoryConfig.loadWorkspaceConfig(File) ,BUG
+292,JCR-4292, davex: preserve cause in exceptions and log affected URI ,NUG
+293,JCR-4293, jackrabbit-core: observation tests should not rely on mix:lockable mixin type ,BUG
+294,JCR-4294, TCK tests should pass on repositories without locking support ,BUG
+295,JCR-4295,Release Jackrabbit 2.12.9,NUG
+296,JCR-4296,Upgrade httpmime dependency to 4.5.5,NUG
+297,JCR-4297,Release Jackrabbit 2.17.3,NUG
+299,JCR-4299,Update derby dependency to 10.14.2.0,NUG
+300,JCR-4300,Getting error while trying to connect to S3,BUG
+301,JCR-4301,get rid of JSR 305 dependency,NUG
+302,JCR-4302, BTreeManager: fix Eclipse compiler error ,NUG
+303,JCR-4303, jackrabbit-standalone fails to set log file names for jackrabbit and jetty ,BUG
+304,JCR-4304,update Jetty to supported version 9.2.*,NUG
+305,JCR-4305,jackrabbit-standalone JSP does not work with Java 10,BUG
+306,JCR-4306, switch to findbugs replacement that is still maintained (spotbugs) ,NUG
+307,JCR-4307,Update animal-sniffer-maven-plugin to 1.16,NUG
+308,JCR-4308,update Jetty to 9.4.*,NUG
+310,JCR-4310,Release Jackrabbit 2.10.8,NUG
+311,JCR-4311,2.16: remove comparisonVersion for baseline check (let defaults apply),NUG
+312,JCR-4312,set baseline comparisonVersion to latest stable (2.16.1),NUG
+313,JCR-4313,SPI2DAV: Consider proxy environment variables for http client,NUG
+314,JCR-4314, ConnectionFactoryTest failing ,BUG
+315,JCR-4315,Release Jackrabbit 2.16.2,NUG
+316,JCR-4316,set baseline comparisonVersion to latest stable (2.16.2),NUG
+317,JCR-4317, davex remoting fails for non-ASCII characters in node names ,BUG
+318,JCR-4318,Update failsafe and surefire plugin versions to 2.22.0,NUG
+320,JCR-4320,Update spotbugs plugin to 3.1.5,NUG
+321,JCR-4321, Update maven plugins from org.apache.maven.plugins ,NUG
+322,JCR-4322,Consistent use of log4j versions,NUG
+323,JCR-4323,webapp: update Tomcat dependency to 8.5.32,NUG
+324,JCR-4324, NPE on Version.getLinearPredecessor() implementation ,BUG
+325,JCR-4325,Release Jackrabbit 2.8.8,NUG
+326,JCR-4326,Update aws java sdk version to 1.11.330 (consistent with Oak),NUG
+327,JCR-4327,Update httpcore dependency to 4.4.10,NUG
+328,JCR-4328,Update 7.0.* Tomcat dependencies once 7.0.90 is released,NUG
+329,JCR-4329,Release Jackrabbit 2.17.4,NUG
+330,JCR-4330, jackrabbit-jcr-commons and jackrabbit-bundle have broken manifests ,BUG
+331,JCR-4331,Update httpclient dependency to 4.5.6,NUG
+332,JCR-4332,Update httpmime dependency to 4.5.6,NUG
+333,JCR-4333,Update javax.transaction dependency to 1.3,NUG
+334,JCR-4334,Release Jackrabbit 2.8.9,NUG
+335,JCR-4335, API for direct binary access ,NUG
+336,JCR-4336, Upgrade commons-dbcp dependencies ,NUG
+337,JCR-4337,Jackrabbit should compile & test on Java 11,NUG
+338,JCR-4338,avoid use of javax.rmi.PortableRemoteObject (removed in Java 11),NUG
+339,JCR-4339, Indexing configuration condition property seems to be broken  ,BUG
+340,JCR-4340,Release Jackrabbit 2.17.5,NUG
+341,JCR-4341,SHA1 and SHA512 hashes should be links to sig files on dist site,NUG
+342,JCR-4342,remove unused JSR 305 dependency from pom,NUG
+343,JCR-4343,Update commons-vfs2 version to 2.2,NUG
+344,JCR-4344,Update h2db version to latest stable 1.4.196,NUG
+345,JCR-4345,Update mockito dependency to 2.20.0,NUG
+346,JCR-4346,Update easymock dependency to 3.6,NUG
+347,JCR-4347,Update com.jcraft.jsch dependency to 0.1.54,NUG
+348,JCR-4348," Update osgi (compendium, core) dependencies ",NUG
+349,JCR-4349,Update plexus-utils dependency to 3.1.0,NUG
+350,JCR-4350, jackrabbit-jcr-servlet: remove special-cased servlet-api dependency ,NUG
+351,JCR-4351,Release Jackrabbit 2.16.3,NUG
+352,JCR-4352,Update lucene-core dependency to 3.6.2,NUG
+353,JCR-4353,set baseline comparisonVersion to latest stable (2.16.3),NUG
+354,JCR-4354, VFS (commons-vfs) based FileSystem for VFS backend based Persistence Manager ,NUG
+355,JCR-4355, Javadoc fixes and improvements for new direct binary access API ,NUG
+356,JCR-4356, How to search  and replace for partial text from fullword. ,NUG
+408,JCR-4408, jackrabbit-webapp: test dependency for httpcore breaks war file ,BUG
+410,JCR-4410, jackrabbit-webapp: cleanup left over Oak references ,BUG
+126,JCR-4425, NodeSetPrimaryTypeTest.testSetPrimaryType() must not use nt:activity ,BUG
+127,JCR-4426,Release Jackrabbit 2.18.2,BUG
+128,JCR-4427,set baseline comparisonVersion to latest stable (2.18.1),BUG
+129,JCR-4428,update Apache parent pom to version 21,BUG
+130,JCR-4429, Add extension of JackrabbitAccessControlList bound to a principal ,BUG
+131,JCR-4430,fix javadoc:javadoc for jdk >= 11,BUG
+132,JCR-4436, Improve tests for o.a.j.oak.security.authentication.token package ,BUG
+133,JCR-4438, jcr-webdav: AbstractLocatorFactory - fix Javadoc and add trace logging ,BUG
+134,JCR-4439, disable baseline check for jackrabbit-bundle ,BUG
+135,JCR-4440, remove jackrabbit-bundle ,BUG
+136,JCR-4446,ISO8601.parse() uses the system default locale for region,BUG
+137,JCR-4447, jackrabbit-jcr-commons: update cglib dependency ,BUG
+138,JCR-4448, Update committer list in jackrabbit-parent/pom.xml ,BUG
+139,JCR-4456,EOL Jackrabbit 2.10,BUG
+140,JCR-4457,Update httpclient/mime dependencies to 4.5.9,BUG
+141,JCR-4458," When JcrRemotingServlet deployed on non-root context, AclResource Webdav request fails ",BUG
+142,JCR-4459, Basic Authentication for HTTPS URIs does not work ,BUG
+143,JCR-4460, allow to run remoted conformance tests with a custom servlet context path ,BUG
+144,JCR-4461,Release Oak 1.16.0,BUG
+145,JCR-4462, Highlighted terms in excerpt for PhraseQuery queries issue ,BUG
+146,JCR-4463, Update JavaDoc for completeBinaryUpload explaining idempotency ,BUG
+147,JCR-4464,Update Tika dependency to 1.22,BUG
+148,JCR-4465,Release Jackrabbit 2.19.4,BUG
+149,JCR-4466,Jackrabbit should compile & test with JDK 14,BUG
+150,JCR-4467,Remove all usage of java.security.acl.Group for Java 14,BUG
+151,JCR-4468, Update CI page ,BUG
+152,JCR-4469, link jackrabbit-api api docs from Oak ,BUG
+153,JCR-4470,update javadoc-plugin dependency to 3.1.1,BUG
+154,JCR-4472, jcr-rmi: switch to package-level version annotations ,BUG
+155,JCR-4473,set baseline comparisonVersion to latest stable (2.18.3),BUG
+156,JCR-4475,Improve o.a.j.jcr2dav.RepositoryStubImpl to test with custom servlet path mapping,BUG
+157,JCR-4476,Update httpcore dependency to 4.4.12,BUG
+158,JCR-4479, dist.apache.org must not be used for public downloads ,BUG
+159,JCR-4480,SHA1 should no longer be provided on download pages,BUG
+160,JCR-4483,jcr2spi: potential NPE in ImportHandler.endDocument,BUG
+161,JCR-4484, jcr-tests: SerializationTest needs to cleanup after parse failures in import tests ,BUG
+162,JCR-4485, InternalValueFactory.create(File) does not close input stream ,BUG
+163,JCR-4487,Update to jacoco 0.8.5 (version compatible with Java 14),BUG
+164,JCR-4488,Update jacoco dependency to 0.8.4,BUG
+165,JCR-4489,Update jacoco dependency to 0.8.4,BUG
+166,JCR-4491,Upgrade Commons VFS to 2.6,BUG
+167,JCR-4492,Update Jackrabbit trunk to Oak 1.18.0,BUG
+168,JCR-4495, Download page must use mirror system ,BUG
+169,JCR-4496,align ISO8601 class in tests with jcr-commons version,BUG
+170,JCR-4497, pass computed args to surefire/failsafe invocations ,BUG
+171,JCR-4499,Update jacoco dependency to 0.8.5 and align config with Oak,BUG
+172,JCR-4500, jcr-commons: enable coverage checks ,BUG
+173,JCR-4501,jcr-commons: add test coverage for ISO8601 util,BUG
+174,JCR-4502,"ISO8601: add convenience methods that do not require passing a Calendar, also support short format without ms information",BUG
+175,JCR-4516,switch bundle comparisonVersion for 2.20.0,BUG
+176,JCR-4517, Fix typo in website ,BUG
+177,JCR-4518, Download pages must provide a hash for all artifacts ,BUG
+178,JCR-4519,Update httpcore dependency to 4.4.13,BUG
+179,JCR-4520,Update Jackrabbit trunk and 2.20 to Oak 1.22.0,BUG
+180,JCR-4523,PostgreSQL multi-schema when dealing with 2 repositories with same table in the same DB,BUG
+181,JCR-4524, can't find files ,BUG
+182,JCR-4526, PII(Personally Identifiable Information) compliance for Exception Logging ,BUG
+183,JCR-4527, old dependency for lucene-core ,BUG
+184,JCR-4530, jackrabbit-core: avoid use of deprecated commons-collections Buffers ,BUG
+185,JCR-4531,Update tomcat dependency to 8.5.51/7.0.100,BUG
+186,JCR-4533, Remove references to www.apache.org/dist ,BUG
+187,JCR-4534, Update Apache Lucene  ,BUG
+188,JCR-4535, Test the automatic deletion of version history nodes when all versions are gone. ,BUG
+189,JCR-4536,spi2dav: allow disabling cert and host name checks for TLS connections,BUG
+190,JCR-4537, MalformedURLException: Nested JAR URLs are not supported ,BUG
+191,JCR-4538,EOL Jackrabbit 2.8,BUG
+192,JCR-4539,Update Jackrabbit trunk and 2.20 to Oak 1.26.0,BUG
+193,JCR-4540, MSSQL: Wrong database column type leads to performance issues in query ,BUG
+194,JCR-4541, reduce classpath lookups for SaxParserFactory ,BUG
+195,JCR-4542, How to launch jackrabbit standalone server as https by default it loads as http ,BUG
+196,JCR-4543,Update Tika dependency to 1.24,BUG
+197,JCR-4544,Update slf4j dependency to 1.7.30,BUG
+198,JCR-4545,Update httpclient/mime dependencies to 4.5.12,BUG
+199,JCR-4546,Update aws java sdk version to 1.11.700 (consistent with Oak),BUG
+200,JCR-4547,Update tomcat dependency to 8.5.53/7.0.103,BUG
+201,JCR-4548,update javadoc-plugin dependency to 3.2.0,BUG
+202,JCR-4549, backup with RepositoryCopier.copy() fails on second method call ,BUG
+203,JCR-4552,EOL Jackrabbit 2.18,BUG
+204,JCR-4561,webapp: update htmlunit dependency to 2.40.0,BUG
+205,JCR-4562,Remove workaround for FELIX-2492,BUG
+206,JCR-4564, jackrabbit-jcr-server: remove obsolete workaround for scr-plugin ,BUG
+207,JCR-4566, travis-ci script added. Please trigger it on travis-ci. ,BUG
+208,JCR-4567,Jackrabbit should build and test with Java 15,BUG
+209,JCR-4568,Update to jacoco version 0.8.6 (compatible with Java 15),BUG
+210,JCR-4569,Update to maven bundle plugin compatible with Java 15,BUG
+211,JCR-4570, WebdavRequestImpl does not check ETags if there is no resource or no exclusive write lock ,BUG
+212,JCR-4571," WebdavRequestImpl stores If-Header values using either absolute URIs or absolute paths, but both may be used for lookup ",BUG
+213,JCR-4574, add tests for https (with self-signed cert) ,BUG
+214,JCR-4575,Update tomcat dependency to 8.5.55/7.0.104,BUG
+215,JCR-4578, IndexMerger should log more debug informations about the internal IndexBuckets ,BUG
+216,JCR-4579, jackrabbit-data: allow to disable statement pooling through system property ,BUG
+217,JCR-4581, use GZIP encoding in XML responses when client signals support ,BUG
+218,JCR-4582, support 'deflate' encoding in requests ,BUG
+219,JCR-4583, remove XML serialization workaround for ancient Java versions ,BUG
+220,JCR-4585,jackrabbit-webdav: return Etag with 304 response,BUG
+221,JCR-4586, jackrabbit-webdav: must ignore if-modified-since with broken date  ,BUG
+222,JCR-4587, jackrabbit-webdav: include if-unmodified-since in precondition check ,BUG
+223,JCR-4588, jackrabbit-webdav/server: add parsers for http dates and use them in conditional eval ,BUG
+224,JCR-4590, jcr-server: DirListingExportHandler sets empty Etag ,BUG
+225,JCR-4591, basic trailer field support ,BUG
+226,JCR-4592,Update maven-assembly-plugin to 3.3.0,BUG
+227,JCR-4593,update war-plugin dependency to 3.3.0,BUG
+228,JCR-4594,update pmd-plugin dependency to 3.13.0,BUG
+229,JCR-4595,update checkstyle-plugin dependency to 3.1.1,BUG
+230,JCR-4596,update build-helper-maven-plugin to version 3.2.0,BUG
+231,JCR-4601,jackrabbit-jcr-commons: update cglib dependency to 3.3.0,BUG
+232,JCR-4602, jackrabbit-core: remove unused commons-collections dependency ,BUG
+233,JCR-4603, spi-commons: Iterators - incorrect method signature ,BUG
+234,JCR-4604, deprecate Iterators.Predicate ,BUG
+235,JCR-4605, standalone: fix deprecation warning wrt GnuParser ,BUG
+236,JCR-4606, standalone: logback log files created in wrong place ,BUG
+237,JCR-4609, Improve logging in case of exception in JcrUtils.getRepository() ,BUG
+238,JCR-4610,Tests in jackrabbit-spi2dav are not executed by default,BUG
+239,JCR-4611, JackRabbit Oracle Bundle Schema NODE_ID Type Change to VarChar ,BUG
+240,JCR-4617, Emit apache-rat-plugin errors on console ,BUG
+241,JCR-4618, Relax PredefinedNodeTypeTest to not require nt:frozenNode to be referenceable ,BUG
+242,JCR-4625, ParsingNameResolver.getQName(...) must not throw IllegalNameException for empty string ,BUG
+243,JCR-4626,CI build fail because org.glassfish:javax.el:jar:3.0.1-b06-SNAPSHOT can't be retrieved,BUG
+244,JCR-4627, jackrabbit-it-osgi: pax-exam fails to load artefacts from maven central ,BUG
+245,JCR-4629,Update spotbugs-maven-plugin to 4.0.4,BUG
+246,JCR-4630,Update animal-sniffer dependency to 1.19,BUG
+247,JCR-4631,update war-plugin dependency to 3.3.1,BUG
+248,JCR-4634,Jackrabbit should build and test with Java 16,BUG
+249,JCR-4635, jackrabbit-webdav: successful PUT should return etag response field ,BUG
+250,JCR-4653,Update httpclient/mime dependencies to 4.5.13,BUG
+251,JCR-4654,webapp: update htmlunit dependency to 2.45.0,BUG
+252,JCR-4656,Upgrade Commons VFS to 2.7.0,BUG

@@ -1,0 +1,1001 @@
+ID,CLASSIFIED,SUMMARY
+LUCENE-2719,NUG, Re-add SorterTemplate and use it to provide fast ArraySorting and replace BytesRefHash sorting 
+LUCENE-754,BUG," FieldCache keeps hard references to readers, doesn't prevent multiple threads from creating same instance "
+LUCENE-1487,NUG, FieldCacheTermsFilter 
+LUCENE-2216,BUG, OpenBitSet#hashCode() may return false for identical sets. 
+LUCENE-1061,NUG, Adding a factory to QueryParser to instantiate query instances 
+LUCENE-456,BUG, Duplicate hits and missing hits in sorted search 
+LUCENE-2243,NUG, FastVectorHighlighter: support DisjunctionMaxQuery 
+LUCENE-2458,NUG, queryparser makes all CJK queries phrase queries regardless of analyzer 
+LUCENE-2670,NUG, allow automatontermsenum to work on full byte range 
+LUCENE-3183,BUG, TestIndexWriter failure: AIOOBE 
+LUCENE-2606,NUG, optimize contrib/regex for flex 
+LUCENE-609,NUG, Lazy field loading breaks backward compat 
+LUCENE-912,BUG, DisjunctionMaxScorer.skipTo has bug that keeps it from skipping 
+LUCENE-2144,BUG, InstantiatedIndexReader does not handle #termDocs(null) correct (AllTermDocs) 
+LUCENE-3129,NUG, Single-pass grouping collector based on doc blocks 
+LUCENE-1826,NUG, All Tokenizer implementations should have constructors that take AttributeSource and AttributeFactory 
+LUCENE-3743,NUG, LuceneTestCase's uncaught exceptions handler should check for AssumptionViolatedExceptions and then not trigger test failure 
+LUCENE-1495,NUG, Allow TaskSequence to run for certain time 
+LUCENE-3483,NUG, Move Function grouping collectors from Solr to grouping module 
+LUCENE-882,NUG, Spellchecker doesn't need to store ngrams 
+LUCENE-3472,NUG, add back Document.getValues() 
+LUCENE-2826,NUG, LineDocSource should assign stable IDs; docdate field should be NumericField 
+LUCENE-1435,NUG, CollationKeyFilter: convert tokens into CollationKeys encoded using IndexableBinaryStringTools 
+LUCENE-539,NUG, Fix for deprecations in contrib/surround 
+LUCENE-2035,BUG, TokenSources.getTokenStream() does not assign positionIncrement 
+LUCENE-3196,NUG, Optimize FixedStraightBytes for bytes size == 1 
+LUCENE-764,NUG, Document the temporary free space requirements of IndexWriter methods 
+LUCENE-1903,BUG, Incorrect ShingleFilter behavior when outputUnigrams == false 
+LUCENE-1843,NUG," Convert some tests to new TokenStream API, better support of cross-impl AttributeImpl.copyTo() "
+LUCENE-661,NUG, BUILD.txt instructions wrong for JavaCC 
+LUCENE-2038,NUG, Systemrequirements should say 1.5 instead of 1.4 
+LUCENE-771,NUG, Change default write lock file location to index directory (not java.io.tmpdir) 
+LUCENE-929,NUG, contrib/benchmark build doesn't handle checking if content is properly extracted 
+LUCENE-2254,NUG, Support more queries (other than just title) in Trec quality pkg 
+LUCENE-2634,BUG, IndexReader.isCurrent() lies if documents were only removed by latest commit 
+LUCENE-3186,NUG, DocValues type should be recored in FNX file to early fail if user specifies incompatible type 
+LUCENE-1449,BUG, IndexDeletionPolicy.delete behaves incorrectly when deleting latest generation  
+LUCENE-3210,NUG, TieredMergePolicy should expose control over how aggressively segments with deletions are targeted  
+LUCENE-207,BUG, [PATCH] npe if java.io.tmpdir does not exist 
+LUCENE-1582,NUG, Make TrieRange completely independent from Document/Field with TokenStream of prefix encoded values 
+LUCENE-1325,NUG, add IndexCommit.isOptimized method 
+LUCENE-1142,NUG, Updated Snowball package 
+LUCENE-3690,NUG, JFlex-based HTMLStripCharFilter replacement 
+LUCENE-1346,NUG, replace Vector with ArrayList in Queries 
+LUCENE-2961,NUG, Remove benchmark/lib/xml-apis.jar - JVM 1.5 already contains the required JAXP 1.3 implementation 
+LUCENE-1809,NUG, highlight-vs-vector-highlight.alg is unfair 
+LUCENE-3644,BUG, problems with IR's readerFinishedListener 
+LUCENE-3578,BUG, TestSort testParallelMultiSort reproducible seed failure 
+LUCENE-1724,NUG, Analysis package calls Java 1.5 API 
+LUCENE-2055,NUG, Fix buggy stemmers and Remove duplicate analysis functionality 
+LUCENE-3306,NUG, disable positions for spellchecker ngram fields 
+LUCENE-1488,NUG, multilingual analyzer based on icu 
+LUCENE-2444,NUG, move contrib/analyzers to modules/analysis 
+LUCENE-941,BUG, Benchmark alg line -  {[AddDoc(4000)]: 4} : * - causes an infinite loop 
+LUCENE-3776,NUG, NRTManager shouldn't expose its private SearcherManager 
+LUCENE-3658,BUG, NRTCachingDir has invalid asserts (if same file name is written twice) 
+LUCENE-1327,BUG, TermSpans skipTo() doesn't always move forwards 
+LUCENE-3074,NUG, SimpleTextCodec needs SimpleText DocValues impl 
+LUCENE-1369,NUG, Eliminate unnecessary uses of Hashtable and Vector 
+LUCENE-3573,BUG," TaxonomyReader.refresh() is broken, replace its logic with reopen(), following IR.reopen pattern "
+LUCENE-2169,NUG, Speedup of CharArraySet#copy if a CharArraySet instance is passed to copy. 
+LUCENE-1465,BUG, NearSpansOrdered.getPayload does not return the payload from the minimum match span 
+LUCENE-2796,NUG, Tests need to clean up after themselves 
+LUCENE-2012,NUG, Add @Override annotations 
+LUCENE-3687,NUG, Allow similarity to encode norms other than a single byte 
+LUCENE-540,BUG, Merging multiple indexes does not maintain document order. 
+LUCENE-2934,NUG, Alternative depth-based DOT layout ordering in FST's Utils 
+LUCENE-443,NUG, ConjunctionScorer tune-up 
+LUCENE-656,NUG, FieldsInfo uses deprecated API 
+LUCENE-3534,NUG, Backport FilteredQuery/IndexSearcher changes to 3.x: Remove filter logic from IndexSearcher and delegate to FilteredQuery 
+LUCENE-1280,BUG, NPE in PhraseQuery.toString(String f) 
+LUCENE-729,NUG, non-recursive MultiTermDocs 
+LUCENE-1038,NUG, TermVectorMapper.setDocumentNumber() 
+LUCENE-3225,NUG, Optimize TermsEnum.seek when caller doesn't need next term 
+LUCENE-3745,NUG, Need stopwords and stoptags lists for default Japanese configuration 
+LUCENE-2571,NUG, Indexing performance tests with realtime branch 
+LUCENE-2290,NUG, Remove unnecessary String concatenation in IndexWriter 
+LUCENE-1114,NUG, contrib/Highlighter javadoc example needs to be updated 
+LUCENE-3401,BUG, need to ensure that sims that use collection-level stats (e.g. sumTotalTermFreq) handle non-existent field 
+LUCENE-325,NUG, [PATCH] new method expungeDeleted() added to IndexWriter 
+LUCENE-3182,BUG, TestAddIndexes reproducible test failure on turnk 
+LUCENE-2940,BUG, NPE in TestNRTThreads 
+LUCENE-1987,NUG," Remove rest of analysis deprecations (Token, CharacterCache) "
+LUCENE-1011,BUG, Two or more writers over NFS can cause index corruption 
+LUCENE-2688,NUG, NativeFSLockFactory throws an exception on Android 2.2 platform as java.lang.management package is not available on android. 
+LUCENE-1272,NUG, Support for boost factor in MoreLikeThis 
+LUCENE-822,NUG, Make FieldSelector usable from Searchable  
+LUCENE-3296,NUG, Enable passing a config into PKIndexSplitter 
+LUCENE-2293,NUG, IndexWriter has hard limit on max concurrency 
+LUCENE-879,NUG, Document number integrity merge policy 
+LUCENE-2011,NUG, Remove deprecated Scorer.explain(int) method 
+LUCENE-288,NUG, [patch] better support gcj compilation 
+LUCENE-1016,NUG," TermVectorAccessor, transparent vector space access  "
+LUCENE-1314,NUG, IndexReader.clone 
+LUCENE-967,NUG," Add ""tokenize documents only"" task to contrib/benchmark "
+LUCENE-3800,BUG, Readers wrapping other readers don't prevent usage if any of their subreaders was closed 
+LUCENE-223,NUG, [PATCH] remove unused variables 
+LUCENE-1550,NUG, Add N-Gram String Matching for Spell Checking 
+LUCENE-387,NUG, Contrib: Main memory based SynonymMap and SynonymTokenFilter 
+LUCENE-354,NUG, FIXME in src/test/org/apache/lucene/IndexTest.java 
+LUCENE-2059,NUG, benchmark pkg: allow TrecContentSource not to change the docname 
+LUCENE-348,NUG, fileformats.xml doesn't document compound file streams 
+LUCENE-1405,NUG, Support for new Resources model in ant 1.7 in Lucene ant task. 
+LUCENE-3345,BUG, docvalues FNFE 
+LUCENE-866,NUG, Multi-level skipping on posting lists 
+LUCENE-1742,NUG, Wrap SegmentInfos in public class  
+LUCENE-2989,NUG, TestCollectionUtil fails on IBM JRE 
+LUCENE-873,NUG, nightly builds depend on clover 
+LUCENE-2067,NUG, Czech Stemmer 
+LUCENE-3556,NUG, Make DirectoryTaxonomyWriter's indexWriter member private 
+LUCENE-2561,BUG, Fix exception handling and thread safety in realtime branch 
+LUCENE-1913,BUG, FastVectorHighlighter: AIOOBE occurs if one PhraseQuery is contained by another PhraseQuery 
+LUCENE-2624,NUG, add new snowball languages 
+LUCENE-272,NUG, [PATCH] Remove equals() from internal Comparator of ConjunctionScorer 
+LUCENE-488,BUG, adding docs with large (binary) fields of 5mb causes OOM regardless of heap size 
+LUCENE-1558,NUG, Make IndexReader/Searcher ctors readOnly=true by default 
+LUCENE-2742,NUG, Enable native per-field codec support  
+LUCENE-1427,NUG, QueryWrapperFilter should not do scoring 
+LUCENE-2124,NUG," move JDK collation to core, ICU collation to ICU contrib "
+LUCENE-3249,NUG, Move Solr's FunctionQuery impls to Queries Module 
+LUCENE-1048,BUG, Lock.obtain(timeout) behaves incorrectly for large timeouts 
+LUCENE-3051,BUG, don't call SegmentInfo.sizeInBytes for the merging segments 
+LUCENE-1442,BUG, NOT_ANALYZED fields can double-count offsets 
+LUCENE-1918,BUG, Adding empty ParallelReader indexes to an IndexWriter may cause ArrayIndexOutOfBoundsException or NoSuchElementException 
+LUCENE-3709,BUG, norms reading fails with FileNotFound in exceptional case 
+LUCENE-2700,NUG, Expose DocValues via Fields 
+LUCENE-2797,NUG, upgrade icu to 4.6 
+LUCENE-1728,NUG, Move SmartChineseAnalyzer & resources to own contrib project 
+LUCENE-3068,BUG, The repeats mechanism in SloppyPhraseScorer is broken when doc has tokens at same position 
+LUCENE-3827,NUG, Make term offsets work in MemoryIndex 
+LUCENE-3692,BUG, DocumentsWriter blocks flushes when applyDeletes takes forever - memory not released 
+LUCENE-2477,NUG, remove MoreLikeThis's default analyzer 
+LUCENE-1090,NUG, remove relative paths assumptions from benchmark code 
+LUCENE-864,NUG, contrib/benchmark files need eol-style set 
+LUCENE-728,NUG, Remove or deprecate contrib/similarity 
+LUCENE-3058,NUG, FST should allow more than one output for the same input 
+LUCENE-1251,BUG," on disk full during close, FSIndexOutput fails to close descriptor "
+LUCENE-1339,NUG, Add IndexReader.acquire() and release() methods using IndexReader's ref counting 
+LUCENE-3024,BUG," If index has more than Integer.MAX_VALUE terms, seeking can it AIOOBE due to long/int overflow "
+LUCENE-1383,NUG," Work around ThreadLocal's ""leak"" "
+LUCENE-3528,BUG, TestNRTManager hang 
+LUCENE-867,NUG, Incomplete lucene-core-1.9.1 in Maven2 repository 
+LUCENE-1365,NUG, deprecate IndexWriter.addIndexes(Directory[]) 
+LUCENE-2689,BUG, remove NativeFSLockFactory's attempt to acquire a test lock 
+LUCENE-2298,NUG, Polish Analyzer 
+LUCENE-653,BUG, GData-server storage fix activation depth 
+LUCENE-3757,NUG, Change AtomicReaderContext.leaves() to return itsself as only leave to simplify code and remove an otherwise unneeded ReaderUtil method 
+LUCENE-834,NUG, Payload Queries 
+LUCENE-2824,NUG, optimizations for bufferedindexinput 
+LUCENE-3552,NUG, TaxonomyReader/Writer and their Lucene* implementation 
+LUCENE-2664,NUG, Add SimpleText codec 
+LUCENE-1764,BUG, SampleComparable doesn't work well in contrib/remote tests 
+LUCENE-2591,NUG, TestNLS fails with ja locale 
+LUCENE-3416,NUG, Allow to pass an instance of RateLimiter to FSDirectory allowing to rate limit merge IO across several directories / instances 
+LUCENE-969,NUG, Optimize the core tokenizers/analyzers & deprecate Token.termText 
+LUCENE-3241,NUG, Remove Lucene core's FunctionQuery impls 
+LUCENE-2069,NUG, fix LowerCaseFilter for unicode 4.0 
+LUCENE-1976,BUG, isCurrent() and getVersion() on an NRT reader are broken 
+LUCENE-3727,BUG, fix assertions/checks that use File.length() to use getFilePointer() 
+LUCENE-1993,NUG, MoreLikeThis - allow to exclude terms that appear in too many documents (patch included) 
+LUCENE-3053,NUG, improve test coverage for Multi* 
+LUCENE-2380,NUG," Add FieldCache.getTermBytes, to load term data as byte[] "
+LUCENE-1469,NUG, isValid should be invoked after analyze rather than before it so it can validate the output of analyze 
+LUCENE-3671,NUG, Add a TypeTokenFilter 
+LUCENE-444,BUG, StandardTokenizer loses Korean characters 
+LUCENE-450,BUG, MatchAllDocsQuery doesn't honor boost or queryNorm 
+LUCENE-1786,NUG, improve performance of contrib/TestCompoundWordTokenFilter 
+LUCENE-1444,NUG, Broken javadocs->site docs links 
+LUCENE-3589,BUG, BytesRef copy short missed the length setting 
+LUCENE-2512,BUG, DeleteByPercentTask hits NPE 
+LUCENE-3239,NUG," drop java 5 ""support"" "
+LUCENE-3254,BUG, BitVector.isSparse is sometimes wrong 
+LUCENE-1718,BUG, IndexReader.setTermInfosIndexDivisor doesn't carry over to reopened readers 
+LUCENE-900,NUG, Enable Java asserts in the Junit tests 
+LUCENE-1602,NUG, Rewrite TrieRange to use MultiTermQuery 
+LUCENE-1484,NUG, Remove SegmentReader.document synchronization 
+LUCENE-2277,BUG, QueryNodeImpl throws ConcurrentModificationException on add(List<QueryNode>) 
+LUCENE-3045,BUG, QueryNodeImpl.containsTag(String) should lowercase the tag key 
+LUCENE-1744,BUG, BooleanScorer2 fails to update this.doc when its the top scorer 
+LUCENE-1539,NUG, Improve Benchmark 
+LUCENE-536,BUG, JEDirectory delete issue 
+LUCENE-1124,NUG, short circuit FuzzyQuery.rewrite when input token length is small compared to minSimilarity 
+LUCENE-2109,NUG, Make DocsEnum subclass of DocIdSetIterator 
+LUCENE-2353,BUG, Config incorrectly handles Windows absolute pathnames 
+LUCENE-430,NUG, Reducing buffer sizes for TermDocs. 
+LUCENE-1548,BUG, LevenshteinDistance code normalization is incorrect 
+LUCENE-1125,NUG, Excessive Arrays.fill(0) in DocumentsWriter drastically slows down small docs (3.9X slowdown!) 
+LUCENE-608,NUG," deprecate Document.fields(), add getFields() "
+LUCENE-1810,NUG, Add a LATENT FieldSelectorResult 
+LUCENE-1451,BUG, Can't create NIOFSDirectory w/o setting a system property 
+LUCENE-3218,NUG, Make CFS appendable   
+LUCENE-2699,NUG, Update StandardTokenizer and UAX29Tokenizer to Unicode 6.0.0 
+LUCENE-2782,BUG, Possible rare thread hazard in IW.commit 
+LUCENE-1472,NUG, DateTools.stringToDate() can cause lock contention under load 
+LUCENE-2579,NUG, Small imprecision in Search package Javadocs 
+LUCENE-239,NUG, [PATCH] cleaner API for Field.Text 
+LUCENE-3374,NUG, move nrtcachingdir to core in 4.0 
+LUCENE-2588,NUG, terms index should not store useless suffixes 
+LUCENE-1145,NUG, DisjunctionSumScorer small tweak 
+LUCENE-1665,NUG, Remove SortField.AUTO 
+LUCENE-2737,NUG, Codec is not consistently passed in internal API 
+LUCENE-2936,BUG, score and explain don't match 
+LUCENE-1354,NUG, Provide Programmatic Access to CheckIndex 
+LUCENE-2384,NUG, Reset zzBuffer in StandardTokenizerImpl* when lexer is reset. 
+LUCENE-237,NUG, [PATCH] fix compile errors in sandbox 
+LUCENE-400,NUG, NGramFilter -- construct n-grams from a TokenStream 
+LUCENE-2170,NUG, Thread starvation problems in some tests 
+LUCENE-2332,NUG, Merge CharTermAttribute and deprecations to stable 
+LUCENE-788,BUG, contrib/benchmark assumes Locale.US for parsing dates in Reuters collection 
+LUCENE-1497,NUG, Minor changes to SimpleHTMLFormatter 
+LUCENE-3272,NUG, Consolidate Lucene's QueryParsers into a module 
+LUCENE-1341,NUG, BoostingNearQuery class (prototype) 
+LUCENE-1867,NUG, replace collation/lib/icu4j.jar with a smaller icu jar 
+LUCENE-795,NUG, deprecate Directory.renameFile() 
+LUCENE-1752,BUG, incorrect snippet returned with SpanScorer 
+LUCENE-203,BUG, [PATCH] GermanAnalyzer fails silently + doesn't close files 
+LUCENE-381,NUG, Contributing a High-performance single-document main memory Apache Lucene fulltext search index. 
+LUCENE-1567,NUG, New flexible query parser 
+LUCENE-2037,NUG, Allow Junit4 tests in our environment. 
+LUCENE-2374,NUG, Add reflection API to AttributeSource/AttributeImpl 
+LUCENE-3470,NUG, reorder arguments of Field constructor to be more intuitive 
+LUCENE-2701,NUG, Factor maxMergeSize into findMergesForOptimize in LogMergePolicy 
+LUCENE-2048,NUG, Omit positions but keep termFreq 
+LUCENE-1329,NUG, Remove synchronization in SegmentReader.isDeleted 
+LUCENE-1693,NUG, AttributeSource/TokenStream API improvements 
+LUCENE-468,NUG," Searchable.java: The info in the @deprecated tags do not refer to the search(Weight, etc...) versions... "
+LUCENE-3820,NUG, Wrong trailing index calculation in PatternReplaceCharFilter 
+LUCENE-2860,BUG, SegmentInfo.sizeInBytes ignore includeDocStore when caching 
+LUCENE-2777,NUG, Revise PagedBytes#fillUsingLengthPrefix* methods names 
+LUCENE-229,NUG, [PATCH] Binary stored fields 
+LUCENE-651,NUG, Poor performance race condition in FieldCacheImpl 
+LUCENE-1624,BUG, Don't commit an empty segments_N when IW is opened with create=true 
+LUCENE-2417,NUG, Fix IndexCommit hashCode() and equals() to be consistent 
+LUCENE-2759,BUG, We should never open an IndexInput when an IndexOutput is still open 
+LUCENE-3897,BUG, KuromojiTokenizer fails with large docs 
+LUCENE-2647,NUG," Move & rename the terms dict, index, abstract postings out of oal.index.codecs.standard "
+LUCENE-232,BUG, Version 1.3 reports IOException when re-creating an index 
+LUCENE-1658,NUG, Absorb NIOFSDirectory into FSDirectory 
+LUCENE-2554,NUG, preflex codec doesn't order terms correctly 
+LUCENE-1453,BUG," When reopen returns a new IndexReader, both IndexReaders may now control the lifecycle of the underlying Directory which is managed by reference counting "
+LUCENE-1923,NUG, Add toString() or getName() method to IndexReader 
+LUCENE-3712,NUG, Remove unused (and untested) methods from ReaderUtil that are also veeeeery ineffective 
+LUCENE-2303,NUG," Remove code duplication from Token class, just extend TermAttributeImpl "
+LUCENE-1312,BUG, InstantiatedIndexReader does not implement getFieldNames properly 
+LUCENE-964,NUG, Remove DocumentWriter 
+LUCENE-2166,BUG," If you hit the ""max term prefix"" warning when indexing, it never goes away "
+LUCENE-2637,BUG, FSDirectory.copyBytes isn't safe for SimpleFSDirectory 
+LUCENE-1425,NUG, Add ConstantScore highlighting support to SpanScorer 
+LUCENE-452,NUG, PrefixQuery is missing the equals() method 
+LUCENE-3357,NUG, Unit and integration test cases for the new Similarities 
+LUCENE-1569,BUG, IndexReader.clone can leave files open 
+LUCENE-247,NUG, Confusing code line 
+LUCENE-1817,NUG, it is impossible to use a custom dictionary for SmartChineseAnalyzer 
+LUCENE-3721,BUG, CharFilters not being invoked in Solr 
+LUCENE-1723,BUG, KeywordTokenizer does not properly set the end offset 
+LUCENE-1625,NUG, openReaderPassed not populated in CheckIndex.Status.SegmentInfoStatus 
+LUCENE-2813,BUG, TestIndexWriterDelete fails randomly 
+LUCENE-2787,NUG, disable atime for DirectIOLinuxDirectory 
+LUCENE-3476,BUG, SearcherManager misses to close IR if manager is closed during reopen 
+LUCENE-2884,BUG, StandardCodec sometimes supplies skip pointers past EOF 
+LUCENE-1257,NUG, Port to Java5 
+LUCENE-2068,BUG, fix reverseStringFilter for unicode 4.0 
+LUCENE-2747,NUG, Deprecate/remove language-specific tokenizers in favor of StandardTokenizer 
+LUCENE-2933,NUG, Two-stage state expansion for the FST: distance-from-root and child-count criteria. 
+LUCENE-3680,NUG, exception consistency in o.a.l.store 
+LUCENE-3728,NUG, better handling of files inside/outside CFS by codec 
+LUCENE-3682,NUG, Add deprecated 'transition' api for Document/Field 
+LUCENE-250,NUG, Javadocs for Scorer.java and TermScorer.java 
+LUCENE-845,BUG," If you ""flush by RAM usage"" then IndexWriter may over-merge "
+LUCENE-3596,NUG, DirectoryTaxonomyWriter extensions should be able to set internal index writer config attributes such as info stream 
+LUCENE-947,NUG, Some improvements to contrib/benchmark 
+LUCENE-750,NUG, don't use finalizers for FSIndexInput clones 
+LUCENE-3417,BUG, DictionaryCompoundWordTokenFilter does not properly add tokens from the end compound word. 
+LUCENE-587,BUG, Explanation.toHtml outputs invalid HTML 
+LUCENE-3432,BUG, TieredMergePolicy expungeDeletes should not enforce maxMergedSegmentMB 
+LUCENE-1117,BUG, Intermittent thread safety issue with EnwikiDocMaker 
+LUCENE-2734,NUG, Use IndexWriterConfig in benchmark 
+LUCENE-3458,NUG," Change BooleanFilter to have only a single clauses ArrayList (so toString() works fine, clauses() method could be added) so it behaves more lik BooleanQuery "
+LUCENE-1113,NUG, fix for Document.getBoost() documentation 
+LUCENE-796,NUG, Change Visibility of fields[] in MultiFieldQueryParser 
+LUCENE-594,NUG, Javadoc - Field constructor with Reader needs comment about retained reference 
+LUCENE-2265,NUG, improve automaton performance by running on byte[] 
+LUCENE-1180,BUG, Syns2Index fails 
+LUCENE-3368,BUG, IndexWriter commits update documents without corresponding delete 
+LUCENE-880,BUG, DocumentWriter closes TokenStreams too early 
+LUCENE-393,BUG, Inconsistent scoring with SpanTermQuery in BooleanQuery 
+LUCENE-550,NUG, InstantiatedIndex - faster but memory consuming index 
+LUCENE-1953,BUG, FastVectorHighlighter: small fragCharSize can cause StringIndexOutOfBoundsException  
+LUCENE-1176,BUG, TermVectors corruption case when autoCommit=false 
+LUCENE-3508,BUG, Decompounders based on CompoundWordTokenFilterBase cannot be used with custom attributes 
+LUCENE-1592,NUG, fix or deprecate TermsEnum.skipTo 
+LUCENE-1529,NUG," back-compat tests (""ant test-tag"") should test JAR drop-in-ability "
+LUCENE-2247,NUG, Add CharArrayMap to lucene and make CharAraySet an proxy on the keySet() of it 
+LUCENE-1653,NUG, Change DateTools to not create a Calendar in every call to dateToString or timeToString 
+LUCENE-370,BUG, BooleanQuery assumes everything else implements skipTo 
+LUCENE-679,NUG," CLONE -QueryParser is not applicable for the arguments (String, String, Analyzer) error in results.jsp when executing search in the browser (demo from Lucene 2.0) "
+LUCENE-1547,BUG, Rare thread hazard in IndexWriter.commit() 
+LUCENE-510,NUG, IndexOutput.writeString() should write length in bytes 
+LUCENE-739,NUG, Performance improvement for SegmentMerger.mergeNorms() 
+LUCENE-2115,NUG, Port to Generics - test cases in contrib  
+LUCENE-601,NUG, RAMDirectory implements Serializable 
+LUCENE-1970,NUG, Remove deprecated DocIdSetIterator methods 
+LUCENE-2793,NUG, Directory createOutput and openInput should take an IOContext 
+LUCENE-379,NUG, Contribution: Efficient Sorting of DateField/DateTools Encoded Timestamp Long Values 
+LUCENE-1848,NUG," Remove references to older versions of Lucene in ""per-release"" documentation "
+LUCENE-1461,NUG, Cached filter for a single term field 
+LUCENE-2609,NUG, Generate jar containing test classes. 
+LUCENE-1837,NUG, Remove Searcher from Weight#explain 
+LUCENE-2778,NUG, Allow easy extension of RAMDirectory 
+LUCENE-3394,BUG, TestIndexFileDeleter checkIndex fail 
+LUCENE-1701,NUG," Add NumericField, make plain text numeric parsers public in FieldCache, move trie parsers to FieldCache "
+LUCENE-2648,NUG, Allow PackedInts.ReaderIterator to advance more than one value 
+LUCENE-3174,NUG, Similarity.Stats class for term & collection statistics 
+LUCENE-3215,BUG, SloppyPhraseScorer sometimes computes Infinite freq 
+LUCENE-3521,BUG, upgrade icu jar to 4.8.1.1 / remove lucenetestcase hack 
+LUCENE-952,NUG, GData's TestGdataIndexer.testDestroy() intermittently hits spin loop & causes build timeout 
+LUCENE-3703,BUG, DirectoryTaxonomyReader.refresh misbehaves with ref counts 
+LUCENE-1283,NUG, Factor out ByteSliceWriter from DocumentsWriterFieldData 
+LUCENE-3790,BUG," benchmark cannot parse highlight-vs-vector-highlight.alg, but only on 3.x?! "
+LUCENE-3730,NUG, Improved Kuromoji search mode segmentation/decompounding 
+LUCENE-3506,NUG, tests for verifying that assertions are enabled do nothing since they ignore AssertionError 
+LUCENE-3436,NUG," Spellchecker ""Suggest Mode"" Support "
+LUCENE-3719,BUG, FVH: slow performance on very large queries 
+LUCENE-2663,NUG, wrong exception from NativeFSLockFactory (LIA2 test case) 
+LUCENE-2043,NUG, Fix CommitIndexTask to also commit IndexReader changes 
+LUCENE-1483,NUG, Change IndexSearcher multisegment searches to search each individual segment using a single HitCollector 
+LUCENE-1126,NUG, Simplify StandardTokenizer JFlex grammar 
+LUCENE-3142,NUG, benchmark/stats package is obsolete and unused - remove it 
+LUCENE-1656,NUG," When sorting by field, IndexSearcher should not compute scores by default "
+LUCENE-3541,BUG, remove IndexInput.copyBuf 
+LUCENE-1260,NUG, Norm codec strategy in Similarity 
+LUCENE-1500,BUG, Highlighter throws StringIndexOutOfBoundsException 
+LUCENE-2370,NUG, Reintegrate flex branch into trunk 
+LUCENE-1118,NUG, core analyzers should not produce tokens > N (100?) characters in length 
+LUCENE-489,NUG," Allow QP subclasses to support Wildcard Queries with leading ""*"" "
+LUCENE-380,NUG, A new Greek Analyzer for Lucene 
+LUCENE-513,NUG, Remove superfluous comment in MMapDirectory.java 
+LUCENE-2784,NUG, Change all FilteredTermsEnum impls into TermsEnum decorators 
+LUCENE-3679,NUG, Replace IndexReader.getFieldNames with IndexReader.getFieldInfos 
+LUCENE-786,NUG, Extended javadocs in spellchecker 
+LUCENE-1165,NUG, Reduce exposure of nightly build documentation 
+LUCENE-1349,NUG, Mark Fieldable as allowing some changes in 2.x future releases 
+LUCENE-821,NUG, single norm file still uses up descriptors 
+LUCENE-3393,NUG, Rename EasySimilarity to SimilarityBase 
+LUCENE-2532,NUG, improve test coverage of multi-segment indices 
+LUCENE-2830,NUG, Use StringBuilder instead of StringBuffer in benchmark 
+LUCENE-3711,BUG, small SentinelIntSet can cause infinite loop on resize 
+LUCENE-1704,NUG, org.apache.lucene.ant.HtmlDocument added Tidy config file passthrough availability 
+LUCENE-2491,NUG, Extend Codec with a SegmentInfos writer / reader 
+LUCENE-2297,NUG, IndexWriter should let you optionally enable reader pooling 
+LUCENE-2401,NUG, Improve performance of CharTermAttribute(Impl) and also fully implement Appendable 
+LUCENE-1819,BUG, MatchAllDocsQuery.toString(String field) does not honor the javadoc contract 
+LUCENE-3083,BUG, MockRandomMergePolicy optimizes segments not in the Set passed in 
+LUCENE-3430,BUG, TestParser.testSpanTermXML fails with some sims 
+LUCENE-2733,NUG, Add private ctors to static utility classes 
+LUCENE-1860,NUG," switch MultiTermQuery to ""constant score auto"" rewrite by default "
+LUCENE-1754,NUG, Get rid of NonMatchingScorer from BooleanScorer2 
+LUCENE-1084,NUG, increase default maxFieldLength? 
+LUCENE-1640,BUG, MockRAMDirectory (used only by unit tests) has some synchronization problems 
+LUCENE-545,NUG, Field Selection and Lazy Field Loading 
+LUCENE-317,BUG," [PATCH] When locks are disabled, IndexWriter.close() throws NullPointerException "
+LUCENE-1506,NUG, Adding FilteredDocIdSet and FilteredDocIdSetIterator 
+LUCENE-1160,NUG, MergeException from CMS threads should record the Directory 
+LUCENE-2908,NUG, clean up serialization in the codebase 
+LUCENE-768,BUG," Exception in deleteDocument, undeleteAll or setNorm in IndexReader can fail to release write lock on close "
+LUCENE-249,NUG, Demo: DeleteFiles doesn't delete files by their path names 
+LUCENE-289,NUG, [patch] better support gcj compilation 
+LUCENE-898,NUG, contrib/javascript is not packaged into releases 
+LUCENE-1152,BUG, SpellChecker does not work properly on calling indexDictionary after clearIndex 
+LUCENE-532,NUG, [PATCH] Indexing on Hadoop distributed file system 
+LUCENE-1073,NUG," Add unit test showing how to do a ""live backup"" of an index "
+LUCENE-3351,BUG, DirectSpellChecker throws NPE if field doesn't exist 
+LUCENE-3484,BUG," TaxonomyWriter parents array creation is not thread safe, can cause NPE "
+LUCENE-3661,NUG, move deletes under codec 
+LUCENE-1634,NUG, LogMergePolicy should use the number of deleted docs when deciding which segments to merge 
+LUCENE-2715,NUG, optimize fuzzytermsenum per-segment 
+LUCENE-2711,NUG, BooleanScorer.nextDoc should also delegate to sub-scorer's bulk scoring method 
+LUCENE-3881,NUG, Create UAX29URLEmailAnalyzer: a standard analyzer that recognizes URLs and emails 
+LUCENE-3738,BUG, Be consistent about negative vInt/vLong 
+LUCENE-3139,NUG, LuceneTestCase.afterClass does not print enough information if a temp-test-dir fails to delete 
+LUCENE-2960,NUG, Allow (or bring back) the ability to setRAMBufferSizeMB on an open IndexWriter 
+LUCENE-3698,BUG, FastVectorHighlighter adds a multi value separator (space) to the end of the highlighted text 
+LUCENE-2194,NUG, improve efficiency of snowballfilter 
+LUCENE-1662,NUG, consolidate FieldCache and ExtendedFieldCache instances 
+LUCENE-3175,NUG, speed up core tests 
+LUCENE-2638,NUG, Make HighFreqTerms.TermStats class public 
+LUCENE-2226,NUG, move contrib/snowball to contrib/analyzers 
+LUCENE-3656,NUG," IndexReader's add/removeCloseListener should not use ConcurrentHashMap, just a synchronized set "
+LUCENE-495,BUG, Suggested Patches to MultiPhraseQuery and QueryTermExtractor (for use with HighLighter) 
+LUCENE-1490,BUG, CJKTokenizer convert   HALFWIDTH_AND_FULLWIDTH_FORMS wrong 
+LUCENE-352,BUG, [PATCH] NullPointerException when using nested SpanOrQuery in SpanNotQuery 
+LUCENE-2188,NUG, A handy utility class for tracking deprecated overridden methods 
+LUCENE-1127,NUG, TokenSources.getTokenStream(Document...)  
+LUCENE-1210,BUG, IndexWriter & ConcurrentMergeScheduler deadlock case if starting a merge hits an exception 
+LUCENE-1835,NUG, Signature changes in AttributeSource for better Generics support of AddAttribute/getAttribute 
+LUCENE-2273,NUG, FieldCacheImpl's getCacheEntries() is buggy as it uses WeakHashMap incorrectly and leads to ConcurrentModExceptions 
+LUCENE-2014,BUG, position increment bug: smartcn 
+LUCENE-2385,NUG, Move NoDeletionPolicy from benchmark to core 
+LUCENE-906,NUG, Elision filter for simple french analyzing 
+LUCENE-1660,NUG, Make StopFilter.enablePositionIncrements explicit 
+LUCENE-2500,NUG, A Linux-specific Directory impl that bypasses the buffer cache 
+LUCENE-3895,NUG, Not getting random-seed/reproduce-with if a test fails from another thread 
+LUCENE-930,NUG, fail build if contrib tests fail to compile 
+LUCENE-3035,BUG, TestIndexWriter.testCommitThreadSafety fails on realtime_search branch 
+LUCENE-3713,BUG, TestIndexWriterOnDiskFull.testAddIndexOnDiskFull fails with java.lang.IllegalStateException: CFS has pending open files  
+LUCENE-1230,NUG, Source release files missing the *.pom.template files 
+LUCENE-1022,NUG, IndexWriter.setInfoStream should percolate down to mergePolicy & mergeScheduler 
+LUCENE-3533,NUG, Nuke SpanFilters and CachingSpanFilter (maybe move to sandbox) 
+LUCENE-3403,BUG, Term vectors missing after addIndexes + optimize 
+LUCENE-2580,BUG, MultiPhraseQuery throws AIOOBE 
+LUCENE-1183,NUG, TRStringDistance uses way too much memory (with patch) 
+LUCENE-937,NUG, Make CachingTokenFilter faster 
+LUCENE-3072,BUG, 3.1 fileformats out of date 
+LUCENE-502,NUG, TermScorer caches values unnecessarily 
+LUCENE-1792,BUG, new QueryParser fails to set AUTO REWRITE for multi-term queries 
+LUCENE-1954,BUG, InitiatedIndex: CCE on casting NumericField to Field 
+LUCENE-1430,BUG, IndexReader.open(String|File) may incorrectly throw AlreadyClosedException 
+LUCENE-2027,NUG, Deprecate Directory.touchFile 
+LUCENE-1150,NUG, The token types of the standard tokenizer is not accessible 
+LUCENE-1986,BUG, NPE in NearSpansUnordered from PayloadNearQuery 
+LUCENE-738,NUG, read/write .del as d-gaps when the deleted bit vector is sufficiently sparse 
+LUCENE-1645,BUG, Deleted documents are visible across reopened MSRs 
+LUCENE-455,BUG, FieldsReader does not regard offset and position flags 
+LUCENE-2392,NUG, Enable flexible scoring 
+LUCENE-1445,NUG, include junit JAR in source dist 
+LUCENE-2339,NUG, Allow Directory.copy() to accept a collection of file names to be copied 
+LUCENE-2603,NUG, FastVectorHighlighter: add a method to set an arbitrary char that is used when concatenating multiValued data 
+LUCENE-763,BUG, LuceneDictionary skips first word in enumeration 
+LUCENE-3795,NUG, Replace spatial contrib module with LSP's spatial-lucene module 
+LUCENE-2387,BUG, IndexWriter retains references to Readers used in Fields (memory leak) 
+LUCENE-908,NUG, MANIFEST.MF cleanup (main jar and luci customizations) 
+LUCENE-1520,BUG, OOM erros with CheckIndex with indexes containg a lot of fields with norms 
+LUCENE-1104,NUG," Clean up old JIRA issues in component ""Analysis"" "
+LUCENE-701,NUG, Lock-less commits 
+LUCENE-2364,NUG," Add support for terms in BytesRef format to Term, TermQuery, TermRangeQuery & Co. "
+LUCENE-723,NUG, QueryParser support for MatchAllDocs 
+LUCENE-992,BUG, IndexWriter.updateDocument is no longer atomic 
+LUCENE-236,NUG, typos on FAQ 
+LUCENE-2865,NUG, Pass a context struct to Weight#scorer instead of naked booleans 
+LUCENE-2888,BUG, Several DocsEnum / DocsAndPositionsEnum return wrong docID when next() / advance(int) return NO_MORE_DOCS 
+LUCENE-1089,NUG, Add insertWithOverflow to PriorityQueue 
+LUCENE-3286,NUG, Move XML QueryParser to queryparser module 
+LUCENE-830,NUG, norms file can become unexpectedly enormous 
+LUCENE-1941,BUG, MinPayloadFunction returns 0 when only one payload is present 
+LUCENE-3741,NUG, MockCharFilter offset correction is wrong 
+LUCENE-1778,NUG, Add log.step support per task 
+LUCENE-1945,NUG, Make all classes that have a close() methods instanceof Closeable (Java 1.5) 
+LUCENE-3816,BUG, FilteredDocIdSet does not handle a case where the inner set iterator is null 
+LUCENE-966,NUG, A faster JFlex-based replacement for StandardAnalyzer 
+LUCENE-3818,NUG, TestIndexWriterNRTIsCurrent failure 
+LUCENE-1359,BUG, FrenchAnalyzer's tokenStream method does not honour the contract of Analyzer 
+LUCENE-3501,NUG, random sampler is not random (and so facet SamplingWrapperTest occasionally fails) 
+LUCENE-2815,NUG, MultiFields not thread safe 
+LUCENE-1470,NUG, Add TrieRangeFilter to contrib 
+LUCENE-3188,BUG, The class from cotrub directory org.apache.lucene.index.IndexSplitter creates a non correct index 
+LUCENE-1633,NUG, Copy/Paste-Typo in toString() for SpanQueryFilter 
+LUCENE-1480,NUG, Wrap messages output with a check of InfoStream != null 
+LUCENE-1886,NUG, Improve Javadoc 
+LUCENE-1707,NUG, Don't use ensureOpen() excessively in IndexReader and IndexWriter 
+LUCENE-3344,NUG, Add workaround for ICU bug in combination with Java7 to LuceneTestCase 
+LUCENE-3848,BUG, basetokenstreamtestcase should fail if tokenstream starts with posinc=0 
+LUCENE-2497,BUG," Revision 949509 (LUCENE-2480) causes IOE ""read past EOF"" when processing older format SegmentInfo data when JVM assertion processing is disabled. "
+LUCENE-3330,NUG, revise Scorer visitor API 
+LUCENE-2065,NUG, Java 5 port phase II  
+LUCENE-3285,NUG, Move QueryParsers from contrib/queryparser to queryparser module 
+LUCENE-1478,NUG, Missing possibility to supply custom FieldParser when sorting search results 
+LUCENE-1737,NUG, Always use bulk-copy when merging stored fields and term vectors 
+LUCENE-3408,NUG, Remove unnecessary memory barriers in DWPT 
+LUCENE-301,NUG, Index Writer constructor flags unclear - and annoying in certain cases 
+LUCENE-745,NUG, Make inspection of BooleanQuery more efficient 
+LUCENE-309,BUG," [PATCH] IndexSearcher.search(query,filter,nDocs) accepts zero nDocs "
+LUCENE-3529,BUG, creating empty field + empty term leads to invalid index 
+LUCENE-1968,NUG, Remove deprecated methods in PriorityQueue 
+LUCENE-2208,BUG, Token div exceeds length of provided text sized 4114 
+LUCENE-1803,NUG, Wrong javadoc on LowerCaseTokenizer.normalize 
+LUCENE-1629,NUG, contrib intelligent Analyzer for Chinese 
+LUCENE-620,NUG, GData Server - TestCase Deadlock  StorageModifier 
+LUCENE-2928,NUG, Improve LuceneTestCase javadocs 
+LUCENE-1998,NUG, Use Java 5 enums 
+LUCENE-2597,NUG, Query scorers should not use MultiFields 
+LUCENE-1807,NUG, Add convenient constructor to PerFieldAnalyzerWrapper for Dependency Injection 
+LUCENE-1950,NUG, Remove autoCommit from IndexWriter 
+LUCENE-377,NUG, GCJ build fails with JDK 1.5 
+LUCENE-3033,BUG, TestAddIndexes#testAddIndexesWithThreads fails on Realtime 
+LUCENE-3637,NUG, Make IndexReader.decRef() call refCount.decrementAndGet instead of getAndDecrement 
+LUCENE-3219,NUG, Change SortField types to an Enum 
+LUCENE-2676,NUG, TestIndexWriter failes for SimpleTextCodec 
+LUCENE-3284,NUG, Move contribs/modules away from QueryParser dependency 
+LUCENE-1402,NUG, CheckIndex API changed without backwards compaitibility 
+LUCENE-708,NUG, Setup nightly build website links and docs 
+LUCENE-2721,NUG, Random Failure TestSizeBoundedOptimize#testFirstSegmentTooLarge 
+LUCENE-2768,NUG, add infrastructure for longer running nightly test cases 
+LUCENE-1924,NUG," BalancedSegmentMergePolicy, contributed from the Zoie project for realtime indexing "
+LUCENE-1115,NUG, Some small fixes to contrib/benchmark 
+LUCENE-615,NUG, [patch] javadoc and comment updates for BooleanClause. 
+LUCENE-1824,NUG, FastVectorHighlighter truncates words at beginning and end of fragments 
+LUCENE-1366,NUG, Rename Field.Index.UN_TOKENIZED/TOKENIZED/NO_NORMS 
+LUCENE-2996,BUG, addIndexes(IndexReader) incorrectly applies existing deletes 
+LUCENE-2464,NUG, FastVectorHighlighter: add a FragmentBuilder to return entire field contents 
+LUCENE-2074,NUG, Use a separate JFlex generated Unicode 4 by Java 5 compatible StandardTokenizer 
+LUCENE-1508,NUG, CartesianTierPlotter fieldPrefix should be configurable 
+LUCENE-1568,BUG, Fix for NPE's in Spatial Lucene for searching bounding box only 
+LUCENE-2687,NUG, Remove Priority-Queue size trap in MultiTermQuery.TopTermsBooleanQueryRewrite 
+LUCENE-217,NUG, [PATCH] new method: Document.remove() 
+LUCENE-1681,BUG, DocValues infinite loop caused by - a call to getMinValue | getMaxValue | getAverageValue 
+LUCENE-2560,NUG, random analyzer tests 
+LUCENE-3279,NUG, Allow CFS be empty 
+LUCENE-1407,NUG, Refactor Searchable to not have RMI Remote dependency 
+LUCENE-1687,NUG, Remove ExtendedFieldCache by rolling functionality into FieldCache 
+LUCENE-1421,NUG, Ability to group search results by field 
+LUCENE-957,BUG, Lucene RAM Directory doesn't work for Index Size > 8 GB 
+LUCENE-1590,NUG, Stored-only fields automatically enable norms and tf when added to document 
+LUCENE-2656,NUG," If tests fail, don't report about unclosed resources "
+LUCENE-1780,NUG, deprecate Scorer.explain 
+LUCENE-1586,NUG, add IndexReader.getUniqueTermCount 
+LUCENE-1285,BUG, WeightedSpanTermExtractor incorrectly treats the same terms occurring in different query types 
+LUCENE-440,NUG, FilteredQuery should have getFilter() 
+LUCENE-1688,NUG, Deprecating StopAnalyzer ENGLISH_STOP_WORDS - General replacement with an immutable Set 
+LUCENE-1730,BUG," TrecContentSource should use a fixed encoding, rather than system dependent "
+LUCENE-2344,BUG, PostingsConsumer#merge does not call finishDoc 
+LUCENE-1759,NUG, Implement TokenStream.end() in contrib TokenStreams 
+LUCENE-955,BUG, Bug in SegmentTermPositions if used for first term in the dictionary 
+LUCENE-2995,NUG, factor out a shared spellchecking module 
+LUCENE-1725,BUG," Benchmark package uses new TopFieldCollector but also still uses AUTO without resolving it - result is, our sort algorithms won't run "
+LUCENE-1250,BUG, Some equals methods do not check for null argument 
+LUCENE-2559,NUG, reopen support for SegmentReader 
+LUCENE-621,NUG, Default lock timeouts should have static setter/getters 
+LUCENE-690,BUG, LazyField use of IndexInput not thread safe 
+LUCENE-1579,NUG, Cloned SegmentReaders fail to share FieldCache entries 
+LUCENE-1422,NUG, New TokenStream API 
+LUCENE-2754,NUG, add spanquery support for all multitermqueries 
+LUCENE-1356,NUG, Allow easy extensions of TopDocCollector 
+LUCENE-1255,BUG, CheckIndex should allow term position = -1 
+LUCENE-806,NUG, Synchronization bottleneck in FieldSortedHitQueue with many concurrent readers 
+LUCENE-433,NUG," Issue LUCENE-352 was closed, but the patch there is not applied in the current trunk "
+LUCENE-3065,NUG, NumericField should be stored in binary format in index (matching Solr's format) 
+LUCENE-1295,NUG, Make retrieveTerms(int docNum) public in MoreLikeThis 
+LUCENE-2994,NUG," When 3.1 is released, update backwards tests in 3.x branch "
+LUCENE-346,NUG, [PATCH] disable coord for generated BooleanQueries 
+LUCENE-654,NUG, GData-Server - Website sandbox part 
+LUCENE-329,BUG, Fuzzy query scoring issues 
+LUCENE-3404,BUG, testIWondiskfull checkindex failure 
+LUCENE-3234,NUG, Provide limit on phrase analysis in FastVectorHighlighter 
+LUCENE-1322,NUG, Remove synchronization in CompoundFileReader 
+LUCENE-238,NUG, [PATCH] import cleanup 
+LUCENE-515,BUG, Using ConstantScoreQuery on a RemoteSearchable throws java.io.NotSerializableException 
+LUCENE-2537,BUG, FSDirectory.copy() impl is unsafe 
+LUCENE-1832,BUG, minor/nitpick TermInfoReader bug ? 
+LUCENE-1303,BUG, BoostingTermQuery's explanation should be marked as Match even if the payload part negated or zero'ed it 
+LUCENE-212,BUG, FileInputStream never closed in HTMLParser 
+LUCENE-3492,NUG, Extract a generic framework for running randomized tests. 
+LUCENE-1845,NUG," if the build fails to download JARs for contrib/db, just skip its tests "
+LUCENE-877,NUG," 2.1 Locking documentation in ""Apache Lucene - Index File Formats"" section ""6.2 Lock File"" out dated "
+LUCENE-1002,NUG, Nightly Builds 
+LUCENE-1019,NUG, CustomScoreQuery should support multiple ValueSourceQueries 
+LUCENE-493,NUG, Nightly build archives do not contain Java source code. 
+LUCENE-3574,NUG," Add some more constants for newer Java versions to Constants.class, remove outdated ones. "
+LUCENE-1546,NUG, Add IndexReader.flush(commitUserData) 
+LUCENE-2419,NUG, Improve parallel tests 
+LUCENE-2282,NUG," Expose IndexFileNames as public, and make use of its methods in the code "
+LUCENE-832,BUG, NPE when calling isCurrent() on a ParallellReader 
+LUCENE-546,BUG, Index corruption when using RAMDirectory( Directory) constructor 
+LUCENE-1882,NUG, move SmartChineseAnalyzer into the smartcn package 
+LUCENE-1775,NUG, Change remaining contrib streams/filters to use new TokenStream API 
+LUCENE-1243,NUG, A few new benchmark tasks 
+LUCENE-2080,NUG, Improve the documentation of Version 
+LUCENE-646,NUG," [PATCH] fix various small issues with the ""getting started"" demo pages "
+LUCENE-1323,BUG, MultiReader should make a private copy of the subReaders array 
+LUCENE-2809,BUG, IndexWriter.numDocs doesn't take into account applied but not flushed deletes 
+LUCENE-2911,NUG," synchronize grammar/token types across StandardTokenizer, UAX29EmailURLTokenizer, ICUTokenizer, add CJK types. "
+LUCENE-1544,BUG, Deadlock: IndexWriter.addIndexes(IndexReader[]) 
+LUCENE-1673,NUG, Move TrieRange to core 
+LUCENE-3390,BUG, Incorrect sort by Numeric values for documents missing the sorting field 
+LUCENE-2079,NUG, Further improvements to contrib/benchmark for testing NRT 
+LUCENE-2943,BUG, ICU collator thread-safety issues 
+LUCENE-3260,BUG," need a test that uses termsenum.seekExact() (which returns true), then calls next() "
+LUCENE-2633,NUG, PackedInts does not support structures above 256MB 
+LUCENE-1531,NUG," contrib/xml-query-parser, BoostingTermQuery support "
+LUCENE-1123,NUG, Allow overriding the specification version in MANIFEST.MF 
+LUCENE-1219,NUG, support array/offset/ length setters for Field with binary data 
+LUCENE-2814,NUG, stop writing shared doc stores across segments 
+LUCENE-2767,BUG, Missing sync in IndexWriter.addIndexes(IndexReader[]) 
+LUCENE-811,NUG, Public API inconsistency 
+LUCENE-2251,NUG, Change contrib tests to use the special LuceneTestCase(J4) constant for the current version used a matchVersion parameter 
+LUCENE-3734,NUG, Allow customizing/subclassing of DirectoryReader 
+LUCENE-3507,NUG, Improve Memory Consumption for merging DocValues SortedBytes variants 
+LUCENE-3419,NUG, Resolve JUnit assert deprecations 
+LUCENE-1749,NUG, FieldCache introspection API 
+LUCENE-3062,BUG, TestBytesRefHash#testCompact is broken 
+LUCENE-2524,BUG," when many query clases are specified in boolean or dismax query, highlighted terms are always ""yellow"" if multi-colored feature is used "
+LUCENE-3879,BUG, fix more position corrumptions in 4.0 codecs 
+LUCENE-2108,BUG, SpellChecker file descriptor leak - no way to close the IndexSearcher used by SpellChecker internally 
+LUCENE-1804,NUG, Can't specify AttributeSource for Tokenizer 
+LUCENE-881,BUG, QueryParser escaping/parsin issue with strings starting/ending with || 
+LUCENE-1627,NUG," SpellChecker has no ""close"" method "
+LUCENE-398,BUG, ParallelReader crashes when trying to merge into a new index 
+LUCENE-1901,BUG, TermAttributeImpl.equals() does not check termLength 
+LUCENE-3087,BUG, highlighting exact phrase with overlapping tokens fails. 
+LUCENE-1755,BUG, WriteLineDocTask should keep docs w/ just title and no body 
+LUCENE-976,BUG, MMapDirectory is missing newly added openInput method to FSDirectory 
+LUCENE-1833,NUG," When we move to java 1.5 in 3.0 we should replace all Interger, Long, etc construction with .valueOf "
+LUCENE-3548,BUG, CharsRef#append broken on trunk & 3.x 
+LUCENE-807,NUG, Minor improvement to JavaDoc for ScoreDocComparator 
+LUCENE-849,NUG," contrib/benchmark:  configurable HTML Parser, external classes to path, exhaustive doc maker "
+LUCENE-1929,BUG, Highlighter doesn't support NumericRangeQuery or deprecated RangeQuery 
+LUCENE-1666,BUG," Constants causing NullPointerException when fetching metadata ""Implementation Version"" in MANIFEST "
+LUCENE-693,NUG, ConjunctionScorer - more tuneup 
+LUCENE-861,BUG, Contrib queries package Query implementations do not override equals() 
+LUCENE-2516,NUG," More clarification, improvements and correct behaviour of backwards tests "
+LUCENE-3084,NUG," MergePolicy.OneMerge.segments should be List<SegmentInfo> not SegmentInfos, Remove Vector<SI> subclassing from SegmentInfos & more refactoring "
+LUCENE-490,NUG, JavaCC 4.0 fails to generate QueryParser.java 
+LUCENE-3860,BUG, 3.x indexes have the wrong normType set in fieldinfos 
+LUCENE-1198,BUG, Exception in DocumentsWriter.ThreadState.init leads to corruption 
+LUCENE-1050,BUG, SimpleFSLockFactory ignores error on deleting the lock file 
+LUCENE-2213,NUG, Small improvements to ArrayUtil.getNextSize 
+LUCENE-3171,NUG, BlockJoinQuery/Collector 
+LUCENE-1618,NUG, Allow setting the IndexWriter docstore to be a different directory 
+LUCENE-755,NUG, Payloads 
+LUCENE-1419,NUG, Expert API to specify indexing chain 
+LUCENE-1591,NUG, Enable bzip compression in benchmark 
+LUCENE-1753,NUG, Make not yet final core/contrib TokenStream/Filter implementations final 
+LUCENE-780,NUG, Generalize directory copy operation 
+LUCENE-3293,NUG, Use IOContext.READONCE in VarGapTermsIndexReader to load FST 
+LUCENE-1321,BUG, Highlight fragment does not extend to maxDocCharsToAnalyze 
+LUCENE-1006,BUG, QueryParser doesn't accept empty string 
+LUCENE-3376,NUG, Move ReusableAnalyzerBase into core 
+LUCENE-2645,BUG, False assertion of >0 position delta in StandardPostingsWriterImpl 
+LUCENE-709,NUG, [PATCH] Enable application-level management of IndexWriter.ramDirectory size 
+LUCENE-3064,NUG, add checks to MockTokenizer to enforce proper consumption 
+LUCENE-1459,BUG, CachingWrapperFilter crashes if you call both bits() and getDocIdSet() 
+LUCENE-1932,NUG, Convert PrecedenceQueryParser to new TokenStream API 
+LUCENE-1326,BUG, Inflater.end() method not always called in FieldsReader 
+LUCENE-504,BUG," FuzzyQuery produces a ""java.lang.NegativeArraySizeException"" in PriorityQueue.initialize if I use Integer.MAX_VALUE as BooleanQuery.MaxClauseCount "
+LUCENE-1829,NUG, 'ant javacc' in root project should also properly create contrib/queryparser Java files 
+LUCENE-401,NUG, [PATCH] fixes for gcj target. 
+LUCENE-2589,NUG, Add a variable-sized int block codec 
+LUCENE-3264,NUG, crank up faceting module tests 
+LUCENE-2615,BUG, DirectIOLinuxDirectory hardwires buffer size and creates files with invalid permissions 
+LUCENE-3135,NUG, backport suggest module to branch 3.x 
+LUCENE-202,NUG, Document.fields() only returns stored fields 
+LUCENE-3621,NUG, switch appendingcodec to use appending blocktree 
+LUCENE-3342,NUG, make frozenbuffereddeletes more efficient for terms 
+LUCENE-1136,NUG, add ability to not count sub-task doLogic increment to contri/benchmark 
+LUCENE-3426,NUG, optimizer for n-gram PhraseQuery 
+LUCENE-2126,NUG, Split up IndexInput and IndexOutput into DataInput and DataOutput 
+LUCENE-3642,BUG, EdgeNgrams creates invalid offsets 
+LUCENE-2241,NUG, Core Tests should call Version based ctors instead of deprecated default ctors 
+LUCENE-3908,NUG," when tests fail, sometimes the testmethod in 'reproduce with' is null "
+LUCENE-1163,BUG," CharArraySet.contains(char[] text, int off, int len) does not work "
+LUCENE-3216,NUG, Store DocValues per segment instead of per field 
+LUCENE-1885,BUG, NativeFSLockFactory.makeLock(...).isLocked() does not work 
+LUCENE-759,NUG, Add n-gram tokenizers to contrib/analyzers 
+LUCENE-2847,NUG, Support all of unicode in StandardTokenizer 
+LUCENE-710,NUG," Implement ""point in time"" searching without relying on filesystem semantics "
+LUCENE-541,NUG, The DisjunctionMaxQuery lacks an implementation of extractTerms(). 
+LUCENE-1552,BUG, IndexWriter.addIndexes(IndexReader[] readers) doesn't correctly handle exception success flag. 
+LUCENE-1769,NUG," Fix wrong clover analysis because of backwards-tests, upgrade clover to 2.6.3 or better "
+LUCENE-2578,NUG," cutover FunctionQuery tests to use RandomIndexWriter, for better testing "
+LUCENE-1238,NUG, intermittent failures of  TestTimeLimitedCollector.testTimeoutMultiThreaded in nightly tests 
+LUCENE-589,NUG, Demo HTML parser doesn't work for international documents 
+LUCENE-2236,NUG," Similarity can only be set per index, but I may want to adjust scoring behaviour at a field level "
+LUCENE-2147,NUG, Improve Spatial Utility like classes 
+LUCENE-2391,NUG, Spellchecker uses default IW mergefactor/ramMB settings of 300/10 
+LUCENE-2937,BUG, small float underflow detection bug 
+LUCENE-3563,BUG, TestPagedBytes failure 
+LUCENE-2158,BUG, NRT can temporarily lose deletions at high indexing rates 
+LUCENE-341,BUG, The deprecated constructor of BooleanClause does not set new state 
+LUCENE-2586,NUG, move intblock/sep codecs into test 
+LUCENE-2199,BUG, ShingleFilter skips over trie-shingles if outputUnigram is set to false 
+LUCENE-683,BUG, Lazy Field Loading has edge case bug causing read past EOF 
+LUCENE-1967,NUG, make it easier to access default stopwords for language analyzers 
+LUCENE-730,NUG, Restore top level disjunction performance 
+LUCENE-1503,NUG," refactor spatial contrib ""Filter"" ""Query"" classes "
+LUCENE-2922,NUG, Optimize BlockTermsReader.seek 
+LUCENE-1781,BUG, Large distances in Spatial go beyond Prime MEridian 
+LUCENE-913,BUG, Two consecutive score() calls return different scores for Boolean Queries. 
+LUCENE-1040,NUG, Can't quickly create StopFilter 
+LUCENE-3220,NUG, Implement various ranking models as Similarities 
+LUCENE-1204,NUG, IndexWriter.deleteDocuments bug 
+LUCENE-3338,NUG, Flexible query parser does not support open ranges and range queries with mixed inclusive and exclusive ranges 
+LUCENE-225,BUG, ClassCastException MultiReader 
+LUCENE-3576,NUG, TestBackwardsCompatibility needs terms with U+E000 to U+FFFF 
+LUCENE-1928,NUG, PayloadTermQuery refers to a deprecated documentation for redirection  
+LUCENE-2075,NUG, Share the Term -> TermInfo cache across threads 
+LUCENE-3794,BUG," DirectoryTaxonomyWriter can lose the INDEX_CREATE_TIME property, causing DirTaxoReader.refresh() to falsely succeed (or fail) "
+LUCENE-2626,NUG, FastVectorHighlighter: enable FragListBuilder and FragmentsBuilder to be set per-field override 
+LUCENE-1937,NUG, Add more methods to manipulate QueryNodeProcessorPipeline elements 
+LUCENE-3465,BUG, IndexSearcher fails to pass docBase to Collector when using ExecutorService 
+LUCENE-3725,NUG, Add optional packing to FST building 
+LUCENE-3697,BUG, FastVectorHighlighter SimpleBoundaryScanner does not work well when highlighting at the beginning of the text  
+LUCENE-514,NUG, MultiPhraseQuery should allow access to terms 
+LUCENE-2756,BUG, MultiSearcher.rewrite() incorrectly rewrites queries 
+LUCENE-2902,NUG, tests should run checkIndex on indexes they create 
+LUCENE-1839,NUG," Scorer.explain is deprecated but abstract, should have impl that throws UnsupportedOperationException "
+LUCENE-2555,NUG, Remove shared doc stores 
+LUCENE-978,BUG, GC resources in TermInfosReader when exception occurs in its constructor 
+LUCENE-2343,NUG, Add support for benchmarking Collectors 
+LUCENE-840,NUG, contrib/benchmark unit tests 
+LUCENE-3093,NUG, Build failed in the flexscoring branch because of Javadoc warnings 
+LUCENE-598,NUG, GData Server MileStone 1 Revision 
+LUCENE-243,NUG, [PATCH] setIndexInterval() in IndexWriter 
+LUCENE-2642,NUG, merge LuceneTestCase and LuceneTestCaseJ4 
+LUCENE-2716,NUG, Improve automaton's MinimizeOperations.minimizeHopcroft() to not create so many objects 
+LUCENE-285,NUG, David Spencer Spell Checker improved 
+LUCENE-2696,NUG, TestIndexWriterDelete makes broken segments with payloads on 
+LUCENE-1311,NUG, Add ability to open prior commits to IndexReader 
+LUCENE-1977,NUG, Remove MultiTermQuery.getTerm() 
+LUCENE-3595,NUG, Refactor FieldCacheRangeFilter.FieldCacheDocIdSet to be separate class and fix the dangerous matchDoc() throws AIOOBE requirement 
+LUCENE-3040,NUG, analysis consumers should use reusable tokenstreams 
+LUCENE-335,NUG, Testcase for StandardAnalyzer 
+LUCENE-1540,NUG, Improvements to contrib.benchmark for TREC collections 
+LUCENE-3121,NUG, FST should offer lookup-by-output API when output strictly increases 
+LUCENE-756,NUG, Maintain norms in a single file .nrm 
+LUCENE-761,NUG, Clone proxStream lazily in SegmentTermPositions 
+LUCENE-222,NUG," [PATCH] Better ""lock obtain timed out"" error message "
+LUCENE-2195,NUG, Speedup CharArraySet if set is empty 
+LUCENE-1097,NUG, IndexWriter.close(false) does not actually stop background merge threads 
+LUCENE-3609,BUG," BooleanFilter changed behavior in 3.5, no longer acts as if ""minimum should match"" set to 1 "
+LUCENE-411,NUG," [PATCH] BitSetQuery, FastPrefixQuery, FastWildcardQuery and FastQueryParser "
+LUCENE-3577,NUG, rename expungeDeletes 
+LUCENE-2883,NUG, Consolidate Solr  & Lucene FunctionQuery into modules 
+LUCENE-3527,NUG, Implement getDistance() on DirectSpellChecker.INTERNAL_LEVENSHTEIN 
+LUCENE-2705,NUG, TestThreadSafety.testLazyLoadThreadSafety test failure 
+LUCENE-2050,NUG, Improve contrib/benchmark for testing near-real-time search performance 
+LUCENE-981,NUG, NewAnalyzerTask 
+LUCENE-2010,NUG, Remove segments with all documents deleted in commit/flush/close of IndexWriter instead of waiting until a merge occurs. 
+LUCENE-2658,BUG, TestIndexWriterExceptions random failure: AIOOBE in ByteBlockPool.allocSlice 
+LUCENE-2272,NUG, PayloadNearQuery has hardwired explanation for 'AveragePayloadFunction' 
+LUCENE-2573,NUG, Tiered flushing of DWPTs by RAM with low/high water marks 
+LUCENE-2309,NUG, Fully decouple IndexWriter from analyzers 
+LUCENE-2060,NUG, CMS should default its maxThreadCount to 1 (not 3) 
+LUCENE-1607,NUG, String.intern() faster alternative 
+LUCENE-2568,BUG, TestUTF32ToUTF8 fails on IBM's JRE 
+LUCENE-2703,BUG, multitermquery scoring differences between 3x and trunk 
+LUCENE-3863,NUG, DocValues.type() -> DocValues.getType() 
+LUCENE-2682,NUG, create test case to verify we support > 2.1B terms 
+LUCENE-3841,BUG, CloseableThreadLocal does not work well with Tomcat thread pooling 
+LUCENE-3361,NUG, port url+email tokenizer to standardtokenizerinterface (or similar) 
+LUCENE-3117,NUG, yank SegmentReader.norm out of SegmentReader.java 
+LUCENE-3197,BUG, Optimize runs forever if you keep deleting docs at the same time 
+LUCENE-1898,NUG, Decide if we should remove lines numbers from latest Changes 
+LUCENE-478,BUG, CJK char list 
+LUCENE-698,BUG, FilteredQuery ignores boost 
+LUCENE-871,NUG, ISOLatin1AccentFilter a bit slow 
+LUCENE-2302,NUG," Replacement for TermAttribute+Impl with extended capabilities (byte[] support, CharSequence, Appendable) "
+LUCENE-3334,NUG, IOUtils.closeSafely should log suppressed Exceptions in stack trace of original Exception (a new feature of Java 7) 
+LUCENE-2693,BUG, Add delete term and query need to more precisely record the bytes used 
+LUCENE-1899,NUG, Inefficient growth of OpenBitSet 
+LUCENE-3094,NUG, optimize lev automata construction 
+LUCENE-1005,BUG," GData TestDateFormater (sic) fails when the Date returned is: Sun, 23 Sep 2007 01:29:06 GMT+00:00 "
+LUCENE-1296,NUG, Allow use of compact DocIdSet in CachingWrapperFilter 
+LUCENE-2985,NUG, Build SegmentCodecs incrementally for consistent codecIDs during indexing 
+LUCENE-2459,BUG, FilterIndexReader doesn't work correctly with post-flex SegmentMerger 
+LUCENE-3744,NUG, Add support for type whitelist in TypeTokenFilter 
+LUCENE-276,BUG, Memory leak when sorting 
+LUCENE-2393,NUG, Utility to output total term frequency and df from a lucene index 
+LUCENE-2319,NUG, IndexReader # doCommit - typo nit about v3.0 in trunk 
+LUCENE-316,NUG, [PATCH] Mention RangeFilter in javadoc for maxClauseCount 
+LUCENE-1502,BUG, CharArraySet behaves inconsistently in add(Object) and contains(Object) 
+LUCENE-2704,NUG, TestIndexWriter.testOptimizeTempSpaceUsage fails w/ SimpleText codec 
+LUCENE-2842,NUG, add Galician analyzer 
+LUCENE-2621,NUG, Extend Codec to handle also stored fields and term vectors 
+LUCENE-1102,NUG, EnwikiDocMaker id field 
+LUCENE-3789,NUG, Expose FilteredTermsEnum from MTQ  
+LUCENE-2310,NUG," Reduce Fieldable, AbstractField and Field complexity "
+LUCENE-2758,BUG, TestPerFieldCodecSupport intermittent fail 
+LUCENE-3815,NUG, Correct copy-paste victim Comment 
+LUCENE-3612,NUG, remove _X.fnx 
+LUCENE-960,NUG, SpanQueryFilter addition 
+LUCENE-2978,NUG, Upgrade benchmark from commons-compress-1.0 to commons-compress-1.1 for 15 times faster gzip decompression 
+LUCENE-1153,NUG, Lucene needs to ship the JUnit jar for testing 
+LUCENE-3397,NUG, Cleanup Test TokenStreams so they are reusable 
+LUCENE-2119,BUG," If you pass Integer.MAX_VALUE as 2nd param to search(Query, int) you hit unexpected NegativeArraySizeException "
+LUCENE-1776,NUG, NearSpansOrdered does not lazy load payloads as the PayloadSpans javadoc implies 
+LUCENE-2805,NUG, SegmentInfos shouldn't blindly increment version on commit 
+LUCENE-657,NUG, FuzzyQuery should not be final 
+LUCENE-744,NUG, TestFieldsReader - TestLazyPerformance problems w/ permissions in temp dir in multiuser environment 
+LUCENE-2235,NUG, implement PerFieldAnalyzerWrapper.getOffsetGap 
+LUCENE-1003,BUG,"RussianAnalyzer's tokenizer skips numbers from input text, "
+LUCENE-3112,NUG, Add IW.add/updateDocuments to support nested documents 
+LUCENE-2053,NUG, When thread is interrupted we should throw a clear exception 
+LUCENE-3455,NUG, All Analysis Consumers should use reusableTokenStream 
+LUCENE-1334,NUG, Term improvement 
+LUCENE-1676,NUG," New Token filter for adding payloads ""in-stream"" "
+LUCENE-905,NUG, left nav of docs/index.html in dist artifacts links to hudson for javadocs 
+LUCENE-3473,NUG, CheckIndex should verify numUniqueTerms == recomputedNumUniqueTerms 
+LUCENE-2260,NUG, AttributeSource holds strong reference to class instances and prevents unloading e.g. in Solr if webapplication reload and custom attributes in separate classloaders are used (e.g. in the Solr plugins classloader) 
+LUCENE-2629,BUG," In modules/analysys/icu, ant gennorm2 does not work "
+LUCENE-2156,NUG, use AtomicInteger/Boolean to track IR.refCount and IW.closed 
+LUCENE-3558,NUG, SearcherManager and NRTManager should be in the same package 
+LUCENE-275,NUG, Occur incompletely implemented for remote use. 
+LUCENE-3179,NUG, OpenBitSet.prevSetBit() 
+LUCENE-3553,NUG, tweak AppendingCodec to write segments_N compatible with 'normal' Lucene 
+LUCENE-785,NUG, RAMDirectory not Serializable 
+LUCENE-1939,BUG, IndexOutOfBoundsException at ShingleMatrixFilter's Iterator#hasNext method 
+LUCENE-829,BUG, StandardBenchmarker#makeDocument does not explicitly close opened files 
+LUCENE-1175,BUG, occasional MergeException while indexing 
+LUCENE-1411,NUG, Enable IndexWriter to open an arbitrary commit point 
+LUCENE-3292,NUG, IOContext should be part of the SegmentReader cache key  
+LUCENE-2360,NUG, speedup recycling of per-doc RAM 
+LUCENE-3526,BUG, preflex codec returns wrong terms if you use an empty field name 
+LUCENE-3857,NUG, exceptions from other threads in beforeclass/etc do not fail the test 
+LUCENE-3540,NUG," In 3.x branch (starting with 3.4) the IndexFormatTooOldException was backported, but the error message was not modified for 3.x "
+LUCENE-2386,NUG, IndexWriter commits unnecessarily on fresh Directory 
+LUCENE-2333,NUG," Failures during contrib builds, when classes in core were changed without ant clean "
+LUCENE-583,BUG, ISOLatin1AccentFilter discards position increments of filtered terms 
+LUCENE-1706,NUG, Site search powered by Lucene/Solr 
+LUCENE-1318,BUG, InstantiatedIndexReader.norms called from MultiReader bug 
+LUCENE-3407,BUG, wrong stats/scoring from MemoryCodec 
+LUCENE-2479,NUG," need the ability to also sort SpellCheck results by freq, instead of just by Edit Distance+freq "
+LUCENE-1891,NUG," Spatial uses java util logging that causes needless minor work (multiple string concat, a method call) due to not checking log level "
+LUCENE-1184,NUG, Allow SnapshotDeletionPolicy to be reused across writer close/open 
+LUCENE-3391,NUG, Make EasySimilarityProvider a full-fledged class  
+LUCENE-3705,BUG, deadlock in TestIndexWriterExceptions 
+LUCENE-3693,NUG, Add a testing implementation for DocumentsWriterPerThreadPool 
+LUCENE-1847,NUG, PhraseQuery/TermQuery/SpanQuery use IndexReader specific stats in their explains 
+LUCENE-2831,NUG, Revise Weight#scorer & Filter#getDocIdSet API to pass Readers context 
+LUCENE-1892,NUG, Demo HTMLParser compares StringBuffer to an empty String with .equals 
+LUCENE-436,BUG," [PATCH] TermInfosReader, SegmentTermEnum Out Of Memory Exception "
+LUCENE-2215,NUG, paging collector 
+LUCENE-209,NUG, Lucene requires ant 1.6? 
+LUCENE-2220,BUG, Stackoverflow when calling deprecated CharArraySet.copy() 
+LUCENE-1865,NUG, Add a ton of missing license headers throughout test/demo/contrib 
+LUCENE-1018,BUG, intermittant exceptions in TestConcurrentMergeScheduler 
+LUCENE-2672,NUG, speed up automaton seeking in nextString 
+LUCENE-2116,NUG, Add link to irc channel #lucene on the website 
+LUCENE-659,BUG, [PATCH] PerFieldAnalyzerWrapper fails to implement getPositionIncrementGap() 
+LUCENE-630,NUG, results.jsp in luceneweb.war uses unknown parse-Method 
+LUCENE-1456,BUG, FieldInfo omitTerms bug 
+LUCENE-2550,NUG, 3.x backwards tests are using Version.LUCENE_CURRENT: aren't testing backwards! 
+LUCENE-3191,NUG, Add TopDocs.merge to merge multiple TopDocs 
+LUCENE-1493,NUG, Enable setting hits queue size in Search*Task in contrib/benchmark 
+LUCENE-460,NUG, hashCode improvements 
+LUCENE-1182,NUG, SimilarityDelegator is missing a delegating scorePayload() method 
+LUCENE-1080,NUG, Make Token.DEFAULT_TYPE public 
+LUCENE-926,NUG, Document Package level javadocs need improving 
+LUCENE-578,NUG, Summer of Code GDATA Server  --Project structure and simple version to start with-- 
+LUCENE-1157,NUG, Formatable changes log  (CHANGES.txt is easy to edit but not so friendly to read by Lucene users) 
+LUCENE-242,NUG, Lucene Search has poor cpu utilization on a 4-CPU machine 
+LUCENE-3052,BUG, PerFieldCodecWrapper.loadTermsIndex concurrency problem 
+LUCENE-944,NUG, Remove deprecated methods in BooleanQuery 
+LUCENE-1870,NUG, dists include analyzer contrib in src dist but not binary dist 
+LUCENE-3627,BUG, CorruptIndexException on indexing after a failure occurs after segments file creation but before any bytes are written 
+LUCENE-1009,NUG, LogByteSizeMergePolicy over-merges with autoCommit=false and documents with term vectors and/or stored fields 
+LUCENE-1766,NUG, Add Thread-Safety note to IndexWriter JavaDoc 
+LUCENE-1948,NUG, Deprecating InstantiatedIndexWriter 
+LUCENE-1094,BUG, Exception in DocumentsWriter.addDocument can corrupt stored fields file (fdt) 
+LUCENE-2964,NUG, Allow benchmark tasks from alternative packages 
+LUCENE-1301,NUG, Refactor DocumentsWriter 
+LUCENE-1641,NUG, Correct spatial and trie documentation links in JavaDocs and site 
+LUCENE-3126,NUG, IndexWriter.addIndexes can make any incoming segment into CFS if it isn't already 
+LUCENE-2322,NUG, Remove verbosity from tests and make configureable 
+LUCENE-2185,NUG, add @Deprecated annotations 
+LUCENE-2412,NUG," Architecture Diagrams needed for Lucene, Solr and Nutch "
+LUCENE-1138,BUG, SpellChecker.clearIndex calls unlock inappropriately 
+LUCENE-2616,BUG, FastVectorHighlighter: out of alignment when the first value is empty in multiValued field 
+LUCENE-2161,NUG, Some concurrency improvements for NRT 
+LUCENE-2493,NUG, Rename lucene/solr dev jar files to -SNAPSHOT.jar 
+LUCENE-413,BUG, [PATCH] BooleanScorer2 ArrayIndexOutOfBoundsException + alternative NearSpans 
+LUCENE-3189,BUG, TestIndexWriter.testThreadInterruptDeadlock failed (can't reproduce) 
+LUCENE-2128,NUG, Further parallelizaton of ParallelMultiSearcher 
+LUCENE-3232,NUG, Move MutableValues to Common Module 
+LUCENE-3685,NUG, Add top-down version of BlockJoinQuery 
+LUCENE-825,BUG, NullPointerException from SegmentInfos.FindSegmentsFile.run() if FSDirectory.list() returns NULL  
+LUCENE-2743,NUG, SimpleText is too slow 
+LUCENE-3566,BUG, Parametrizing H1 and H2 
+LUCENE-3030,NUG, Block tree terms dict & index 
+LUCENE-3622,NUG, separate IndexDocValues interface from implementation 
+LUCENE-2708,NUG," when a test Assume fails, display information "
+LUCENE-716,NUG, Support unicode escapes in QueryParser 
+LUCENE-290,NUG, [PATCH] public static members in class TermVectorsWriter 
+LUCENE-645,BUG, Highligter fails to include non-token at end of string to be highlighted 
+LUCENE-449,NUG, NullPointerException when temporary directory not readable 
+LUCENE-818,NUG, IndexWriter should detect when it's used after being closed 
+LUCENE-2744,BUG, CheckIndex overstates how many fields have norms enabled 
+LUCENE-3454,NUG, rename optimize to a less cool-sounding name 
+LUCENE-2582,NUG, allow an alg file to specify the default codec 
+LUCENE-1989,NUG," CharArraySet cannot be made generic, because it violates the Set<char[]> interface "
+LUCENE-2489,NUG, promote TestExternalCodecs.PerFieldCodecWrapper to core 
+LUCENE-2639,NUG," remove random juggling in tests, add -Dtests.seed "
+LUCENE-3301,BUG, add workaround for jre breakiterator bugs 
+LUCENE-3598,NUG, Improve InfoStream class in trunk to be more consistent with logging-frameworks like slf4j/log4j/commons-logging 
+LUCENE-2494,NUG, Modify ParallelMultiSearcher to use a CompletionService instead of slowly polling for results 
+LUCENE-481,BUG, IndexReader.getCurrentVersion() and isCurrent should use commit lock. 
+LUCENE-2440,NUG, Add support for custom ExecutorServices in ParallelMultiSearcher 
+LUCENE-3811,NUG, remove unused benchmark dependencies 
+LUCENE-2416,NUG, Some improvements to Benchmark 
+LUCENE-3894,NUG, Make BaseTokenStreamTestCase a bit more evil 
+LUCENE-1709,NUG, Parallelize Tests 
+LUCENE-367,NUG, Can not subscribe 
+LUCENE-2402,NUG, Add an explicit method to invoke IndexDeletionPolicy 
+LUCENE-1862,NUG, duplicate package.html files in queryParser and analsysis.cn packages 
+LUCENE-3681,NUG, FST.BYTE2 should save as fixed 2 byte not as vInt 
+LUCENE-706,NUG, Index File Format - Example for frequency file .frq is wrong 
+LUCENE-2611,NUG, IntelliJ IDEA and Eclipse setup 
+LUCENE-1995,BUG, ArrayIndexOutOfBoundsException during indexing 
+LUCENE-3913,BUG, HTMLStripCharFilter produces invalid final offset 
+LUCENE-3328,NUG, Specialize BooleanQuery if all clauses are TermQueries 
+LUCENE-1739,BUG, 2.4.x index cannot be opened with 2.9-dev 
+LUCENE-2004,BUG," Constants.LUCENE_MAIN_VERSION is inlined in code compiled against Lucene JAR, so version detection is incorrect "
+LUCENE-2773,NUG, Don't create compound file for large segments by default 
+LUCENE-1851,NUG, 'ant javacc' in root project should also properly create contrib/surround Java files 
+LUCENE-2198,NUG, support protected words in Stemming TokenFilters 
+LUCENE-572,BUG, SpanNotQuery.hashCode ignores exclude 
+LUCENE-1808,NUG, make Query.createWeight public (or add back Query.createQueryWeight()) 
+LUCENE-516,NUG, TestFSDirectory fails on Windows 
+LUCENE-3631,NUG, Remove write access from SegmentReader and possibly move to separate class or IndexWriter/BufferedDeletes/... 
+LUCENE-1412,BUG, FileNotFoundException thrown by Directory.copy() 
+LUCENE-669,BUG, finalize()-methods of FSDirectory.FSIndexInput and FSDirectory.FSIndexOutput try to close already closed file 
+LUCENE-2415,NUG, Remove JakarteRegExCapabilities shim to access package protected field 
+LUCENE-3027,BUG, TestOmitTf.testMixedMerge random seed failure 
+LUCENE-563,NUG, IndexReader currently has javadoc errors 
+LUCENE-3580,NUG, Most 4.0 PostingsReaders don't obey DISI contract 
+LUCENE-2245,NUG, Remaining contrib testcases should use Version based ctors instead of deprecated ones 
+LUCENE-1838,NUG, BoostingNearQuery must implement clone - now it clones to a NearSpanQuery - cloning is required for Span container classes 
+LUCENE-2090,NUG, convert automaton to char[] based processing and TermRef / TermsEnum api 
+LUCENE-415,BUG, Merge error during add to index (IndexOutOfBoundsException) 
+LUCENE-3583,NUG, benchmark tests always fail on windows because directory cannot be removed 
+LUCENE-2631,BUG, Fix small perf issues with String/TermOrdValComparator 
+LUCENE-1794,NUG, implement reusableTokenStream for all contrib analyzers 
+LUCENE-2816,NUG, MMapDirectory speedups 
+LUCENE-3765,NUG, trappy ignoreCase behavior with StopFilter/ignoreCase 
+LUCENE-1234,NUG, BoostingTermQuery's BoostingSpanScorer class should be protected instead of package access 
+LUCENE-1236,NUG, EdgeNGram* documentation improvement 
+LUCENE-3453,NUG, remove IndexDocValuesField 
+LUCENE-2051,NUG, Contrib Analyzer Setters should be deprecated and replace with ctor arguments 
+LUCENE-948,BUG, Writers on two machines over NFS can hit FNFE due to stale NFS client caching 
+LUCENE-1554,BUG, Problem with IndexWriter.mergeFinish 
+LUCENE-2662,NUG, BytesHash 
+LUCENE-1379,BUG, SpanScorer fails when sloppyFreq() returns 0 
+LUCENE-2885,NUG, Add WaitForMergesTask 
+LUCENE-349,NUG, Documentation for tii and tis files seems to be out of sync with code 
+LUCENE-340,NUG, [PATCH] Highlighter: Delegate output escaping to Formatter 
+LUCENE-3268,BUG, TestScoredDocIDsUtils.testWithDeletions test failure 
+LUCENE-1841,NUG, Provide Summary Information on the Files in the Lucene index 
+LUCENE-2467,BUG, IndexWriter memory leak when large docs are indexed 
+LUCENE-3600,BUG, BlockJoinQuery advance fails on an assert in case of a single parent with child segment 
+LUCENE-3400,NUG, Deprecate / Remove DutchAnalyzer.setStemDictionary 
+LUCENE-1593,NUG, Optimizations to TopScoreDocCollector and TopFieldCollector 
+LUCENE-3462,BUG, Jenkins builds hang quite often in TestIndexWriterWithThreads.testCloseWithThreads 
+LUCENE-1905,BUG, Instantiating SimpleFSLockFactory by its String param constructor throws an IllegalStateException 
+LUCENE-2311,NUG," Pass potent SR to IRWarmer.warm(), and also call warm() for new segments "
+LUCENE-635,NUG, [PATCH] Decouple locking implementation from Directory implementation 
+LUCENE-1902,NUG, Changes.html not explicitly included in release 
+LUCENE-2111,NUG, Wrapup flexible indexing 
+LUCENE-2092,BUG, BooleanQuery.hashCode and equals ignore isCoordDisabled 
+LUCENE-1727,NUG, Order of stored Fields not maintained 
+LUCENE-3615,NUG, Make it easier to run Test2BTerms 
+LUCENE-1992,BUG, intermittent failure in TestIndexWriter. testExceptionDuringSync  
+LUCENE-3184,NUG, add LuceneTestCase.rarely()/LuceneTestCase.atLeast() 
+LUCENE-1663,NUG, Documentation bug.  The 2.4.1 query parser syntax wiki page says it is for 1.9 
+LUCENE-3625,NUG, FieldValueFitler should expose the field it uses 
+LUCENE-2975,BUG, hotspot bug in readvint gives wrong results 
+LUCENE-2321,NUG, use packed ints for the terms dict index 
+LUCENE-2476,BUG," Constructor of IndexWriter let's runtime exceptions pop up, while keeping the writeLock obtained "
+LUCENE-3571,NUG, nuke IndexSearcher(directory) 
+LUCENE-295,BUG, [PATCH] MultiSearcher problems with Similarity.docFreq() 
+LUCENE-3606,NUG, Make IndexReader really read-only in Lucene 4.0 
+LUCENE-2383,BUG, Some small fixes after the flex merge... 
+LUCENE-3909,NUG, Move Kuromoji to analysis.ja and introduce Japanese* naming 
+LUCENE-1147,NUG, add option to CheckIndex to only check certain segments 
+LUCENE-2935,NUG, Let Codec consume entire document 
+LUCENE-2970,NUG, SpecialOperations.isFinite can have TERRIBLE TERRIBLE runtime in certain situations 
+LUCENE-2089,NUG, explore using automaton for fuzzyquery 
+LUCENE-1542,BUG, Lucene can incorrectly set the position of tokens that start a field with positonInc 0. 
+LUCENE-1247,NUG, Unnecessary assert in org.apache.lucene.index.DocumentsWriterThreadState.trimFields() 
+LUCENE-1979,NUG, Remove remaining deprecations from indexer package 
+LUCENE-3807,NUG, Cleanup suggester API 
+LUCENE-2574,NUG, Optimize copies between IndexInput and Output 
+LUCENE-919,NUG, DefaultSkipListReader should not be public 
+LUCENE-2024,NUG," ""ant dist"" no longer generates md5's for the top-level artifacts "
+LUCENE-652,NUG," Compressed fields should be ""externalized"" (from Fields into Document) "
+LUCENE-1079,NUG, DocValues cleanup: constructor & getInnerArray() 
+LUCENE-241,BUG, NullPointerException in CompoundFileReader 
+LUCENE-1963,NUG, ArabicAnalyzer: Lowercase before Stopfilter 
+LUCENE-258,NUG, [PATCH] HTMLParser doesn't parse hexadecimal character references 
+LUCENE-1965,NUG, Lazy Atomic Loading Stopwords in SmartCN  
+LUCENE-2804,NUG, check all tests that use FSDirectory.open 
+LUCENE-951,BUG, PATCH MultiLevelSkipListReader NullPointerException 
+LUCENE-865,BUG, SpellChecker not working because of stale IndexSearcher 
+LUCENE-2358,NUG, rename KeywordMarkerTokenFilter 
+LUCENE-3012,BUG," if you use setNorm, lucene writes a headerless separate norms file "
+LUCENE-1883,NUG, Fix typos in CHANGES.txt and contrib/CHANGES.txt prior to 2.9 release 
+LUCENE-1869,NUG," when checking tvx/fdx size mismatch, also include whether the file exists "
+LUCENE-2667,NUG," Fix FuzzyQuery's defaults, so its fast. "
+LUCENE-3327,BUG," TestFSTs.testRandomWords throws AIOBE when ""verbose""=true "
+LUCENE-3437,NUG," Detect the test thread by reference, not by name. "
+LUCENE-1169,BUG, Search with Filter does not work! 
+LUCENE-3911,NUG, improve BaseTokenStreamTestCase random string generation 
+LUCENE-1107,NUG," Clean up old JIRA issues in component ""Other"" "
+LUCENE-2803,BUG, FieldCache should not pay attention to deleted docs when creating entries 
+LUCENE-1202,NUG, Clover setup currently has some problems 
+LUCENE-847,NUG, Factor merge policy out of IndexWriter 
+LUCENE-2862,NUG, Track total term freq per term 
+LUCENE-389,NUG, MatchAllDocsQuery to return all documents 
+LUCENE-501,NUG, need DOAP file for Lucene 
+LUCENE-2373,NUG, Create a Codec to work with streaming and append-only filesystems 
+LUCENE-910,NUG, Add/change warning comments in the javadocs of Payload APIs 
+LUCENE-875,NUG, javadocs creation has too many warnings/errors 
+LUCENE-836,NUG," Benchmarks Enhancements (precision/recall, TREC, Wikipedia) "

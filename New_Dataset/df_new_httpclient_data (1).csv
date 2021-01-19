@@ -1,0 +1,546 @@
+,ID,SUMMARY,CLASSIFIED
+0,HTTPCLIENT-2000, PublicSuffixMatcher.getDomainRoot returns only normalized domain ,BUG
+1,HTTPCLIENT-2001, Plus sign in URL has stopped working ,BUG
+2,HTTPCLIENT-2002, CloseableHttpClient end of stream The target server failed to respond: org.apache.http.NoHttpResponseException: The target server failed to respond ,BUG
+3,HTTPCLIENT-2003, DefaultHostnameVerifier.verify failled for host not ending with public suffix ,BUG
+4,HTTPCLIENT-2004, setMaxConnPerRoute & setMaxConnTotal configs not working ,BUG
+5,HTTPCLIENT-2005, ContentCompressionExec is not thread-safe ,BUG
+6,HTTPCLIENT-2006," HttpClient 5.0-beta5 gets 403 error for URL, works in HttpClient 4/Curl/Wget etc ",BUG
+7,HTTPCLIENT-2007, Performance Issue with Pooled Connection Manager + Custom socket factory  ,NUG
+8,HTTPCLIENT-2008, org.apache.hc.client5.http.impl.AuthSupport#extractFromAuthority  StringIndexOutOfBoundsException ,BUG
+9,HTTPCLIENT-2009, org.apache.hc.client5.http.impl.AuthSupport#extractFromAuthority  StringIndexOutOfBoundsException ,BUG
+10,HTTPCLIENT-2010, SSL handshaking taking lot of time in createLayeredSocket in SSLConnectionSocketFactory ,NUG
+11,HTTPCLIENT-2011, Encoded plus sign (%2B) is not preserved when URI contains an encoded forward slash (%2F) ,BUG
+12,HTTPCLIENT-2012, URIBuilder#setPathSegments Doesn't URL-encode Reserved Characters ,BUG
+13,HTTPCLIENT-2013, Connect timeout throws HttpHostConnectException (ConnectException) instead of ConnectTimeoutException (IOException) ,BUG
+14,HTTPCLIENT-2014, Refactor DefaultRedirectStrategy for subclassing ,NUG
+15,HTTPCLIENT-2015, Connect timeout value is effective doubled ,NUG
+16,HTTPCLIENT-2016, Tab chars are replaced by question marks in header values ,BUG
+17,HTTPCLIENT-2017, HttpClient5 double-closes IOSessions for HTTP/1.1 HEAD requests ,BUG
+18,HTTPCLIENT-2018, Improper input validation vulnerability in commons-codec version used by latest HttpClient ,BUG
+19,HTTPCLIENT-2019, Remove ServiceUnavailableRetryStrategy in favor of HttpRequestRetryStrategy ,BUG
+20,HTTPCLIENT-2020, DefaultBackoffStrategy should include TOO_MANY_REQUESTS (429) too ,NUG
+21,HTTPCLIENT-2021, Can not interrupt a request with thread.interrupt (hystrix) ,BUG
+22,HTTPCLIENT-2022, HttpCacheEntrySerializationException Message Unused ,NUG
+23,HTTPCLIENT-2023, Whitelist Char Array in DefaultHttpCacheEntrySerializer ,BUG
+24,HTTPCLIENT-2024, NoHttpResponseException on high Load ,BUG
+25,HTTPCLIENT-2025, URIBuilder clone ,NUG
+26,HTTPCLIENT-2026, URIBuilder opaque different than java.net.URI ,BUG
+27,HTTPCLIENT-2027, Normalize URIBuilder path ,NUG
+28,HTTPCLIENT-2028, Restore staleConnectionCheckEnabled=true semantic behavior in validateAfterInactivity config ,NUG
+29,HTTPCLIENT-2029, URIBuilder cannot parse non-UTF8 URIs ,BUG
+30,HTTPCLIENT-2030, PublicSuffixMatcher::getDomainRoot with expectation fails on invalid domain names. ,BUG
+31,HTTPCLIENT-2031, Don't use plural names for enums ,BUG
+32,HTTPCLIENT-2032, Sometimes get a broken pipe error in Java 11 when trying to connect with HttpClient ,BUG
+33,HTTPCLIENT-2033, Connection manager shutdown flushes output buffer without synchronization ,BUG
+34,HTTPCLIENT-2034, Introduce HttpRequestRetryStrategy ,NUG
+35,HTTPCLIENT-2035, Remove HttpRequestRetryHandler in favor of HttpRequestRetryStrategy ,NUG
+36,HTTPCLIENT-2036, CacheValidityPolicy should use TimeValue ,NUG
+37,HTTPCLIENT-2037, AIMDBackoffManager should use TimeValue ,NUG
+38,HTTPCLIENT-2038, CacheConfig should use TimeValue ,NUG
+39,HTTPCLIENT-2039, Do not close ConnectionManager in case of Errors ,NUG
+40,HTTPCLIENT-2040, Headers are not sent when following redirects ,BUG
+41,HTTPCLIENT-2041, AuthenticationStrategy#select() assumes challanges key to be lowercase ,BUG
+42,HTTPCLIENT-2042, AuthScope uses uppercase for scheme name whereas the rest of the code uses the lowercase version ,BUG
+43,HTTPCLIENT-2043, Rename classes documented as factories from *Provider to *Factory. ,NUG
+44,HTTPCLIENT-2044, Add and reuse singleton instances for immutable factory objects.  ,NUG
+45,HTTPCLIENT-2045, BasicScheme ignores charset param ,BUG
+46,HTTPCLIENT-2046, Rename enum AuthSchemes to StandardAuthScheme ,NUG
+47,HTTPCLIENT-2047, Regression in default HTTP Client construction for non-public hostnames ,BUG
+48,HTTPCLIENT-2048, HttpHost constructor unnecessary Type Casting in HttpComponent version-4.4.11 ,BUG
+49,HTTPCLIENT-2049, Apache http client resets connection unexpected ,BUG
+50,HTTPCLIENT-2050," Conscrypt fails with ""Socket is closed"" exception with HttpClient 5.0-beta7 ",BUG
+51,HTTPCLIENT-2051," RedirectExec always changes HTTP method on 301, 302, 303 ",BUG
+52,HTTPCLIENT-2052, RedirectExec tries to follow redirect even if HttpEntity is non-repeatable ,BUG
+53,HTTPCLIENT-2053, Add SC_PERMANENT_REDIRECT (308) to DefaultRedirectStrategy ,NUG
+54,HTTPCLIENT-2054, SSLPeerUnverifiedException with wildcard ,BUG
+55,HTTPCLIENT-2055, Verification of certificates containing wildcard SANs fails for non-public domains ,BUG
+56,HTTPCLIENT-2056, BUG with httpclient5 ,BUG
+57,HTTPCLIENT-2057," [5.0] Potential cleanup for CloseableHttpAsyncClient#execute(SimpleHttpRequest, HttpContext, FutureCallback) ",NUG
+58,HTTPCLIENT-2058, DefaultHostnameVerifier does not verify local DNS names ,BUG
+59,HTTPCLIENT-2059, MinimalHttpAsyncClient does not allow null HttpContext ,BUG
+60,HTTPCLIENT-2060," SSLPeerUnverifiedException: Certificate for <X> doesn't match any of the subject alternative names: [X, Y, Z] ",BUG
+61,HTTPCLIENT-2061, Accept-Encoding lost on redirect ,BUG
+62,HTTPCLIENT-2062, Apache commons-codec has a vulnerability ,BUG
+63,HTTPCLIENT-2063," The ""HTTP 405 Method Not Allowed"" warning is printing exception trace in log file ",BUG
+64,HTTPCLIENT-2064, MultipartEntityBuilder should support preamble and epilog ,NUG
+65,HTTPCLIENT-2065, Simplify additon of content type parameters in MultipartEntityBuilder ,NUG
+66,HTTPCLIENT-2066, Provide ByteArrayBody constructors w/o filename parameter ,NUG
+67,HTTPCLIENT-2067, JSON reply from a server comes out crippled from HttpEntity.getContent() ,BUG
+68,HTTPCLIENT-2068, Caching HttpClient: Add ability to invalidate cached responses upon revalidation ,NUG
+69,HTTPCLIENT-2069, RequestConfig.copy does not copy responseTimeout ,BUG
+70,HTTPCLIENT-2070, BasicAuthCache not to use object serialization ,BUG
+71,HTTPCLIENT-2071, No Content-Length or Content-Encoding headers for any http response ,BUG
+72,HTTPCLIENT-2072," Security vulnerability with apache commons-code 1.11, upgrade to 1.13 ",NUG
+73,HTTPCLIENT-2073, HttpClient doesn't authenticate with NTLM on Windows ,BUG
+74,HTTPCLIENT-2074, HttpClient incorrectly parses the CONNECT request URI  ,BUG
+75,HTTPCLIENT-2075, New method in Request of Fluent HC to set response timeout ,NUG
+76,HTTPCLIENT-2076, LaxExpiresHandler throws NullPointerException when a value is null. ,BUG
+77,HTTPCLIENT-2077, Migration from HttpClient v4.5.x to v5.0 causes NTLM proxy authentication failure ,BUG
+78,HTTPCLIENT-2078, Log deBUG message when no credentials for given auth scope are found ,BUG
+79,HTTPCLIENT-2079, version.properties contains non-interpolated value ,BUG
+80,HTTPCLIENT-2080, HttpRequestRetryStrategy doesn't delay the retry if IOException occurs ,BUG
+81,HTTPCLIENT-2081, Intermittent Connection reset errors while talking to IBM COS ,BUG
+82,HTTPCLIENT-2082, PoolingHttpClientConnectionManagerBuilder should also take the connection socket lookup as a builder parameter ,BUG
+83,HTTPCLIENT-2083, HttpClientBuilder addExecInterceptorFirst and addExecInterceptorLast NPE ,BUG
+84,HTTPCLIENT-2084, HttpClientBuilder placing last HttpRequestInterceptor first ,BUG
+85,HTTPCLIENT-2085, NPE in HttpClientBuilder addExecInterceptorFirst and addExecInterceptorLast ,BUG
+86,HTTPCLIENT-2086, NTLM Message parse Error ,BUG
+87,HTTPCLIENT-2087, What is the alternative to RequestConfig.Builder setLocalAddress in version 5.0? ,NUG
+88,HTTPCLIENT-2088, Request headers directly copied to the redirect URL ,BUG
+89,HTTPCLIENT-2089," ""Connection pool shut down"" error occurred When using HttpClient to send request. What is the reason? ",BUG
+90,HTTPCLIENT-2090, Read timeout not applied for SSLHandshake when using proxy ,BUG
+91,HTTPCLIENT-2091, Connect timeout is used instead of socket timeout after a tls upgrade ,BUG
+92,HTTPCLIENT-2092, Which class could HttpEntityEnclosingRequestBase be replaced with in version 5.x ,NUG
+93,HTTPCLIENT-2093, Broken pipe (Write failed) if service returns error while request is being sent ,BUG
+94,HTTPCLIENT-2094, setValidateAfterInactivity disagreement between classic/async for duration zero ,BUG
+95,HTTPCLIENT-2095, Consider replacing concatenation into slf4j loggers with interpolation ,NUG
+96,HTTPCLIENT-2096, Consider using static loggers instead of instance loggers ,NUG
+97,HTTPCLIENT-2097, Avoid boxed primitive instance equality in PoolingAsyncClientConnectionManager ,BUG
+98,HTTPCLIENT-2098, maxResultLength parameter no effect on reading HttpEntity ,BUG
+99,HTTPCLIENT-2099, unlimited socket timeout results in the connect timeout being used as a socket timeout ,BUG
+100,HTTPCLIENT-2100, MultipartEntityBuilder would not support HttpRFC6532Multipart ,BUG
+101,HTTPCLIENT-2101, Switch between HTTP 1.0 and HTTP 1.1 ... ,NUG
+102,HTTPCLIENT-2102, Socks Proxy connection ignores sotimeout (thus never times out) ,BUG
+103,HTTPCLIENT-2103, [5.1] Implement a fluent builder for ManagedHttpClientConnectionFactory ,NUG
+104,HTTPCLIENT-2104, [5.1] ManagedHttpClientConnectionFactory should support a configurable ResponseOutOfOrderStrategy ,NUG
+105,HTTPCLIENT-2105, HttpClient5 makes post call with no body after 307 redirect ,BUG
+106,HTTPCLIENT-2106, Credentials charset for DigestScheme can not be configured any more ,BUG
+107,HTTPCLIENT-2107, PoolingHttpClientConnectionManager unsafe volatile field access ,BUG
+108,HTTPCLIENT-2108, UriComponentsBuilder extension friendly ,NUG
+109,HTTPCLIENT-2109, Incorrect documentation for RequestConfig.Builder.setConnectionKeepAlive ,NUG
+110,HTTPCLIENT-2110," Can not get content type from string ""application/octet-stream"" ",BUG
+111,HTTPCLIENT-2111," DefaultHostnameVerifier fails with ""doesn't match any of the subject alternative names"" ",BUG
+112,HTTPCLIENT-2112, AbstractMultipartFormat uses ByteBuffer.array without arrayOffset ,BUG
+113,HTTPCLIENT-2113, Asynch client fails to set Host header during cross-site redirect ,BUG
+114,HTTPCLIENT-2114, AsyncHttpRequestRetryExec ignores HttpRequestRetryStrategy  ,BUG
+115,HTTPCLIENT-2115, HttpAsyncClientBuilder build() ignores replaceExecInterceptor()  ,BUG
+116,HTTPCLIENT-2116," request http website via proxy, the cookie don't work well ",BUG
+117,HTTPCLIENT-2117, Raw Query Parameters are not encoded correctly anymore ,BUG
+118,HTTPCLIENT-2118, Difference in behavior between 4.5.x and 5.0.x - CloseableHttpClient returns 403 after NoHttpResponseException ,BUG
+119,HTTPCLIENT-2119, HttpClientBuilder javadoc is missing proxy authentication properties ,NUG
+120,HTTPCLIENT-2120, Support HTTP/2 (TLS) Tunneling over HTTP-Proxy ,BUG
+121,HTTPCLIENT-2121," 307 redirect failure with ""Premature end of Content-Length delimited message body"" when Content-Length given ",BUG
+122,HTTPCLIENT-2122, Details of H2ConnectionException are omitted by ConnectionClosedException ,BUG
+123,HTTPCLIENT-2123, H2AsyncClientBuilder doesn't add RequestInterceptorEntry.Postion.LAST with correct method ,BUG
+124,HTTPCLIENT-2124," NullPointerException in org.apache.hc.client5.http.impl.classic.MinimalHttpClient.doExecute(HttpHost, ClassicHttpRequest, HttpContext) ",BUG
+125,HTTPCLIENT-2125, NullPointerException in BasicHttpClientConnectionManager ,BUG
+126,HTTPCLIENT-2126, AsyncCachingExec throws NPE when response body is null ,BUG
+127,HTTPCLIENT-2127, CancelledKeyException Triggers Reactor to Shutdown ,BUG
+0,HTTPCLIENT-1200, DecompressingHttpClient fails to request on https host ,BUG
+1,HTTPCLIENT-1201, provide basic documentation in an obvious place ,NUG
+2,HTTPCLIENT-1202, ResponseCachingPolicy should honor explicit cache-control directives for non-recognized status codes ,BUG
+3,HTTPCLIENT-1203, java.lang.NoSuchMethodError: org.apache.http.impl.conn.DefaultClientConnectionOperator ,BUG
+4,HTTPCLIENT-1204, redirect error!  java.net.URISyntaxException: Illegal character  ,BUG
+5,HTTPCLIENT-1205," FileEntity(File file, ContentType contentType) does not allow the Content-Type to be unset once set ",BUG
+6,HTTPCLIENT-1206," DecompressingHttpClient ignores ""https://"" URI, always connects as plain ""http://"" ",BUG
+7,HTTPCLIENT-1207, Improve extensibility of DefaultHttpRequestRetryHandler ,NUG
+8,HTTPCLIENT-1208, PoolingClientConnectionManager give a new route even if keep-alive ,BUG
+9,HTTPCLIENT-1209, remove dots form url when following a redirect ,BUG
+10,HTTPCLIENT-1210, Implement HttpRequestBase#toString() ,BUG
+11,HTTPCLIENT-1211, SSLSocketFactory constructor throwing java.lang.IllegalStateException: SSLContextImpl is not initialized ,BUG
+12,HTTPCLIENT-1212, SET-COOKIE header with RFC1036 Date cannot be parsed / is dropped ,BUG
+13,HTTPCLIENT-1213, performance issue with CachingHttpClient ,NUG
+14,HTTPCLIENT-1214, DecompressingHttpClient getHttpHost method uses wrong URI component ,BUG
+15,HTTPCLIENT-1215, http://host and http://host:80 not considered the same for credential matching ,BUG
+16,HTTPCLIENT-1216, org.apache.http.impl.cookie.DateUtils creates but doesn't cleanup a ThreadLocal instance ,BUG
+17,HTTPCLIENT-1217, AutoRetryHttpClient does not release connection on retries ,BUG
+18,HTTPCLIENT-1218, Serializibility of HttpCacheEntry and BufferedHeader ,BUG
+19,HTTPCLIENT-1219, TCP_NODELAY defaults to false ,BUG
+20,HTTPCLIENT-1220, Add DecompressingHttpClient#getHttpClient() ,NUG
+21,HTTPCLIENT-1221, Add DecompressingHttpClient 0-arg constructor using the DefaultHttpClient ,NUG
+24,HTTPCLIENT-1224, (regression) NTLM auth not retried after a redirect over a non-persistent connection ,BUG
+25,HTTPCLIENT-1225, A cacheable no-body response causes a NPE when that cache entry is hit ,BUG
+27,HTTPCLIENT-1227, DateUtils parsing triggers ParseExceptions ,BUG
+28,HTTPCLIENT-1228, HttpGet.abort() / HttpPost.abort() doesn't always abort immediately ,BUG
+29,HTTPCLIENT-1229, @ThreadSafe BasicClientConnectionManager is not threadsafe with respect to shutdown ,BUG
+30,HTTPCLIENT-1230," BasicClientConnectionManager is not thread safe, remove @ThreadSafe annotation ",BUG
+33,HTTPCLIENT-1233," (regression) DefaultConnectionReuseStrategy incorrectly flags connections as non-reusable after 204, 205 or 304 status responses ",BUG
+34,HTTPCLIENT-1234, HTTPS + SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER leads to javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated ,BUG
+36,HTTPCLIENT-1236, Change exception message when timeout getting connection from pool ,BUG
+37,HTTPCLIENT-1237, PoolingClientConnectionManager should only update pool expiry for resuable connections ,BUG
+38,HTTPCLIENT-1238, Contribute Bundle Activator And Central Proxy Configuration ,BUG
+39,HTTPCLIENT-1239, Support for overridable DefaultHttpServerConnection in LocalTestServer ,BUG
+40,HTTPCLIENT-1240, Empty HttpParams for cacheable requests ,BUG
+41,HTTPCLIENT-1241, Preemptive authentication is not preemptive anymore ,BUG
+42,HTTPCLIENT-1242, Preemptive authentication using AuthCache stopped working ,BUG
+43,HTTPCLIENT-1243, Processing Multipart Response entity - BUG ,BUG
+44,HTTPCLIENT-1244, convert unit tests for cache module to use Mockito ,BUG
+45,HTTPCLIENT-1245, org.apache.http.impl.client.cache.memcached.SHA256KeyHashingScheme use of MessageDigest should be synchronized ,BUG
+46,HTTPCLIENT-1246, Patch for JmxEnabledHttpClient ,BUG
+47,HTTPCLIENT-1247, DateUtils.PATTERN_RFC1036 contains an extra 'E' ,BUG
+48,HTTPCLIENT-1248, LaxRedirectStrategy converts POST to GET and throws away body ,BUG
+49,HTTPCLIENT-1249, DefaultConnectionReuseStrategy -- need to honor keep alives when receiving a 404 on a HEAD request ,BUG
+50,HTTPCLIENT-1250, Allow query string to be ignored when determining cacheability for HTTP 1.0 responses ,BUG
+51,HTTPCLIENT-1251, PoolingClientConnectionManager and  multithreading problem ,BUG
+53,HTTPCLIENT-1253, URIBuilder setParameter() method could exceed the HTTP header size.   ,BUG
+54,HTTPCLIENT-1254, Redirect with underscore in hostname causes ProtocolException ,BUG
+55,HTTPCLIENT-1255, Wildcard matching in hostname verifier incorrect ,BUG
+56,HTTPCLIENT-1256, HttpClient permits man in the middle attacks when using HTTPS ,BUG
+58,HTTPCLIENT-1258, NTLM authentication fails for local accounts ,BUG
+59,HTTPCLIENT-1259, Calling abort() on DecompressingHttpClient does nothing ,BUG
+60,HTTPCLIENT-1260, Javadoc incorrectly states StringBody(String)'s encoding uses the system default. ,BUG
+62,HTTPCLIENT-1262, Weird SSL issue (peer not authenticated) [www.popcornopolis.com] ,BUG
+63,HTTPCLIENT-1263, CachingHttpClient not consuming backend HttpResponse entity causing PoolingClientConnectionManager to become unresponsive ,BUG
+64,HTTPCLIENT-1264, Need CookiePolicy.BROWSER_COMPATIBILITY_MEDIUM_SECURITY policy ,BUG
+66,HTTPCLIENT-1266, Flag issues in NTLM implementation prevent authentication on some servers ,BUG
+67,HTTPCLIENT-1267, There seems to be no way to get HttpClient to include cookies from a custom store ,BUG
+68,HTTPCLIENT-1268, NTLM: Authenticating against some servers throws an exception ,BUG
+69,HTTPCLIENT-1269, BrowserCompatSpec: cookies values containing spaces are forwarded without quotes ,BUG
+71,HTTPCLIENT-1271, Remove commons-httpclient version 20020423 from the central maven repository ,BUG
+72,HTTPCLIENT-1272, HttpClient does not retry failed PROXY authentication when multiple challenges are present ,BUG
+73,HTTPCLIENT-1273, DecompressingHttpClient rethrows an HttpException as an IOException ,BUG
+74,HTTPCLIENT-1274, NullPointerException on 304 Not Modified response ,BUG
+75,HTTPCLIENT-1275, AllowAllHostnameVerifier does not prevent SSL handshake verification errors ,BUG
+76,HTTPCLIENT-1276, NullPointerException when 304 response updates a cache entry ,BUG
+77,HTTPCLIENT-1277, CachingHttpClient sends a 304 Not Modified to an unconditional request ,BUG
+79,HTTPCLIENT-1279, NullPointerException (apparently) when authenticating ,BUG
+80,HTTPCLIENT-1280, CachingExec catches SocketTimeoutException silently and closes the backend InputStream ,BUG
+81,HTTPCLIENT-1281, GzipDecompressingEntity does not release InputStream when an IOException occurs while reading the Gzip header ,BUG
+82,HTTPCLIENT-1282," When using Virtual host, there is no way to use the default port ",BUG
+83,HTTPCLIENT-1283, Use of toUpperCase() in NTLM engine may fail on non-US locales ,BUG
+84,HTTPCLIENT-1284, Cookie matching issue with virtual hosts ,BUG
+87,HTTPCLIENT-1287, DefaultUserTokenHandler.getUserToken() throws ConnectionShutdownException after certain aborted fetches ,BUG
+88,HTTPCLIENT-1288, abortable http request that doesn't enforce strict uri syntax ,BUG
+89,HTTPCLIENT-1289, Timeout exception caused by http 500 error ,BUG
+90,HTTPCLIENT-1290, 304 cached response never reused with If-modified-since conditional requests ,BUG
+91,HTTPCLIENT-1291, The HttpGet() and likely other method objects should accept only absoluteURI with path specified  ,BUG
+93,HTTPCLIENT-1293, proxy with kerberos auth is not woking ,BUG
+94,HTTPCLIENT-1294, CircularRedirectException is falsely thrown on URI case mismatch ,BUG
+95,HTTPCLIENT-1295, Syncronous and asynchronous versions of the client report exception in a slightly different way ,BUG
+96,HTTPCLIENT-1296, Null pointer exception when using default host and virtual host with port -1 ,BUG
+97,HTTPCLIENT-1297, Exception reusing HttpClient https connection ,BUG
+98,HTTPCLIENT-1298, Unable to shutdown executor service used by AsynchronousValidator ,BUG
+99,HTTPCLIENT-1299, FileNotFoundException on Cached Variant ,BUG
+100,HTTPCLIENT-1300, HttpClient does not retry authentication when multiple challenges are present if the primary one fails  ,BUG
+101,HTTPCLIENT-1301, HttpClient -> local address binding does not work correctly ,BUG
+102,HTTPCLIENT-1302, AllowAllHostnameVerifier should not access session ,BUG
+104,HTTPCLIENT-1304, SystemDefaultHttpClient discards Headers set on the request ,BUG
+106,HTTPCLIENT-1306, eclipse m2e generates errors on project import because of the maven-notice plugin ,BUG
+108,HTTPCLIENT-1308, Request.elementCharset doesn't do anything ,BUG
+109,HTTPCLIENT-1309, UnknownHostException if DefaultHttpClient asked to handle HttpRequest whose host name includes a port ,BUG
+111,HTTPCLIENT-1311, Interrupt flag is not preserved where InterruptedException is caught ,BUG
+112,HTTPCLIENT-1312, Decompressing on redirects with redirection support off doesn't work properly ,BUG
+113,HTTPCLIENT-1313, IllegalStateException when using AWS SDK ,BUG
+114,HTTPCLIENT-1314, Deadlock in http.client.fluent.Async.ExecRunnable.run() if there is an exception in FutureCallback ,BUG
+115,HTTPCLIENT-1315, NTLM or digest authentication using a local user on a domain host doesn't work ,BUG
+116,HTTPCLIENT-1316, Certificate verification rejects IPv6 addresses which are not String-equal ,BUG
+117,HTTPCLIENT-1317, InetAddressUtils should handle IPv6 Addresses with Embedded IPv4 Addresses ,BUG
+118,HTTPCLIENT-1318, Redirect to TLS site via TLS proxy fails - incorrectly marked as insecure target route ,BUG
+119,HTTPCLIENT-1319, InetAddressUtils.isIPv6HexCompressedAddress does not detect excess groups ,BUG
+120,HTTPCLIENT-1320, SSLSocketFactory.createSystemSSLContext causes java.security.UnrecoverableKeyException: Password verification failed ,BUG
+123,HTTPCLIENT-1323, CachingHttpClient ignores params set on the request ,BUG
+124,HTTPCLIENT-1324, CachingHttpClientBuilder.build() fails when asynchronousWorkersMax=0 ,BUG
+125,HTTPCLIENT-1325, Using a HttpRequest that is not an HttpUriRequest when host in URI is not target host results in an invalid request ,BUG
+126,HTTPCLIENT-1326, Cannot override DefaultClientConnectionOperator ,BUG
+128,HTTPCLIENT-1328, socketTimeout parameter is ignored ,BUG
+129,HTTPCLIENT-1329, SSLSocketFactory keystorePassword constructor parameter should be char[] instead of java.lang.String ,BUG
+132,HTTPCLIENT-1332, Missing content-type MultipartEntity Request ,BUG
+133,HTTPCLIENT-1333, HttpClient return 400 when requests include a long header value ,BUG
+137,HTTPCLIENT-1337," Either DefaultHttpRequestRetryHandler:98 should retry on InterruptedIOException, or DefaultClientConnection's opening() should throw something that can be retried. ",BUG
+138,HTTPCLIENT-1338, Caching of digest credentials broken when server expires nonce  (regression bug) ,BUG
+139,HTTPCLIENT-1339, SSLPeerUnverifiedException occurs randomly when calling resource via HTTPS ,BUG
+140,HTTPCLIENT-1340, Connection re-used in a inconsistent state despite 'Connection: close' after successful authentication  ,BUG
+141,HTTPCLIENT-1341, DeflateDecompressingEntity does not call Inflater#end ,BUG
+142,HTTPCLIENT-1342," ""java.lang.IllegalArgumentException: Host name may not be null"" thrown during redirect ",BUG
+144,HTTPCLIENT-1344, Userinfo Credentials in URI Should Not Default to Preemptive Authentication ,BUG
+145,HTTPCLIENT-1345, Useinfo Credentials Ignored In Redirect Location Header ,BUG
+146,HTTPCLIENT-1346, SSL handshake exceptions are hidden from application ,BUG
+147,HTTPCLIENT-1347, gzip responses doubly cached ,BUG
+148,HTTPCLIENT-1348, Incorect extraction of certificate CN in AbstractVerifier ,BUG
+149,HTTPCLIENT-1349, SSLSocketFactory incorrectly identifies key passed with keystore as the keystore password. ,BUG
+150,HTTPCLIENT-1350, Expect/continue does not consistently work ,BUG
+151,HTTPCLIENT-1351, Fragments Are Lost When Following Redirects ,BUG
+152,HTTPCLIENT-1352," ""Premature end of Content-Length delimited message body ..."" when reading entity. ",BUG
+156,HTTPCLIENT-1356, [commons-httpclient 3.1] HttpElement.parseElements missing values ,BUG
+157,HTTPCLIENT-1357, Problem using HTTPS when using proxy ,BUG
+159,HTTPCLIENT-1359, Repeated Requests Using the Same Context Fail If They Redirect ,BUG
+163,HTTPCLIENT-1363, 4.3 deprecations break NTLMv2 EWS system ,BUG
+165,HTTPCLIENT-1365, NPE when ManagedHttpClientConnectionFactory.create(ConnectionConfig) is called with null ,BUG
+166,HTTPCLIENT-1366, org.apache.http.client.utils.URLEncodedUtils should parse the semicolon as a query parameter separator ,BUG
+167,HTTPCLIENT-1367, decoded PATH of cookie value in CookieOrigin ,BUG
+172,HTTPCLIENT-1372, Content-Disposition header in form data does not adhere to RFC6266 ,BUG
+173,HTTPCLIENT-1373, OPTIONS and TRACE Should Not Invalidate Cache ,BUG
+176,HTTPCLIENT-1376, HttpClient incorrectly reuses HTTP/1.1 connection - the response body of the first request is considered as the response for the second request ,BUG
+177,HTTPCLIENT-1377, NTCredentials for Basic Authentication uses slash instead of backslash   ,BUG
+181,HTTPCLIENT-1381, NullPointerException during NTLM authentication using null workstation/domain ,BUG
+182,HTTPCLIENT-1382, BasicHttpClientConnectionManager  doesn't handle http protocol ,BUG
+183,HTTPCLIENT-1383, NTLM authentication can enter in infinite loop ,BUG
+185,HTTPCLIENT-1385, CacheKeyGenerator Does Not Normalize Path Correctly ,BUG
+186,HTTPCLIENT-1386, Need to add attribute to manifest file of HttpClient  ,BUG
+187,HTTPCLIENT-1387, Replace URICollection with List<URI> ,BUG
+188,HTTPCLIENT-1388, HttpClient/Core lacks OSGI compatible fields in manifest ,BUG
+189,HTTPCLIENT-1389, HttpClient OSGi bundle (4.2.5)'s included JavaMail API bundle will not resolve (should not depend hard on sun.* classes) ,BUG
+192,HTTPCLIENT-1392, CLONE - redirect error!  java.net.URISyntaxException: Illegal character  ,BUG
+193,HTTPCLIENT-1393, HTTP Request Headers dont persist for multiple redirects ,BUG
+195,HTTPCLIENT-1395, Call the storage implementation only once on a cache miss ,BUG
+198,HTTPCLIENT-1398, Unable to access HttpClients or HttpClientBuilder in OSGi ,BUG
+199,HTTPCLIENT-1399, NPE in org.apache.http.client.methods.RequestBuilder line 237 ,BUG
+203,HTTPCLIENT-1403, HttpClient cannot handle contatenated gzip streams ,BUG
+205,HTTPCLIENT-1405, HttpClient 4.3 - ProxyClient CONNECT message missing Host header ,BUG
+206,HTTPCLIENT-1406, https on port 80 over proxy caused the http client to go into an infinite loop ,BUG
+211,HTTPCLIENT-1411, Http Client may throw an IllegalArgumentException with certain cookies ,BUG
+213,HTTPCLIENT-1413, Divide by Zero error in FutureRequestExecutionMetrics ,BUG
+217,HTTPCLIENT-1417, Null pointer exception during cookie parsing ,BUG
+218,HTTPCLIENT-1418, Class cast exception when ClientPNames.CONN_MANAGER_TIMEOUT is set ,BUG
+224,HTTPCLIENT-1424, Axis2 Service Stub throws java.lang.IllegalStateException ,BUG
+225,HTTPCLIENT-1425, Socket Closed Exception When Reading Connection: close Response Entities ,BUG
+285,HTTPCLIENT-1426, MultipartEntityBuilder creates malformed HttpEntity ,BUG
+286,HTTPCLIENT-1427, Tutorial about Preemptive authentication misses setting AuthCache ,BUG
+287,HTTPCLIENT-1428, Minor error in javadoc for CacheConfig.Builder.setHeuristicCachingEnabled ,BUG
+288,HTTPCLIENT-1429, Very large cookies should be logged in a truncated form ,BUG
+289,HTTPCLIENT-1430, Please reduce object creation in HeaderGroup.getFirstHeader() ,BUG
+290,HTTPCLIENT-1431,The HTTPClient 4.3 doesn't accept the SocketFactory based on the LayeredSchemeSocketFactory when using HTTP proxy,BUG
+291,HTTPCLIENT-1432, Lazy decompressing of HttpEntity.getContent() ,BUG
+292,HTTPCLIENT-1433, DefaultClientConnectionOperator instance check inconsistent with explicit cast ,BUG
+293,HTTPCLIENT-1434, TrustSelfSignedStrategy should be a singleton ,BUG
+294,HTTPCLIENT-1435, Proxy authentication of Fluent API does not work ,BUG
+295,HTTPCLIENT-1436,Unable to retrieve binary encoded response from a website using httpclient 4.3,BUG
+296,HTTPCLIENT-1437, Fluent Executor.execute is not thread safe ,BUG
+297,HTTPCLIENT-1438, org.apache.http.NoHttpResponseException: The target server failed to respond ,BUG
+298,HTTPCLIENT-1439, Infinite timeout on entity send ,BUG
+299,HTTPCLIENT-1440, NPE When Location Is file: URI ,BUG
+300,HTTPCLIENT-1441, AsynchronousValidationRequest and a connection pool leak ,BUG
+301,HTTPCLIENT-1442, Request loses authorization header when redirected by proxy ,BUG
+302,HTTPCLIENT-1443, HttpCache uses the physical host instead of the virtual host in the cache key ,BUG
+303,HTTPCLIENT-1444," OSGI Manifest does not export ""org.apache.http"" package ",BUG
+304,HTTPCLIENT-1445, Unable to access WebService through WebSphere Application Server with new HttpClient ,BUG
+305,HTTPCLIENT-1446,Proxy authentication Error - NTLM authentication error: Unexpected state: MSG_TYPE3_GENERATED in Http Client 4.3.1,BUG
+306,HTTPCLIENT-1447, Clients created with HttpClients.createMinimal do not work with absolute URIs ,BUG
+307,HTTPCLIENT-1448, Add context information to DefaultRequestDirector INFO level logging ,BUG
+308,HTTPCLIENT-1449,X509HostnameVerifier API is too restrictive,BUG
+309,HTTPCLIENT-1450," ""tests.jar"" isn't deployed to Maven central repository ",BUG
+310,HTTPCLIENT-1451,HttpClient does not store response cookies on a 401,BUG
+311,HTTPCLIENT-1452, in case of a redirect a wrong host param is set to http header ,BUG
+312,HTTPCLIENT-1453, PoolingHttpClientConnectionManager thread safety ,BUG
+313,HTTPCLIENT-1454, Allow use of multiple SSLContexts with single instance of HttpClient ,BUG
+314,HTTPCLIENT-1455, Documentation caching erroneus? ,BUG
+315,HTTPCLIENT-1456,ClientProtocolException occurs when retries after receiving 503,BUG
+316,HTTPCLIENT-1457, HttpClientBuilder.useSystemProperties() is incompatible with NTLM scheme ,BUG
+317,HTTPCLIENT-1458, SystemDefaultCredentialsProvider authenticates with wrong protocol for https requests ,BUG
+318,HTTPCLIENT-1459,InetAddressUtils.isIPv6Address is not identifying my IPv6 Address,BUG
+319,HTTPCLIENT-1460, Cached files would be deleted after CloseableHttpClient being closed. ,BUG
+320,HTTPCLIENT-1461, GZIP decoding is very slow ,BUG
+321,HTTPCLIENT-1465, IOException when reading gziped content from sites with slightly incorrect gzip stream (missing gz footer) ,BUG
+322,HTTPCLIENT-1466, FileBodyPart.generateContentType() method ignores ContentType parameters ,BUG
+323,HTTPCLIENT-1467, Why is MultipartEntityBuilder::addPart(FormBodyPart) private? ,BUG
+324,HTTPCLIENT-1468, Remove unneccessary throws UnsupportedEncodingException ,BUG
+325,HTTPCLIENT-1471, ResponseCachingPolicy - eliminate boxing and HashSet ,BUG
+326,HTTPCLIENT-1472, DateParseException only used by deprecated classes ,BUG
+327,HTTPCLIENT-1473,Http get via invalid proxy get 200/OK instead of 500,BUG
+328,HTTPCLIENT-1474, HTTP POST with Fluent HC is broken ,BUG
+329,HTTPCLIENT-1475, Add a requests count readable stat for each HttpGet to be processed ,BUG
+330,HTTPCLIENT-1476, Thread lock within httpClient call ,BUG
+331,HTTPCLIENT-1477, javax.net.ssl.keyStore is ignored by HttpClientBuilder.useSystemProperties() ,BUG
+332,HTTPCLIENT-1478, https calls ignore http.socket.timeout during SSL Handshake ,BUG
+333,HTTPCLIENT-1479, NPE in DefaultHttpClient with Proxy and AuthCache ,BUG
+334,HTTPCLIENT-1480, Provide a convenience method to parse a proxy with format localhost:port ,BUG
+335,HTTPCLIENT-1481, Http Proxy with SSL target not working ,BUG
+336,HTTPCLIENT-1482, ability to expect-continue only if potentially stale ,BUG
+337,HTTPCLIENT-1483, GzipCompressingEntity shouldn't close outputstream in final block ,BUG
+338,HTTPCLIENT-1484, GzipCompressingEntity shouldn't close outputstream in finally block ,BUG
+339,HTTPCLIENT-1485, Wrong type of exception raised because of hardcoded string-compare ,BUG
+340,HTTPCLIENT-1486, Quirky Behavior in URIUtils leads to Improper Request Execution ,BUG
+341,HTTPCLIENT-1487, CachingHttpClient doesn't persist cache ,BUG
+342,HTTPCLIENT-1483, GzipCompressingEntity shouldn't close outputstream in final block ,BUG
+343,HTTPCLIENT-1484, GzipCompressingEntity shouldn't close outputstream in finally block ,BUG
+344,HTTPCLIENT-1485, Wrong type of exception raised because of hardcoded string-compare ,BUG
+345,HTTPCLIENT-1486, Quirky Behavior in URIUtils leads to Improper Request Execution ,BUG
+346,HTTPCLIENT-1487, CachingHttpClient doesn't persist cache ,BUG
+347,HTTPCLIENT-1488," Built-in NTLM engine fails to authenticate against Squids ntlm_fake_auth, JCIFS doesn't ",BUG
+348,HTTPCLIENT-1489," Multiple, comma-separated challenges in WWW-Authenticate are not recognized ",BUG
+349,HTTPCLIENT-1490, auth caches do not take auth realm into account ,BUG
+350,HTTPCLIENT-1491, Enable provision of Service Principal Name to InitializeSecurityContext  ,BUG
+351,HTTPCLIENT-1492," ""TimeToLive"" for connection pooling not settable via HttpClientBuilder ",BUG
+352,HTTPCLIENT-1493, Conditional stale connection checking ,BUG
+353,HTTPCLIENT-1494, StringBody constructor throws NPE if text is null ,BUG
+354,HTTPCLIENT-1495," Finalizer in PoolingHttpClientConnectionManager should not log ""shutdown"" messages if already shutdown normally ",BUG
+355,HTTPCLIENT-1496," HttpRequestInterceptors do not have easy access to the scheme, host or port of the request. ",BUG
+356,HTTPCLIENT-1497, Allow to enable SO_LINGER option with zero timeout ,BUG
+357,HTTPCLIENT-1498," ""java.lang.IllegalArgumentException: Host name may not be blank"" thrown during redirect (regression?) ",BUG
+358,HTTPCLIENT-1499, Fluent-HC GET should support bodyString() ,BUG
+359,HTTPCLIENT-1500, Fluent-HC GET should support bodyString() ,BUG
+360,HTTPCLIENT-1501, Fluent API not accepting form parameters ,BUG
+361,HTTPCLIENT-1502, Android HttpClient Maven javadoc/source uploaded incorrectly ,BUG
+362,HTTPCLIENT-1504,Hanging request execution when PoolingHttpClientConnectionManager has 0 MaxTotal connections set,BUG
+363,HTTPCLIENT-1505, Add a MultipartEntityReader ,BUG
+364,HTTPCLIENT-1506," Including ""; charset=..."" in the content type header prevents form fields from getting transmitted? ",BUG
+365,HTTPCLIENT-1507, Quick start comments do not correspond to user guide ,BUG
+366,HTTPCLIENT-1508, Default user agent should reflect the Java version used and not compiled ,BUG
+367,HTTPCLIENT-1509, Increase DefaultHttpResponseParser buffer size ,BUG
+368,HTTPCLIENT-1510, Expect/continue not working for HttpRequest objects that are implemented with an HttpRequestWrapper ,BUG
+369,HTTPCLIENT-1511, Should be possible to retrieve the entity stream from a fluent respose ,BUG
+370,HTTPCLIENT-1512, Please add org.apache.http.client.fluent.Content.asString(Charset) ,BUG
+371,HTTPCLIENT-1513,Trim default ports (80 and 443) in host header,BUG
+372,HTTPCLIENT-1514, org.apache.http.entity.ContentType#get method is too strict regarding malformed Content-Type headers ,BUG
+373,HTTPCLIENT-1515, Caching responses to HEAD requests ,BUG
+374,HTTPCLIENT-1516, URL-encoded form paramters - missing '=' for null-values ,BUG
+375,HTTPCLIENT-1517,"Strip Porty by default setup and strip ports by default ports 80,443, also use canonical hostname to create kerberos / gssapi context",BUG
+376,HTTPCLIENT-1518,In 4.3.2/3 (running on Sun Solaris 10) during stress test connections go in close_wait,BUG
+377,HTTPCLIENT-1519, redundant port when executing request ,BUG
+378,HTTPCLIENT-1520, Fix License URLs in pom.xml ,BUG
+379,HTTPCLIENT-1521, Improve HttpClient extensibility for proxy chaining ,BUG
+380,HTTPCLIENT-1522, SNI support ,BUG
+0,HTTPCLIENT-1530,DateUtils.parseDate not fully compliant with RFC 1123,BUG
+1,HTTPCLIENT-1531, https connections through proxies don't work if authentication is disabled ,BUG
+2,HTTPCLIENT-1532, Android Basic Authentication - the failure case ,BUG
+3,HTTPCLIENT-1533, MultipartEntity encoding regression bug ,BUG
+4,HTTPCLIENT-1534, HTTP Digest Authentication does not use cookies sent on challenge ,BUG
+5,HTTPCLIENT-1535, InetAddress and NoRouteToHost ,BUG
+6,HTTPCLIENT-1536, HttpClientConnectionOperator should use HttpHost.getAddress if available ,BUG
+7,HTTPCLIENT-1537, metatype.xml definition is wrong for httpclient-osgi ,BUG
+8,HTTPCLIENT-1538, Monitor contention at org.apache.http.impl.client.CloseableHttpResponseProxy.newProxy(HttpResponse original) ,BUG
+9,HTTPCLIENT-1539, Non-consistent SunCertPathBuilderException ,BUG
+10,HTTPCLIENT-1540, Support delegated credentials (ISC_REQ_DELEGATE) via ClientWinAuth ,BUG
+11,HTTPCLIENT-1541, Use correct service principle name (HTTP/hostname) for WinHttpClients ,BUG
+13,HTTPCLIENT-1543, httpmime should contain a proper bundle manifest for osgi ,BUG
+14,HTTPCLIENT-1544, NPE in formatCooke method while parsing response cookies ,BUG
+15,HTTPCLIENT-1545, Possible infinite loop when WindowsNegotiateScheme authentication fails ,BUG
+16,HTTPCLIENT-1546, Cookie values can end up being double quoted ,BUG
+17,HTTPCLIENT-1547," HttpClient OSGi bundle doesn't import the package ""javax.naming"" ",BUG
+19,HTTPCLIENT-1549,CVE-2014-3577 patch may not be RFC-compliant,BUG
+20,HTTPCLIENT-1550," ""deflate"" encoding issue : java.util.zip.ZipException: invalid stored block lengths ",BUG
+21,HTTPCLIENT-1551,CVE-2014-3577 Is MITM possible in commons httpclient 3.x,BUG
+22,HTTPCLIENT-1552, URI Encoding doesn't encode ':' in URI ,BUG
+23,HTTPCLIENT-1553, SSLSocketFactory null argument exception in HttpClientBuilder.build() if system properties are not used. ,BUG
+24,HTTPCLIENT-1554, defaultRequestConfig never used in InternalHttpClient ,BUG
+25,HTTPCLIENT-1555, Socket timeout not applied to SSLSocketFactory & it waits indefinitely. ,BUG
+26,HTTPCLIENT-1556, Default CookieSpecs provider not found for AbstractHttpClient subclass ,BUG
+27,HTTPCLIENT-1557,NTLMEngine.Type1Message doesn't do anything with domain and host,BUG
+28,HTTPCLIENT-1558, Problematic OSGi bundling ,BUG
+29,HTTPCLIENT-1559, Converting a relative address to absolute address using HttpClient in Java ,BUG
+31,HTTPCLIENT-1561, InitializeSecurityContext in WinHttpClient ignores return codes ,BUG
+32,HTTPCLIENT-1562, Typo in WindowsNegotiateScheme ,BUG
+33,HTTPCLIENT-1563, HttpClient OSGi bundle is missing some javax.naming package imports ,BUG
+34,HTTPCLIENT-1564,ContentEncodingHttpClient 4.3.5 breaks compat with 4.2.5,BUG
+35,HTTPCLIENT-1565, examples.client.ClientExecuteSOCKS doesn't specify the context while making the request. ,BUG
+36,HTTPCLIENT-1566, Obvious bug in HTTP Basic Authentication! ,BUG
+39,HTTPCLIENT-1569, GGSSchemeBase incorrectly spelled ,BUG
+41,HTTPCLIENT-1571,Commit for HTTPCLIENT-1562 broke change from HTTPCLIENT-1560,BUG
+42,HTTPCLIENT-1572, Aborting request execution doesn't throw RequestAbortedException ,BUG
+44,HTTPCLIENT-1574, Missing package for OSGI - javax.naming ,BUG
+45,HTTPCLIENT-1575," PoolingHttpClientConnectionManager.setMaxPerRoute accepts, but ignores, HttpRoutes with default ports ",BUG
+46,HTTPCLIENT-1576, httpclient incorrectly return Cookie rejected  ,BUG
+47,HTTPCLIENT-1577, Some setting may not take effect if  assigned HttpClientConnectionManager instance in HttpClientBuilder ,BUG
+49,HTTPCLIENT-1579,CacheValidityPolicy does not correctly handle 304 Not Modified freshness,BUG
+52,HTTPCLIENT-1582, SSPI-based auth might fail if output token size is too small ,BUG
+58,HTTPCLIENT-1588, CloseableHttpClient.execute do not close CloseableHttpResponse ,BUG
+60,HTTPCLIENT-1590, Charset detection problem if Content-Type header is text/html ,BUG
+61,HTTPCLIENT-1591, SNI doesn't work in Android port for proxied connections ,BUG
+64,HTTPCLIENT-1594, MultipartEntity doesn't work when I set Charset for it ,BUG
+65,HTTPCLIENT-1595, SSLConnectionSocketFactory not respecting enabled protocols ,BUG
+67,HTTPCLIENT-1597, BrowserCompatHostnameVerifier doesn't recognize CN ,BUG
+74,HTTPCLIENT-1604,HttpClient fails Basic Authentication when using RFC2617Scheme,BUG
+75,HTTPCLIENT-1605,Cannot upload files with HttpClient 4.3.6 using PUT/POST,BUG
+76,HTTPCLIENT-1606, TestSSLSocketFactory fails on OpenJDK ,BUG
+78,HTTPCLIENT-1608, Cookies are not processed while NTLM handshaking takes place ,BUG
+81,HTTPCLIENT-1611, NoClassDefFoundError: org/apache/http/ssl/SSLContexts in httpclient-osgi ,BUG
+82,HTTPCLIENT-1612, Missing package import statement in manifest (org.apache.http.ssl) ,BUG
+84,HTTPCLIENT-1614,Domain processing incompatible with 4.3.6,BUG
+88,HTTPCLIENT-1618, EntityUtils toByteArray EOFException ,BUG
+89,HTTPCLIENT-1619, BasicScheme.authenticate(...) is not thread save ,BUG
+91,HTTPCLIENT-1621, Possible NPE/incorrect type in HttpClientBuilder#evictIdleConnections ,BUG
+93,HTTPCLIENT-1623,Several files still refer to Java 1.5,BUG
+94,HTTPCLIENT-1624,NTLMresp in type3message is being generated wrong when using NEGOTIATE_NTLM2_KEY,BUG
+95,HTTPCLIENT-1625, Completely overhaul GSS-API-based authentication backend ,BUG
+98,HTTPCLIENT-1628, Auth cache can fail when domain name contains uppercase characters ,BUG
+100,HTTPCLIENT-1630,304 response causes multiple copies of file in cache,BUG
+103,HTTPCLIENT-1633,RFC6265CookieSpecProvider ignores compatibility level,BUG
+104,HTTPCLIENT-1634, Httpclient RequestConfig Timeout not occuring ,BUG
+106,HTTPCLIENT-1636, Regression: hostname verification fails when it shouldn't ,BUG
+107,HTTPCLIENT-1637, HttpClient does not handle cookies during authentication ,BUG
+110,HTTPCLIENT-1640, Failed to parse cookie max-age attribute  ,BUG
+112,HTTPCLIENT-1642, Issue with github SSL certificate ,BUG
+114,HTTPCLIENT-1644, NullPointerException during DefaultCookieSpec.formatCookies call ,BUG
+117,HTTPCLIENT-1647," HTTP Client reporting ""Garbage in response"" whereas response seems to be valid ",BUG
+119,HTTPCLIENT-1649, Caching of proxy auth schemes is broken ,BUG
+123,HTTPCLIENT-1653, HttpClient does not validate maps.googleapis.com SSL certificate ,BUG
+124,HTTPCLIENT-1654, Deprecate/remove RequestConfig#decompressionEnabled in favor of #contentCompressionEnabled ,BUG
+127,HTTPCLIENT-1657," ""Connection is not open"" in httpClient.execute ",BUG
+129,HTTPCLIENT-1659, Redirect does not send cookies ,BUG
+130,HTTPCLIENT-1660,Http client 4.3.6 - loooong timeout on socket close,BUG
+132,HTTPCLIENT-1662, NTLM auth failed because NTLMEngineImpl strip domain to base domain name ,BUG
+135,HTTPCLIENT-1665, Regression in org.apache.http.entity.mime.MultipartEntity and   org.apache.http.entity.mime.content.StringBody ,BUG
+136,HTTPCLIENT-1666, HTTPClient hangs on bad data from server. ,BUG
+137,HTTPCLIENT-1667, RequestBuilder ignores Charset  ,BUG
+138,HTTPCLIENT-1668, connectTimeout used as socketTimeout in Request ,BUG
+143,HTTPCLIENT-1673, org.apache.http.entity.mime.content is missing from exports of OSGi bundle ,BUG
+144,HTTPCLIENT-1674, Invalid project url in pom.xml ,BUG
+150,HTTPCLIENT-1680,307 redirect throws ClientProtocolException using POST method,BUG
+152,HTTPCLIENT-1682, HttpClient should allow NO port ,BUG
+156,HTTPCLIENT-1686," Threadsafe CloseableHttpClient uses non-threadsafe NTLMScheme, causing errors ",BUG
+157,HTTPCLIENT-1687, ClientPreemptiveDigestAuthentication example fails ,BUG
+158,HTTPCLIENT-1688, ProxySelectorRoutePlanner doesn't handle IllegalStateException thrown by SchemeRegistry.getScheme ,BUG
+160,HTTPCLIENT-1690,ZipException occurs when content-encoding-header is set for 304-response,BUG
+167,HTTPCLIENT-1697, Performance issue while closing client streams ,BUG
+168,HTTPCLIENT-1698,Hostname verification fails when using URL with literal IPv6 address,BUG
+172,HTTPCLIENT-1702,Running mvn eclipse:eclipse fails with Maven 3.2.3 due to an issue with httpmime,BUG
+176,HTTPCLIENT-1706," Domain starting with ""."" in a cookie makes CookieSpec#match fails for subdomain ",BUG
+178,HTTPCLIENT-1708,Issues With Extended ASCII ( Latin Chars ) Escaping with HttpClient 4.5.1,BUG
+180,HTTPCLIENT-1710, OSGiRoutePlanner examines only the first proxy exception and also crashes processing IP address exception ,BUG
+181,HTTPCLIENT-1711, defaulthttpresponseparser parseHead fails to return on live stream ,BUG
+185,HTTPCLIENT-1715,NTLMEngineImpl.Type1Message not thread safe but declared as a constant,BUG
+189,HTTPCLIENT-1719, OSGiProcyConfiguration proxy user field is known as 'proxy.user' to the metadata but the class uses the 'proxy.username' ,BUG
+191,HTTPCLIENT-1721," file upload with MultipartEntityBuilder ""Software caused connection abort: socket write error"" ",BUG
+192,HTTPCLIENT-1722," file upload with MultipartEntityBuilder ""Software caused connection abort: socket write error"" ",BUG
+193,HTTPCLIENT-1723,"HttpClient 4.5.1 may perform multiple requests on the same connection despite having ""Connection: close"" header.",BUG
+196,HTTPCLIENT-1726, The deprecated SSLSocketFactory does not contain the SNI fix found in the SSLConnectionSocketFactory class ,BUG
+201,HTTPCLIENT-1731, java.lang.NullPointerException ,BUG
+203,HTTPCLIENT-1733, http component redirect fails when redirection URL contains not url encoded params ,BUG
+209,HTTPCLIENT-1739, repeated calls to HttpClients.custom.build take longer over time ,BUG
+211,HTTPCLIENT-1741, X-CSRF-Validation issues ,BUG
+212,HTTPCLIENT-1742, No connection reuse if response is compressed ,BUG
+214,HTTPCLIENT-1744, code treats domain names or hostnames case sensitive. This will cause verification to fail because FQDN are case insensitive. ,BUG
+215,HTTPCLIENT-1745, Proxy-Authorization header is not send within first request ,BUG
+216,HTTPCLIENT-1746,"URLEncodedUtils.parse(String, CharSet) in 4.4 causes an NPE on null input and is not backward compatible",BUG
+217,HTTPCLIENT-1747,"The ""default request config"" socket timeout is set to 0 if the deprecated HttpClientParams is used",BUG
+218,HTTPCLIENT-1748," When run in java applet, SystemDefaultCredentialsProvider fails to get authentication from Authenticator ",BUG
+219,HTTPCLIENT-1749, Memory Leak in OSGi support ,BUG
+223,HTTPCLIENT-1753," Exception in thread ""main"" java.lang.NoSuchFieldError: INSTANCE ",BUG
+228,HTTPCLIENT-1758, HttpClients.createDefault() causing exception on my linux server ,BUG
+231,HTTPCLIENT-1761, Missing null check in parse method ,BUG
+232,HTTPCLIENT-1762,Proxy reuses a fully established routed authenticated connection in attempt to CONNECT to target again causing 400 and NPE,BUG
+233,HTTPCLIENT-1763, Invalid 'expires' attribute ,BUG
+236,HTTPCLIENT-1766, SystemDefaultRoutePlanner: Possible null pointer dereference ,BUG
+237,HTTPCLIENT-1767, Null pointer dereference in EofSensorInputStream and ResponseEntityProxy ,BUG
+238,HTTPCLIENT-1768,Connection eviction policy in apache client 3.1. can IdleConnectionTimeoutThread be used?,BUG
+239,HTTPCLIENT-1769, LaxRedirectStrategy should have its own public static final INSTANCE member ,BUG
+255,HTTPCLIENT-1785," If you use custom trust manager/ protocol the ""connection.timeout"" param will throw SSLHandshakeException ",BUG
+261,HTTPCLIENT-1791, Proxy exceptions not honoured in HttpClient-osgi module ,BUG
+266,HTTPCLIENT-1796, java.lang.IllegalArgumentException thrown on a second # in url ,BUG
+271,HTTPCLIENT-1801, HttpRequestBase.releaseConnection() method aborts connection rather than release it ,BUG
+272,HTTPCLIENT-1802, RFC violations in hostname checking ,BUG
+273,HTTPCLIENT-1803, Malformed path not handled well ,BUG
+275,HTTPCLIENT-1805, Blocking thread when executing a request in a FutureCallback ,BUG
+277,HTTPCLIENT-1807," NullPointerException in URLEncodedUtils.parse(String, Charset) ",BUG
+278,HTTPCLIENT-1808, Overflow in Connection TTL ,BUG
+284,HTTPCLIENT-1814, NoHttpResponseException occuring randomly ,BUG
+285,HTTPCLIENT-1815, CLONE - Request 'hangs' on invalid response from server ,BUG
+298,HTTPCLIENT-1828," HttpDelete, HttpGet, HttpHead do not extend HttpEntityEnclosingRequestBase ",BUG
+299,HTTPCLIENT-1829, Apparently normal SSL site generates a handshake failure ,BUG
+301,HTTPCLIENT-1831, Possible bug in URIBuilder ,BUG
+303,HTTPCLIENT-1833, RuntimeException from WindowsNegotiateScheme: Unexpected token ,BUG
+306,HTTPCLIENT-1836,DefaultHostnameVerifier#getSubjectAltNames(X509Certificate) throws java.lang.ClassCastException,BUG
+314,HTTPCLIENT-1844, CloseableHttpClient error : org.apache.http.NoHttpResponseException failed to respond ,BUG
+315,HTTPCLIENT-1845, Extract InputStreamFactory classes out of GzipDecompressingEntity and DeflateDecompressingEntity for reuse and to create less garbage ,BUG
+321,HTTPCLIENT-1851, Regression ClassCastException when connecting SSL ,BUG
+324,HTTPCLIENT-1854, Cannot peek contents of org.apache.http.conn.EofSensorInputStream ,BUG
+325,HTTPCLIENT-1855, Digest auth: Nonce counter not incremented after reuse ,BUG
+326,HTTPCLIENT-1856," incorrect ""Maximum line length limit exceeded"" detection is possible ",BUG
+327,HTTPCLIENT-1857, HttpClient falsely closes a reusable connection ,BUG
+329,HTTPCLIENT-1859, FormBodyPartBuilder.java does not properly escape the name and filename subfields in the ContentDisposition header ,BUG
+332,HTTPCLIENT-1862,Equinox SAXException when starting OSGi module httpclient-osgi-4.5.3.jar,BUG
+339,HTTPCLIENT-1869, java.io.EOFException: Unexpected end of ZLIB input stream ,BUG
+344,HTTPCLIENT-1874, Exponential back-off retry mechanism ,BUG
+347,HTTPCLIENT-1877, java.io.EOFException: Unexpected end of ZLIB input stream ,BUG
+349,HTTPCLIENT-1879, connection should revert to SocketConfig's soTimeout ,BUG
+352,HTTPCLIENT-1882,NTLM authentication error: Unexpected state: MSG_TYPE3_GENERATED,BUG
+354,HTTPCLIENT-1884, javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.googleapis.com' does not match the certificate subject provided by the peer ,BUG
+355,HTTPCLIENT-1885,400 Bad Request Server: Microsoft-HTTPAPI/2.0,BUG
+357,HTTPCLIENT-1887, tcp status remains in ·CLOSE_WAIT· for a very long time ,BUG
+358,HTTPCLIENT-1888, NullPointerException in SystemDefaultCredentialsProvider.getCredentials when AuthScope.orgin is null ,BUG
+362,HTTPCLIENT-1892, Request hangs forever although sockettimeout and connecttimeout are set ,BUG
+366,HTTPCLIENT-1896, GGSSchemeBase does not support GSS continuation ,BUG
+367,HTTPCLIENT-1897,httpclient-osgi-4.5.3 and 4.5.4 do not work with proxy with NTLM scheme,BUG
+368,HTTPCLIENT-1898, Incorrect comment in example class ClientMultiThreadedExecution.java ,BUG
+369,HTTPCLIENT-1899, Memory leak in OSGi support ,BUG
